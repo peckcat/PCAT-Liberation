@@ -9,6 +9,9 @@ if (isServer) then {
 };
 
 switch (KP_liberation_preset_blufor) do {
+    case -1: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_west_desert.sqf";};
+    case -2: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_west_woodland.sqf";};
+    case -3: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_east.sqf";};
     case  1: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\apex.sqf";};
     case  2: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\3cbBAF_mtp.sqf";};
     case  3: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\3cbBAF_des.sqf";};
@@ -43,6 +46,9 @@ switch (KP_liberation_preset_blufor) do {
 };
 
 switch (KP_liberation_preset_opfor) do {
+    case -1: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom_west_desert.sqf";};
+    case -2: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom_west_woodland.sqf";};
+    case -3: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom_east.sqf";};
     case  1: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\apex.sqf";};
     case  2: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\rhs_afrf.sqf";};
     case  3: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\takistan.sqf";};
@@ -67,6 +73,7 @@ switch (KP_liberation_preset_opfor) do {
 };
 
 switch (KP_liberation_preset_resistance) do {
+    case -1: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\custom_gref.sqf";};
     case  1: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\apex.sqf";};
     case  2: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\rhs_gref.sqf";};
     case  3: {[] call compileFinal preprocessFileLineNumbers "presets\resistance\middle_eastern.sqf";};

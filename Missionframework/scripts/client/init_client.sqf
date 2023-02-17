@@ -1,5 +1,7 @@
 [] call compileFinal preprocessFileLineNumbers "scripts\client\misc\init_markers.sqf";
 switch (KP_liberation_arsenal) do {
+    case  -1: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\custom_west.sqf";};
+    case  -2: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\custom_east.sqf";};
     case  1: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\custom.sqf";};
     case  2: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\rhsusaf.sqf";};
     case  3: {[] call compileFinal preprocessFileLineNumbers "arsenal_presets\3cbBAF.sqf";};

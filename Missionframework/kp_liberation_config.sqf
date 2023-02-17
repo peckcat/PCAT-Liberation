@@ -9,6 +9,11 @@ KP_liberation_medical_vehicles = [
     "B_T_Truck_01_medical_F",
     "B_Truck_01_medical_F",
     "C_Van_02_medevac_F",
+    "I_E_Truck_02_Medical_F",
+    "I_E_Van_02_medevac_F",
+    "O_Heli_Transport_04_medevac_F",
+    "O_T_Truck_03_medical_ghex_F",
+    "O_Truck_03_medical_F",
     "CUP_B_BMP2_AMB_CDF",
     "CUP_B_BMP2_AMB_CZ_Des",
     "CUP_B_BMP2_AMB_CZ",
@@ -33,14 +38,11 @@ KP_liberation_medical_vehicles = [
     "gm_ge_airforce_do28d2_medevac",
     "gm_ge_army_u1300l_medic_win_rc",
     "gm_ge_army_u1300l_medic",
-    "I_E_Truck_02_Medical_F",
-    "I_E_Van_02_medevac_F",
-    "O_T_Truck_03_medical_ghex_F",
-    "O_Truck_03_medical_F",
     "RHS_UH60M_MEV_d",
     "RHS_UH60M_MEV",
     "RHS_UH60M_MEV2_d",
     "RHS_UH60M_MEV2",
+    "rhs_gaz66_ap2_vdv",
     "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy",
     "rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy",
     "rhsusf_m113_usarmy_medical",
@@ -52,7 +54,8 @@ KP_liberation_medical_vehicles = [
     "uns_ch47a_medevac",
     "uns_H13_medevac_CAV",
     "uns_M577_amb",
-    "uns_uh1D_med"
+    "uns_uh1D_med",
+    "vtx_UH60M_MEDEVAC"
 ];
 
 // Building classnames which also function as ACE medical facilities.
@@ -79,6 +82,10 @@ KP_liberation_ace_crates = [
 If you want to change a preset, it's recommended to set all four presets to 0 and edit the appropriate custom.sqf files in the preset folders.*/
 
 /* BLUFOR preset:
+-1 = Custom (mostly vanilla + RHS USAF Desert)
+-2 = Custom (mostly vanilla + RHS USAF Woodland)
+-3 = Custom (mostly vanilla + RHS AFRF)
+
 0  = Custom (default vanilla with many optional mods supported)
 1  = Apex Tanoa (apex vanilla with many optional mods supported)
 2  = 3cb BAF (MTP)
@@ -110,9 +117,13 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = 0;
+KP_liberation_preset_blufor = -1;
 
 /* OPFOR preset:
+-1 = Custom (mostly vanilla + RHS USAF Desert)
+-2 = Custom (mostly vanilla + RHS USAF Woodland)
+-3 = Custom (mostly vanilla + RHS AFRF)
+
 0  = Custom (default vanilla CSAT)
 1  = Apex Tanoa (apex vanilla CSAT)
 2  = RHS AFRF (EMR/MSV)
@@ -134,9 +145,10 @@ KP_liberation_preset_blufor = 0;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = 0;
+KP_liberation_preset_opfor = -3;
 
 /* Resistance preset:
+-1 = Custom (mostly vanilla + RHS GREF)
 0  = Custom (default vanilla FIA)
 1  = Apex Tanoa (apex vanilla Syndikat)
 2  = RHS GREF
@@ -146,7 +158,7 @@ KP_liberation_preset_opfor = 0;
 6  = Unsung
 7  = CUP Takistani Locals
 8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = 0;
+KP_liberation_preset_resistance = -1;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -160,6 +172,8 @@ KP_liberation_preset_resistance = 0;
 KP_liberation_preset_civilians = 0;
 
 /* Which arsenal preset should be used?
+-1 = Custom West (mostly vanilla + RHS USAF)
+-2 = Custom East (mostly vanilla + RHS AFRF)
 0  = Use the default blacklist method (defined below)
 1  = Custom arsenal preset (edit the custom.sqf in the arsenal_presets\ folder to change things for your own versions and tweaks)
 2  = RHS USAF arsenal preset
@@ -177,7 +191,7 @@ KP_liberation_preset_civilians = 0;
 14 = CSAT Green Hex arsenal preset
 15 = AAF arsenal preset
 16 = LDF arsenal preset */
-KP_liberation_arsenal = 0;
+KP_liberation_arsenal = -1;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
@@ -203,7 +217,7 @@ GRLIB_color_friendly = "ColorBLUFOR";                                   // Frien
 GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
 GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
 
-GRLIB_fob_range = 125;                                                  // Build range around the main FOB building.
+GRLIB_fob_range = 200;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
 GRLIB_secondary_missions_costs = [15, 10, 8, 5];                        // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR, Humanitarian Aid].
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
@@ -220,7 +234,7 @@ GRLIB_radiotower_size = 2500;                                           // Radio
 GRLIB_surrender_chance = 80;                                            // Chance that enemy infantry will surrender after heavy losses are encountered.
 
 GRLIB_civilians_amount = 10;                                            // Civilian count multiplier.
-GRLIB_cleanup_delay = 1200;                                             // Time in seconds until bodies of dead soldiers are cleaned up.
+GRLIB_cleanup_delay = 600;                                             // Time in seconds until bodies of dead soldiers are cleaned up.
 
 GRLIB_blufor_cap = 100;                                                 // Cap for BLUFOR.
 GRLIB_sector_cap = 180;                                                 // Cap for sector defenders.
@@ -232,8 +246,8 @@ KP_liberation_cr_building_penalty = 3;                                  // Civil
 KP_liberation_cr_vehicle_penalty = 2;                                   // Civil Reputation penalty for stealing a civilian vehicle.
 KP_liberation_cr_resistance_penalty = 3;                                // Civil Reputation penalty for killing a friendly resistance soldier.
 KP_liberation_cr_sector_gain = 5;                                       // Civil Reputation gain for liberate a sector.
-KP_liberation_cr_wounded_chance = 35;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
-KP_liberation_cr_wounded_gain = 2;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
+KP_liberation_cr_wounded_chance = 50;                                   // Chance (0-100) that there are wounded civilians right after capturing a sector.
+KP_liberation_cr_wounded_gain = 3;                                      // Civil Reputation gain for providing medical assistance for wounded civilians.
 
 KP_liberation_civinfo_min = 5400;                                       // Civil Informant minimum spawn time. (seconds)
 KP_liberation_civinfo_max = 10800;                                      // Civil Informant maximum spawn time. (seconds)
@@ -255,6 +269,7 @@ KP_liberation_resistance_ambush_chance = 25;                            // Chanc
 // Array of worldName values.
 // When playing on this map, it'll create a clearance (remove terrain objects) in a 15m radius around the battlegroup/reinforcements spawnpoint.
 KP_liberation_battlegroup_clearance = [
+    "pja305",             // G.O.S N'ziwasogo
     "song_bin_tanh"
 ];
 
@@ -268,12 +283,13 @@ KP_liberation_commander_actions = [
     "5468711",
     "2156347"
     */
+    "76561198018755366"   // Peckcat
 ];
 
 /* Whitelist for BI support framework access.
 Same format as for the commander actions. */
 KP_liberation_suppMod_whitelist = [
-
+    "76561198018755366"   // Peckcat
 ];
 
 /* Array of radio tower classnames to place at radio tower sectors.
@@ -530,9 +546,6 @@ KP_liberation_allowed_items_extension = [
     "rhs_rshg2_mag",
     "rhs_weap_M136_used",
     "rhsusf_acc_anpeq15_bk_light_h",
-    "rhsusf_acc_g33_T1_flip",
-    "rhsusf_acc_g33_xps3_flip",
-    "rhsusf_acc_g33_xps3_tan_flip",
     "sma_spitfire_03_rds_low_ard_red",
     "UK3CB_BAF_AT4_CS_AP_Mag",
     "UK3CB_BAF_Javelin_Launcher"
