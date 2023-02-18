@@ -1,192 +1,219 @@
 [
     {
         "sourceFolder": "kp_liberation.Altis",
-        "missionName": "PCAT-KP-Liberation",
+        "missionName": "PCAT-Liberation",
         "map": "Altis",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -1,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 31,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         },
         "workshopId": "1578862234"
     },
     {
         "sourceFolder": "kp_liberation.Malden",
-        "missionName": "PCAT-KP-Liberation",
+        "missionName": "PCAT-Liberation",
         "map": "Malden",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -1,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 31,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         }
     },
     {
         "sourceFolder": "kp_liberation.Takistan",
-        "missionName": "PCAT-KP-Liberation",
+        "missionName": "PCAT-Liberation",
         "map": "Takistan",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -1,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 31,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         }
     },
     {
         "sourceFolder": "kp_liberation.vt7",
-        "missionName": "PCAT-KP-Liberation(Virolahti)",
+        "missionName": "PCAT-Liberation(Virolahti)",
         "map": "vt7",
         "mapDisplay": "Virolahti",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -1,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 31,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.tem_anizay",
+        "missionName": "PCAT-Liberation(Anizay)",
+        "map": "tem_anizay",
+        "mapDisplay": "Anizay",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 31,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.Chernarus",
+        "missionName": "PCAT-Liberation(Chernarus_Autumn)",
+        "map": "Chernarus",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.Chernarus_Summer",
+        "missionName": "PCAT-Liberation(Chernarus_Summer)",
+        "map": "Chernarus_Summer",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.Chernarus_Winter",
+        "missionName": "PCAT-Liberation(Chernarus_Winter)",
+        "map": "Chernarus_Winter",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         }
     },
     {
         "sourceFolder": "kp_liberation.Tanoa",
-        "missionName": "PCAT-KP-Liberation",
+        "missionName": "PCAT-Liberation",
         "map": "Tanoa",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -2,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         }
     },
     {
         "sourceFolder": "kp_liberation.panthera3",
-        "missionName": "PCAT-KP-Liberation(Panthera)",
+        "missionName": "PCAT-Liberation(Panthera)",
         "map": "panthera3",
         "mapDisplay": "Panthera",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -2,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         }
     },
     {
         "sourceFolder": "kp_liberation.Sara",
-        "missionName": "PCAT-KP-Liberation(Sahrani)",
+        "missionName": "PCAT-Liberation(Sahrani)",
         "map": "Sara",
         "mapDisplay": "Sahrani",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -2,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         }
     },
     {
         "sourceFolder": "kp_liberation.pja305",
-        "missionName": "PCAT-KP-Liberation(N'ziwasogo)",
+        "missionName": "PCAT-Liberation(N'ziwasogo)",
         "map": "pja305",
         "mapDisplay": "G.O.S N'ziwasogo v2 Apex",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -2,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         }
     },
     {
         "sourceFolder": "kp_liberation.pja310",
-        "missionName": "PCAT-KP-Liberation(Al Rayak)",
+        "missionName": "PCAT-Liberation(Al_Rayak)",
         "map": "pja310",
         "mapDisplay": "G.O.S Al Rayak",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -2,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         }
     },
     {
         "sourceFolder": "kp_liberation.UMB_Colombia",
-        "missionName": "PCAT-KP-Liberation(UMB_Colombia)",
+        "missionName": "PCAT-Liberation(UMB_Colombia)",
         "map": "UMB_Colombia",
         "mapDisplay": "Colombia",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -2,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
-        }
-    },
-    {
-        "sourceFolder": "kp_liberation.d41_ruegen",
-        "missionName": "PCAT-KP-Liberation(Ruegen)",
-        "map": "d41_ruegen",
-        "mapDisplay": "Ruegen, Germany",
-        "configFile": "kp_liberation_config.sqf",
-        "variables": {
-            "KP_liberation_arsenal"           : -1,
-            "KP_liberation_preset_blufor"     : -2,
-            "KP_liberation_preset_opfor"      : -3,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
         }
     },
     {
         "sourceFolder": "kp_liberation.Altis",
-        "missionName": "PCAT-KP-Liberation-OPFOR",
+        "missionName": "PCAT-Liberation-OPFOR",
         "map": "Altis",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -2,
-            "KP_liberation_preset_blufor"     : -3,
-            "KP_liberation_preset_opfor"      : -1,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 33,
+            "KP_liberation_preset_opfor"      : 31,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 18
         }
     },
     {
         "sourceFolder": "kp_liberation.Takistan",
-        "missionName": "PCAT-KP-Liberation-OPFOR",
+        "missionName": "PCAT-Liberation-OPFOR",
         "map": "Takistan",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -2,
-            "KP_liberation_preset_blufor"     : -3,
-            "KP_liberation_preset_opfor"      : -1,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 33,
+            "KP_liberation_preset_opfor"      : 31,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 18
         }
     },
     {
         "sourceFolder": "kp_liberation.Sara",
-        "missionName": "PCAT-KP-Liberation-OPFOR",
+        "missionName": "PCAT-Liberation-OPFOR",
         "map": "Sara",
         "mapDisplay": "Sahrani",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
-            "KP_liberation_arsenal"           : -2,
-            "KP_liberation_preset_blufor"     : -3,
-            "KP_liberation_preset_opfor"      : -2,
-            "KP_liberation_preset_resistance" : -1
-        }
-    },
-    {
-        "sourceFolder": "kp_liberation.d41_ruegen",
-        "missionName": "PCAT-KP-Liberation-OPFOR(Ruegen)",
-        "map": "d41_ruegen",
-        "mapDisplay": "Ruegen, Germany",
-        "configFile": "kp_liberation_config.sqf",
-        "variables": {
-            "KP_liberation_arsenal"           : -2,
-            "KP_liberation_preset_blufor"     : -3,
-            "KP_liberation_preset_opfor"      : -2,
-            "KP_liberation_preset_resistance" : -1
+            "KP_liberation_preset_blufor"     : 33,
+            "KP_liberation_preset_opfor"      : 32,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 18
         }
     }
 ]

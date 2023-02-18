@@ -82,9 +82,9 @@ KP_liberation_ace_crates = [
 If you want to change a preset, it's recommended to set all four presets to 0 and edit the appropriate custom.sqf files in the preset folders.*/
 
 /* BLUFOR preset:
--1 = Custom (mostly vanilla + RHS USAF Desert)
--2 = Custom (mostly vanilla + RHS USAF Woodland)
--3 = Custom (mostly vanilla + RHS AFRF)
+31 = Custom (mostly vanilla + RHS USAF Desert)
+32 = Custom (mostly vanilla + RHS USAF Woodland)
+33 = Custom (mostly vanilla + RHS AFRF)
 
 0  = Custom (default vanilla with many optional mods supported)
 1  = Apex Tanoa (apex vanilla with many optional mods supported)
@@ -117,12 +117,12 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 28 = SFP (Woodland)
 29 = SFP (Desert)
 30 = LDF (Contact DLC) */
-KP_liberation_preset_blufor = -1;
+KP_liberation_preset_blufor = 31;
 
 /* OPFOR preset:
--1 = Custom (mostly vanilla + RHS USAF Desert)
--2 = Custom (mostly vanilla + RHS USAF Woodland)
--3 = Custom (mostly vanilla + RHS AFRF)
+31 = Custom (mostly vanilla + RHS USAF Desert)
+32 = Custom (mostly vanilla + RHS USAF Woodland)
+33 = Custom (mostly vanilla + RHS AFRF)
 
 0  = Custom (default vanilla CSAT)
 1  = Apex Tanoa (apex vanilla CSAT)
@@ -145,10 +145,10 @@ KP_liberation_preset_blufor = -1;
 18 = CUP Chernarus Defense Force
 19 = CUP British Armed Forces (Desert)
 20 = CUP British Armed Forces (Woodland) */
-KP_liberation_preset_opfor = -3;
+KP_liberation_preset_opfor = 33;
 
 /* Resistance preset:
--1 = Custom (mostly vanilla + RHS GREF)
+9 = Custom (mostly vanilla + RHS GREF)
 0  = Custom (default vanilla FIA)
 1  = Apex Tanoa (apex vanilla Syndikat)
 2  = RHS GREF
@@ -158,7 +158,7 @@ KP_liberation_preset_opfor = -3;
 6  = Unsung
 7  = CUP Takistani Locals
 8  = CUP National Party of Chernarus */
-KP_liberation_preset_resistance = -1;
+KP_liberation_preset_resistance = 9;
 
 /* Civilians preset:
 0  = Custom (default vanilla)
@@ -172,8 +172,8 @@ KP_liberation_preset_resistance = -1;
 KP_liberation_preset_civilians = 0;
 
 /* Which arsenal preset should be used?
--1 = Custom West (mostly vanilla + RHS USAF)
--2 = Custom East (mostly vanilla + RHS AFRF)
+17 = Custom West (mostly vanilla + RHS USAF)
+18 = Custom East (mostly vanilla + RHS AFRF)
 0  = Use the default blacklist method (defined below)
 1  = Custom arsenal preset (edit the custom.sqf in the arsenal_presets\ folder to change things for your own versions and tweaks)
 2  = RHS USAF arsenal preset
@@ -191,7 +191,7 @@ KP_liberation_preset_civilians = 0;
 14 = CSAT Green Hex arsenal preset
 15 = AAF arsenal preset
 16 = LDF arsenal preset */
-KP_liberation_arsenal = -1;
+KP_liberation_arsenal = 17;
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
