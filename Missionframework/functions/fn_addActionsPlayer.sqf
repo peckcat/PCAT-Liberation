@@ -320,8 +320,18 @@ _player addAction [
 // Clean up for boost fps.
 if (player == ([] call KPLIB_fnc_getCommander)) then {
     _player addAction [
-        ["<t color='#FF0000'>", "-- 清理物件", "</t>"] joinString "",
-        {[] spawn PCAT_fnc_cleanUp;},
+        ["<t color='#FF0000'>", "-- 清理物件2", "</t>"] joinString "",
+        {
+            is_cleaning = true;
+            _scrip_hendler = [] spawn PCAT_fnc_cleanUp;
+            [
+                { scriptDone (_this#0) },
+                {
+                    is_cleaning = nil;
+                },
+                [_scrip_hendler]
+            ] call CBA_fnc_waitUntilAndExecute;
+        },
         nil,
         -860,
         false,
@@ -330,6 +340,7 @@ if (player == ([] call KPLIB_fnc_getCommander)) then {
         "
             alive _originalTarget
             && {build_confirmed isEqualTo 0}
+            && {isNil 'is_cleaning'}
         "
     ];
 };
