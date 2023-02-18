@@ -9,8 +9,7 @@
             "KP_liberation_preset_opfor"      : 33,
             "KP_liberation_preset_resistance" :  9,
             "KP_liberation_arsenal"           : 17
-        },
-        "workshopId": "1578862234"
+        }
     },
     {
         "sourceFolder": "kp_liberation.Malden",

@@ -317,6 +317,24 @@ _player addAction [
     "
 ];
 
+// Clean up for boost fps.
+if (player == ([] call KPLIB_fnc_getCommander)) then {
+    _player addAction [
+        ["<t color='#FF0000'>", "-- 清理物件", "</t>"] joinString "",
+        {[] spawn PCAT_fnc_cleanUp;},
+        nil,
+        -860,
+        false,
+        true,
+        "",
+        "
+            alive _originalTarget
+            && {build_confirmed isEqualTo 0}
+        "
+    ];
+};
+
+/*
 // Permissions
 _player addAction [
     ["<t color='#FF8000'>", localize "STR_COMMANDER_ACTION", "</t><img size='2' image='\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\modeGroups_ca.paa'/>"] joinString "",
@@ -369,5 +387,5 @@ _player addAction [
         && {build_confirmed isEqualTo 0}
     "
 ];
-
+*/
 true
