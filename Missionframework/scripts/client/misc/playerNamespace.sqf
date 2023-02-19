@@ -37,7 +37,11 @@ while {true} do {
     player setVariable ["KPLIB_fobPos", _fobPos];
 
     // Direct acces due to config, commander or admin
-    player setVariable ["KPLIB_hasDirectAccess", (getPlayerUID player) in KP_liberation_commander_actions || {player == ([] call KPLIB_fnc_getCommander)} || {player == quartermaster} || {serverCommandAvailable "#kick"}];
+    player setVariable ["KPLIB_hasDirectAccess",
+        (getPlayerUID player) in KP_liberation_commander_actions
+        || {player == ([] call KPLIB_fnc_getCommander)} 
+        || {player isEqualto (missionnamespace getVariable ['quartermaster',objNull])} 
+        || {serverCommandAvailable "#kick"}];
 
     // Outside of startbase "safezone"
     player setVariable ["KPLIB_isAwayFromStart", (player distance2d startbase) > 1000];
