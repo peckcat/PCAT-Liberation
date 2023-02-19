@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=9271;
+		nextID=9276;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1676;
+		nextID=1702;
 	};
 	class Camera
 	{
-		pos[]={18716.844,22.080137,19628.432};
-		dir[]={0.024401201,-0.89269525,0.44999981};
-		up[]={0.048335314,0.45066079,0.89138573};
-		aside[]={0.99853313,0,-0.05414537};
+		pos[]={18716.264,16.297281,19631.84};
+		dir[]={0.0029221636,-0.97826499,0.20733859};
+		up[]={0.013785987,0.20735811,0.97816795};
+		aside[]={0.99990082,-2.3283064e-010,-0.014092282};
 	};
 };
 binarizationWanted=0;
-sourceName="PCAT-KP-Liberation(UMB_Colombia)";
+sourceName="kp_liberation";
 addons[]=
 {
 	"A3_Ui_F",
@@ -33978,7 +33978,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={18709.965,2.0930979,19635.354};
-					angle=6.237812;
+					angle=6.2378116;
 					class Attributes
 					{
 						condition="true";
@@ -33993,7 +33993,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={18718.264,2.0299606,19641.996};
-					angle=6.237812;
+					angle=6.2378116;
 					class Attributes
 					{
 						condition="!(player in thislist)";
@@ -34011,7 +34011,7 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={18725.949,2.0213287,19634.652};
-					angle=6.237812;
+					angle=6.2378116;
 					class Attributes
 					{
 						condition="GRLIB_endgame == 1";
@@ -34774,17 +34774,18 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={18716.174,2.0066242,19635.959};
-								angles[]={0,0.043847565,0};
+								position[]={18716,2.0063343,19636.051};
 							};
 							side="West";
-							flags=5;
+							flags=4;
 							class Attributes
 							{
+								name="quartermaster";
+								description="2: Quartermaster";
 								isPlayable=1;
 							};
-							id=9232;
-							type="B_soldier_UAV_F";
+							id=9272;
+							type="B_engineer_F";
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34821,17 +34822,16 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={18718.172,2.0099168,19635.871};
-								angles[]={0,0.043847565,0.0016194459};
+								position[]={18718,2.0063343,19636.051};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 								isPlayable=1;
 							};
-							id=9233;
+							id=9273;
 							type="B_soldier_M_F";
+							atlOffset=10.537107;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34868,17 +34868,17 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={18720.17,2.0132098,19635.783};
-								angles[]={0,0.043847565,0.0016194459};
+								position[]={18720,2.2060008,19636.051};
 							};
 							side="West";
-							flags=4;
+							flags=5;
 							class Attributes
 							{
 								isPlayable=1;
 							};
-							id=9234;
-							type="B_engineer_F";
+							id=9274;
+							type="B_soldier_UAV_F";
+							atlOffset=0.19308186;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34890,7 +34890,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Male04ENG";
+											value="Male12ENG";
 										};
 									};
 								};
@@ -34903,7 +34903,7 @@ class Mission
 										class data
 										{
 											singleType="SCALAR";
-											value=1.02;
+											value=1;
 										};
 									};
 								};
@@ -34915,17 +34915,16 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={18722.168,2.0165024,19635.695};
-								angles[]={0,0.043847565,0.0016194459};
+								position[]={18722,2.007206,19636.051};
 							};
 							side="West";
-							flags=4;
 							class Attributes
 							{
 								isPlayable=1;
 							};
-							id=9235;
+							id=9275;
 							type="B_medic_F";
+							atlOffset=10.537979;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35088,7 +35087,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={18713.176,2.0889378,19629.047};
-								angles[]={-0,0.043847565,6.2815661};
+								angles[]={0,0.043847565,6.2815661};
 							};
 							side="West";
 							flags=4;

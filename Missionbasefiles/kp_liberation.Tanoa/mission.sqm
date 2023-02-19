@@ -5,29 +5,29 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1;
+	toggles=5;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=4590;
+		nextID=4595;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1084;
+		nextID=1107;
 	};
 	class Camera
 	{
-		pos[]={439.02695,511.40027,697.00061};
-		dir[]={0.049425881,-0.5837853,0.81040233};
-		up[]={0.035538632,0.81190807,0.58270264};
-		aside[]={0.99814546,1.8626451e-009,-0.060876202};
+		pos[]={1466.311,16.609198,750.6524};
+		dir[]={-0.0024609289,-0.92978752,0.36808848};
+		up[]={-0.0062161405,0.36809668,0.92976671};
+		aside[]={0.99997765,0,0.0066855494};
 	};
 };
 binarizationWanted=0;
-sourceName="PCAT-KP-Liberation";
+sourceName="kp_liberation";
 addons[]=
 {
 	"A3_Ui_F",
@@ -18255,15 +18255,18 @@ class Mission
 							class PositionInfo
 							{
 								position[]={1464,3.0594413,754.04999};
+								angles[]={6.2751846,0,0.023993526};
 							};
 							side="West";
-							flags=5;
+							flags=4;
 							class Attributes
 							{
+								name="quartermaster";
+								description="2: Quartermaster";
 								isPlayable=1;
 							};
-							id=4549;
-							type="B_soldier_UAV_F";
+							id=4591;
+							type="B_engineer_F";
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18309,7 +18312,7 @@ class Mission
 							{
 								isPlayable=1;
 							};
-							id=4550;
+							id=4592;
 							type="B_soldier_M_F";
 							class CustomAttributes
 							{
@@ -18347,17 +18350,17 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={1468,3.1247714,754.04999};
-								angles[]={0.021328852,0,0.010664274};
+								position[]={1468,3.1247716,754.04999};
 							};
 							side="West";
-							flags=4;
+							flags=5;
 							class Attributes
 							{
 								isPlayable=1;
 							};
-							id=4551;
-							type="B_engineer_F";
+							id=4593;
+							type="B_soldier_UAV_F";
+							atlOffset=2.3841858e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -18369,7 +18372,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Male04ENG";
+											value="Male12ENG";
 										};
 									};
 								};
@@ -18382,7 +18385,7 @@ class Mission
 										class data
 										{
 											singleType="SCALAR";
-											value=1.02;
+											value=1;
 										};
 									};
 								};
@@ -18403,7 +18406,7 @@ class Mission
 							{
 								isPlayable=1;
 							};
-							id=4552;
+							id=4594;
 							type="B_medic_F";
 							class CustomAttributes
 							{

@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=6614;
+		nextID=6620;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1063;
+		nextID=1074;
 	};
 	class Camera
 	{
-		pos[]={28224.693,229.46036,2476.4922};
-		dir[]={0.48870793,-0.85749614,0.16090541};
-		up[]={0.81449097,0.51447904,0.26816815};
-		aside[]={0.31273547,2.1030792e-007,-0.9498511};
+		pos[]={14505.006,22.816875,5901.8232};
+		dir[]={0.029137101,-0.7829833,0.62136};
+		up[]={0.036675718,0.62204266,0.78212392};
+		aside[]={0.99890244,0,-0.046840996};
 	};
 };
 binarizationWanted=0;
-sourceName="PCAT-KP-Liberation";
+sourceName="kp_liberation";
 addons[]=
 {
 	"A3_Ui_F",
@@ -10087,17 +10087,19 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={14501,7.3540368,5908.0498};
+								position[]={14501,7.3540363,5908.0498};
+								angles[]={0.042640556,0,6.2338929};
 							};
 							side="West";
-							flags=5;
+							flags=4;
 							class Attributes
 							{
+								name="quartermaster";
+								description="2: Quartermaster";
 								isPlayable=1;
 							};
-							id=6575;
-							type="B_soldier_UAV_F";
-							atlOffset=4.7683716e-007;
+							id=6614;
+							type="B_engineer_F";
 							class CustomAttributes
 							{
 								class Attribute0
@@ -10181,8 +10183,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={14505,7.1567016,5908.0498};
-								angles[]={0.042640556,0,6.2285728};
+								position[]={14505,7.1567011,5908.0498};
+								angles[]={0.042638395,0,6.2285738};
 							};
 							side="West";
 							flags=4;
@@ -10190,9 +10192,8 @@ class Mission
 							{
 								isPlayable=1;
 							};
-							id=6577;
-							type="B_engineer_F";
-							atlOffset=4.7683716e-007;
+							id=6615;
+							type="B_soldier_UAV_F";
 							class CustomAttributes
 							{
 								class Attribute0

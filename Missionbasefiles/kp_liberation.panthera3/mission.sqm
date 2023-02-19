@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2702;
+		nextID=2707;
 	};
 	class MarkerIDProvider
 	{
@@ -20,18 +20,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=145;
+		nextID=156;
 	};
 	class Camera
 	{
-		pos[]={5809.6548,1246.0746,9872.7695};
-		dir[]={0.01734709,-0.99820906,0.057252079};
-		up[]={0.28945708,0.059821431,0.95531982};
-		aside[]={0.95703381,0,-0.28997639};
+		pos[]={9989.083,33.536644,338.09506};
+		dir[]={-0.0017973587,-0.98471242,0.17417872};
+		up[]={-0.010160754,0.17418793,0.98465997};
+		aside[]={0.99994671,0,0.010318499};
 	};
 };
 binarizationWanted=0;
-sourceName="PCAT-KP-Liberation(Panthera)";
+sourceName="kp_liberation";
 addons[]=
 {
 	"A3_Ui_F",
@@ -14331,7 +14331,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5395.7119,23.572067,10054.669};
-				angles[]={-0,3.0389264,0};
+				angles[]={0,3.0389264,0};
 			};
 			side="Empty";
 			flags=4;
@@ -14366,7 +14366,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5389.5244,23.528446,10016.826};
-				angles[]={-0,3.0389264,0};
+				angles[]={0,3.0389264,0};
 			};
 			side="Empty";
 			flags=4;
@@ -14401,7 +14401,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5371.6738,23.54211,10118.79};
-				angles[]={-0,3.0389264,0};
+				angles[]={0,3.0389264,0};
 			};
 			side="Empty";
 			flags=4;
@@ -14436,7 +14436,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5393.4067,23.528446,9981.0488};
-				angles[]={-0,3.0389264,0};
+				angles[]={0,3.0389264,0};
 			};
 			side="Empty";
 			flags=4;
@@ -14471,7 +14471,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5398.6733,23.538578,9930.1963};
-				angles[]={-0,3.0389264,-0};
+				angles[]={0,3.0389264,0};
 			};
 			side="Empty";
 			class Attributes
@@ -14505,7 +14505,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5440.2861,23.513004,10118.208};
-				angles[]={0,3.0389264,-0};
+				angles[]={0,3.0389264,0};
 			};
 			side="Empty";
 			flags=4;
@@ -14551,7 +14551,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={5376.8345,24.228447,10086.024};
-				angles[]={0,4.6100197,-0};
+				angles[]={0,4.6100197,0};
 			};
 			side="Empty";
 			flags=5;
@@ -15473,13 +15473,15 @@ class Mission
 								position[]={9985,7.7314386,342.04999};
 							};
 							side="West";
-							flags=5;
+							flags=4;
 							class Attributes
 							{
+								name="quartermaster";
+								description="2: Quartermaster";
 								isPlayable=1;
 							};
-							id=2661;
-							type="B_soldier_UAV_F";
+							id=2703;
+							type="B_engineer_F";
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15524,7 +15526,7 @@ class Mission
 							{
 								isPlayable=1;
 							};
-							id=2662;
+							id=2704;
 							type="B_soldier_M_F";
 							class CustomAttributes
 							{
@@ -15562,16 +15564,17 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={9989,7.7314386,342.04999};
+								position[]={9989,7.9311051,342.04999};
 							};
 							side="West";
-							flags=4;
+							flags=5;
 							class Attributes
 							{
 								isPlayable=1;
 							};
-							id=2663;
-							type="B_engineer_F";
+							id=2705;
+							type="B_soldier_UAV_F";
+							atlOffset=0.1996665;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -15583,7 +15586,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="Male04ENG";
+											value="Male12ENG";
 										};
 									};
 								};
@@ -15596,7 +15599,7 @@ class Mission
 										class data
 										{
 											singleType="SCALAR";
-											value=1.02;
+											value=1;
 										};
 									};
 								};
@@ -15608,7 +15611,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={9991,7.7314386,342.04999};
+								position[]={9991,7.7323103,342.04999};
 							};
 							side="West";
 							flags=4;
@@ -15616,8 +15619,9 @@ class Mission
 							{
 								isPlayable=1;
 							};
-							id=2664;
+							id=2706;
 							type="B_medic_F";
+							atlOffset=0.00087165833;
 							class CustomAttributes
 							{
 								class Attribute0
