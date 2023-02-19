@@ -142,7 +142,7 @@ heavy_vehicles = [
     ["B_T_MBT_01_TUSK_F",550,450,300],                                  // M2A4 Slammer UP (Merkava City)
     ["B_T_AFV_Wheeled_01_up_cannon_F",550,550,250],                     // Rhino MGS UP
     ["rhsusf_m109_usarmy",600,1250,300],                                // M109A6
-    ["rhsusf_M142_usarmy_WD",600,1800,250]                              // M142 HIMARS
+    ["B_MBT_01_mlrs_F",600,1800,250]                                    // M5 Sandstorm MLRS
 ];
 
 air_vehicles = [

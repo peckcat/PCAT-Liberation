@@ -24,6 +24,33 @@
 */
 
 KPLIB_objectInits = [
+    // Make sure no AI can not enter any artillery vehicle's gunner role.
+    [
+        PCAT_allArtillery_classes,
+        { 
+            _this addEventHandler ["GetIn", {
+                params ["_vehicle", "_role", "_unit", "_turret"];
+
+                if( (!isPlayer _unit) && { _role isEqualTo "gunner" }) then {
+                    systemChat "[PCAT] AI can not get in artillery gunner role !";
+                    _unit leaveVehicle _vehicle;
+                    moveOut _unit;
+                };
+            }];
+
+            _this addEventHandler ["SeatSwitched", {
+                params ["_vehicle", "_unit1", "_unit2"];
+
+                _unit = gunner _vehicle;
+                if( (!isPlayer _unit) && {!isNull _unit}) then {
+                    private _veh = vehicle _unit;
+                    systemChat "[PCAT] AI can not switch to artillery gunner role !";
+                    _unit leaveVehicle _veh;
+                    moveOut _unit;
+                };
+            }];
+        }
+    ],
     // Set KP logo on white flag
     [
         ["Flag_White_F"],

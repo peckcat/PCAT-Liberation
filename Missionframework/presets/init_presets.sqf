@@ -274,6 +274,7 @@ KPLIB_allLandVeh_classes = [[], [huron_typename]] select (huron_typename isKindO
 ];
 KPLIB_allLandVeh_classes = KPLIB_allLandVeh_classes arrayIntersect KPLIB_allLandVeh_classes;
 
+
 // All air vehicle classnames
 KPLIB_allAirVeh_classes = [[], [huron_typename]] select (huron_typename isKindOf "Air");
 {
@@ -302,6 +303,12 @@ KPLIB_o_allVeh_classes  = [];
 ];
 KPLIB_o_allVeh_classes = KPLIB_o_allVeh_classes apply {toLower _x};
 KPLIB_o_allVeh_classes = KPLIB_o_allVeh_classes arrayIntersect KPLIB_o_allVeh_classes;
+
+
+// All artillery vehicle classnames
+PCAT_allArtillery_classes = (KPLIB_b_static_classes + KPLIB_allLandVeh_classes + KPLIB_o_allVeh_classes) select {
+	getNumber  ( configFile >> "CfgVehicles" >> _x >> "artilleryScanner") == 1
+};
 
 // All regular opfor soldier classnames
 KPLIB_o_inf_classes = [opfor_sentry, opfor_rifleman, opfor_grenadier, opfor_squad_leader, opfor_team_leader, opfor_marksman, opfor_machinegunner, opfor_heavygunner, opfor_medic, opfor_rpg, opfor_at, opfor_aa, opfor_officer, opfor_sharpshooter, opfor_sniper,opfor_engineer];
