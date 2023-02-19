@@ -162,14 +162,16 @@ static_vehicles = [
 ];
 
 buildings = [
-    ["BlockConcrete_F",0,0,0],
-    ["BWA3_Flag_Ger_F",0,0,0],
+    ["BlockConcrete_F",0,0,0],                  // 混泥土方塊
+    ["BWA3_Flag_Ger_F",0,0,0],                  // 未知模組物件
     ["CamoNet_BLUFOR_big_F",0,0,0],
     ["CamoNet_BLUFOR_F",0,0,0],
     ["CamoNet_BLUFOR_open_F",0,0,0],
+    ["Flag_NATO_F",0,0,0],
     ["Flag_RedCrystal_F",0,0,0],
+    ["Flag_UK_F",0,0,0],
+    ["Flag_US_F",0,0,0],
     ["Flag_White_F",0,0,0],
-    ["FlexibleTank_01_sand_F",10,0,25],          //活動式燃料槽
     ["Land_AirstripPlatform_01_F",0,0,0],
     ["Land_BagBunker_Large_F",0,0,0],
     ["Land_BagBunker_Small_F",0,0,0],
@@ -186,9 +188,6 @@ buildings = [
     ["Land_CampingChair_V1_F",0,0,0],
     ["Land_CampingChair_V2_F",0,0,0],
     ["Land_CampingTable_F",0,0,0],
-    ["Land_Cargo20_military_green_F",0,0,5000],  //貨櫃箱(中,軍綠)
-    ["Land_Cargo20_red_F",0,5000,0],             //貨櫃箱(中,紅色)
-    ["Land_Cargo20_white_F",5000,0,0],           //貨櫃箱(中,白色)
     ["Land_Cargo_House_V1_F",0,0,0],
     ["Land_Cargo_Patrol_V1_F",0,0,0],
     ["Land_Cargo_Tower_V1_F",0,0,0],
@@ -217,8 +216,6 @@ buildings = [
     ["Land_HBarrierWall_corridor_F",0,0,0],
     ["Land_HelipadCircle_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
     ["Land_HelipadRescue_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
-    ["Land_Highway_Pillar_01_F",0,0,0],
-    ["Land_Highway_Pillar_01_garage_F",0,0,0],
     ["Land_LampAirport_F",0,0,0],
     ["Land_LampHalogen_F",0,0,0],
     ["Land_LampSolar_F",0,0,0],
@@ -250,9 +247,6 @@ buildings = [
     ["PortableHelipadLight_01_blue_F",0,0,0],
     ["PortableHelipadLight_01_green_F",0,0,0],
     ["PortableHelipadLight_01_red_F",0,0,0],
-    ["rhs_Flag_Russia_F",0,0,0],
-    ["rhs_Flag_vdv_F",0,0,0],
-    ["rhs_Flag_vmf_F",0,0,0],
     ["RoadCone_L_F",0,0,0],
     ["Target_Swivel_01_left_F",0,0,0],
     ["Target_Swivel_01_right_F",0,0,0],
@@ -278,12 +272,17 @@ support_vehicles = [
     ["ACE_Box_82mm_Mo_Illum",50,10,0],
     ["ACE_Wheel",10,0,0],
     ["ACE_Track",10,0,0],
-    ["RHS_Ural_Repair_VDV_01",325,0,75],                                // Ural Repair
-    ["RHS_Ural_Fuel_VDV_01",125,0,275],                                 // Ural Fuel
-    ["rhs_gaz66_ammo_msv",125,200,75],                                  // Gaz-66 Ammo
-    ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Container Repair
-    ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Container Fuel
-    ["B_Slingload_01_Ammo_F",75,200,0]                                  // Huron Container Ammo
+    ["B_APC_Tracked_01_CRV_F",500,250,350],                             // CRV-6e Bobcat
+    ["rhsusf_M977A4_REPAIR_BKIT_usarmy_wd",325,0,75],                   // M977A4 Repair
+    ["rhsusf_M978A4_BKIT_usarmy_wd",125,0,275],                         // M978A4 Fuel
+    ["rhsusf_M977A4_AMMO_BKIT_usarmy_wd",125,200,75],                   // M977A4 Ammo
+    ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
+    ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
+    ["FlexibleTank_01_sand_F",10,0,25],          //活動式燃料槽
+    ["Land_Cargo20_military_green_F",0,0,5000],  //貨櫃箱(中,軍綠)
+    ["Land_Cargo20_red_F",0,5000,0],             //貨櫃箱(中,紅色)
+    ["Land_Cargo20_white_F",5000,0,0],           //貨櫃箱(中,白色)
+    ["B_Slingload_01_Ammo_F",75,200,0]                                  // Huron Ammo
 ];
 
 /*

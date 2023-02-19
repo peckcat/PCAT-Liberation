@@ -216,8 +216,8 @@ static_vehicles = [
 ];
 
 buildings = [
-    ["BlockConcrete_F",0,0,0],
-    ["BWA3_Flag_Ger_F",0,0,0],
+    ["BlockConcrete_F",0,0,0],                  // 混泥土方塊
+    ["BWA3_Flag_Ger_F",0,0,0],                  // 未知模組物件
     ["CamoNet_BLUFOR_big_F",0,0,0],
     ["CamoNet_BLUFOR_F",0,0,0],
     ["CamoNet_BLUFOR_open_F",0,0,0],
@@ -226,7 +226,6 @@ buildings = [
     ["Flag_UK_F",0,0,0],
     ["Flag_US_F",0,0,0],
     ["Flag_White_F",0,0,0],
-    ["FlexibleTank_01_sand_F",10,0,25],          //活動式燃料槽
     ["Land_AirstripPlatform_01_F",0,0,0],
     ["Land_BagBunker_Large_F",0,0,0],
     ["Land_BagBunker_Small_F",0,0,0],
@@ -243,9 +242,6 @@ buildings = [
     ["Land_CampingChair_V1_F",0,0,0],
     ["Land_CampingChair_V2_F",0,0,0],
     ["Land_CampingTable_F",0,0,0],
-    ["Land_Cargo20_military_green_F",0,0,5000],  //貨櫃箱(中,軍綠)
-    ["Land_Cargo20_red_F",0,5000,0],             //貨櫃箱(中,紅色)
-    ["Land_Cargo20_white_F",5000,0,0],           //貨櫃箱(中,白色)
     ["Land_Cargo_House_V1_F",0,0,0],
     ["Land_Cargo_Patrol_V1_F",0,0,0],
     ["Land_Cargo_Tower_V1_F",0,0,0],
@@ -274,8 +270,6 @@ buildings = [
     ["Land_HBarrierWall_corridor_F",0,0,0],
     ["Land_HelipadCircle_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
     ["Land_HelipadRescue_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
-    ["Land_Highway_Pillar_01_F",0,0,0],
-    ["Land_Highway_Pillar_01_garage_F",0,0,0],
     ["Land_LampAirport_F",0,0,0],
     ["Land_LampHalogen_F",0,0,0],
     ["Land_LampSolar_F",0,0,0],
@@ -338,6 +332,10 @@ support_vehicles = [
     ["rhsusf_M977A4_AMMO_BKIT_usarmy_wd",125,200,75],                   // M977A4 Ammo
     ["B_Slingload_01_Repair_F",275,0,0],                                // Huron Repair
     ["B_Slingload_01_Fuel_F",75,0,200],                                 // Huron Fuel
+    ["FlexibleTank_01_sand_F",10,0,25],          //活動式燃料槽
+    ["Land_Cargo20_military_green_F",0,0,5000],  //貨櫃箱(中,軍綠)
+    ["Land_Cargo20_red_F",0,5000,0],             //貨櫃箱(中,紅色)
+    ["Land_Cargo20_white_F",5000,0,0],           //貨櫃箱(中,白色)
     ["B_Slingload_01_Ammo_F",75,200,0]                                  // Huron Ammo
 ];
 
