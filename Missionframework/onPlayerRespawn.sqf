@@ -2,6 +2,9 @@ waitUntil {!isNil "KPLIB_initServer"};
 
 params ["_newUnit", "_oldUnit"];
 
+removeUniform _newUnit;
+_newUnit addUniform (uniform _oldUnit);
+
 if (isNil "GRLIB_respawn_loadout") then {
     removeAllWeapons player;
     removeAllItems player;
