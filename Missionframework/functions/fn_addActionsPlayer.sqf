@@ -323,7 +323,7 @@ if (player == ([] call KPLIB_fnc_getCommander)) then {
         ["<t color='#FF0000'>", "-- 清理物件", "</t>"] joinString "",
         {
             is_cleaning = true;
-            _scrip_hendler = [] spawn (compileScript ["PCAT_Scripts\cleanUp.sqf"]);
+            _scrip_hendler = [] spawn PCAT_fnc_cleanUp;
             [
                 { scriptDone (_this#0) },
                 {

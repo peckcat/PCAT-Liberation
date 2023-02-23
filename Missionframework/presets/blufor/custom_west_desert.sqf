@@ -188,7 +188,6 @@ air_vehicles = [
     ["FIR_AV8B_NA",1000,1000,400],                                      // AV-8B Harrier II N/A
     ["FIR_AV8B",1300,1000,400],                                         // AV-8B Harrier II Plus
     ["RHSGREF_A29B_HIDF",700,700,300],                                  // A-29 Super Tucano
-    ["I_Plane_Fighter_03_dynamicLoadout_F",1000,900,400],               // A-143
     ["B_Plane_CAS_01_dynamicLoadout_F",1500,1500,500],                  // A-164 Wipeout (CAS)
     ["FIR_F15C",1250,1250,450],                                         // F-15C Eagle
     ["FIR_F15D",1250,1250,450],                                         // F-15D Eagle

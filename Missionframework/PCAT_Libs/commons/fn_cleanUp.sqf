@@ -1,6 +1,6 @@
 
 /* ----------------------------------------------------------------------------
-    cleanUp.sqf
+    Function: PCAT_fnc_cleanUp
     
     Execution: spawn
     
@@ -32,7 +32,7 @@
         Modified : Peckcat
 
     Examples:
-        [] call (compileScript ["cleanUp.sqf"]);
+        [] spawn PCAT_fnc_cleanUp;
 
 
 ---------------------------------------------------------------------------- */
