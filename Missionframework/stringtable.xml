@@ -46,7 +46,7 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>PCAT-Liberation</Original>
+            <Original>CTI 34 KP Liberation v0.96.7a</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
             <Original>v0.96.7a</Original>
@@ -59,7 +59,7 @@
             <Russian>Развёртывание</Russian>
             <Italian>Schierati</Italian>
             <Chinesesimp>部署</Chinesesimp>
-            <Chinese>佈署</Chinese>
+            <Chinese>部署</Chinese>
             <Turkish>Atla</Turkish>
             <Portuguese>Mobilizar</Portuguese>
             <Korean>배치</Korean>
@@ -73,7 +73,7 @@
             <Russian>Развёртывание в процессе ...</Russian>
             <Italian>Schieramento in Corso ...</Italian>
             <Chinesesimp>正在部署中...</Chinesesimp>
-            <Chinese>正在佈署中...</Chinese>
+            <Chinese>正在部署中...</Chinese>
             <Turkish>Atlama süreci devam ediyor...</Turkish>
             <Portuguese>Mobilização em andamento...</Portuguese>
             <Korean>배치중입니다...</Korean>
@@ -185,7 +185,7 @@
             <Russian>Топливо</Russian>
             <Italian>Carburante</Italian>
             <Chinesesimp>燃料</Chinesesimp>
-            <Chinese>油料</Chinese>
+            <Chinese>燃料</Chinese>
             <Turkish>Yakıt</Turkish>
             <Portuguese>Combustível</Portuguese>
             <Korean>연료</Korean>
@@ -379,6 +379,7 @@
             <Spanish>-- CARGAR AL VEHÍCULO</Spanish>
             <Russian>-- ЗАГРУЗИТЬ В ТРАНСПОРТ</Russian>
             <Korean>-- 차량에 적재</Korean>
+            <Chinese>-- 裝載上載具</Chinese>
             <Turkish>-- ARACA YÜKLE</Turkish>
             <Czech>-- NALOŽIT DO VOZIDLA</Czech>
         </Key>
@@ -388,6 +389,7 @@
             <Spanish>-- DESCARGAR DEL VEHÍCULO</Spanish>
             <Russian>-- ВЫГРУЗИТЬ ИЗ ТРАНСПОРТА</Russian>
             <Korean>-- 차량에서 하역</Korean>
+            <Chinese>-- 從載具卸下</Chinese>
             <Turkish>-- ARAÇTAN İNDİR</Turkish>
             <Czech>-- VYLOŽENÍ Z VOZIDLA</Czech>
         </Key>
@@ -397,6 +399,7 @@
             <Spanish>-- NO HAY VEHÍCULOS DE TRANSPORTE CERCA</Spanish>
             <Russian>-- НЕТ ТРАНСПОРТА ПОБЛИЗОСТИ</Russian>
             <Korean>-- 주변에 수송차량이 없습니다.</Korean>
+            <Original>-- 周圍無運輸載具</Original>
             <Turkish>-- YAKINLARDA NAKLİYE ARACI YOK</Turkish>
             <Czech>-- NELZE NALOŽIT</Czech>
         </Key>
@@ -408,7 +411,7 @@
             <Russian>Ящик с боеприпасами загружен в транспортное средство.</Russian>
             <Italian>Cassa munizioni correttamente caricata sul camion da trasporto</Italian>
             <Chinesesimp>货箱已装载到运输载具中。</Chinesesimp>
-            <Chinese>貨物已上至運輸載具中。</Chinese>
+            <Chinese>貨物已裝載至運輸載具中。</Chinese>
             <Turkish>Mühimmat sandığı başarıyla nakliye aracına yüklendi.</Turkish>
             <Portuguese>Caixa de munição carregada com sucesso no veículo de transporte.</Portuguese>
             <Korean>군수물자를 수송차량에 성공적으로 적재하였습니다.</Korean>
@@ -450,7 +453,7 @@
             <Russian>-- РАЗВЕРНУТЬ FOB --</Russian>
             <Italian>-- COSTRUISCI FOB --</Italian>
             <Chinesesimp>-- 部署前哨 --</Chinesesimp>
-            <Chinese>-- 佈署前線基地 --</Chinese>
+            <Chinese>-- 部署前線基地 --</Chinese>
             <Turkish>-- FOB KUR --</Turkish>
             <Portuguese>-- INSTALAR FOB --</Portuguese>
             <Korean>-- 전초기지 설치 --</Korean>
@@ -464,7 +467,7 @@
             <Russian>Нельзя развернуть FOB здесь, так как вы должны находится в %1 метрах от другой FOB. Ближайшая FOB в %2 метрах.</Russian>
             <Italian>Impossibile creare la nuova FOB qui, devi essere almeno %1 metri distante dalla FOB più vicina. La FOB più vicina si trova a %2 metri.</Italian>
             <Chinesesimp>无法在此部署前哨，前哨之间的距离不得低于%1米。最近的前哨在%2米开外。</Chinesesimp>
-            <Chinese>無法在這裡佈署前線基地，前線基地之間的距離不得低於 %1 公尺，最近的前線基地離此 %2 公尺。</Chinese>
+            <Chinese>無法在這裡部署前線基地，前線基地之間的距離不得低於 %1 公尺，最近的前線基地離此 %2 公尺。</Chinese>
             <Turkish>Buraya FOB kurulamaz, diğer FOB'lerden en az %1 metre uzakta olmalısın. Şuan en yakındaki FOB %2 metre uzakta.</Turkish>
             <Portuguese>Não é possível instalar a FOB aqui, você precisa estar no mínimo a %1 metros de distância de outra FOB. A FOB mais próxima está a %2 metros.</Portuguese>
             <Korean>전초기지를 설치할 수 없습니다. 다른 전초기지로부터 %1 미터 떨어져 있어야 합니다. 현재 가장 가까운 전초기지와 %2 미터 떨어져 있습니다.</Korean>
@@ -478,7 +481,7 @@
             <Russian>Нельзя развернуть FOB здесь, так как вы должны находится в %1 метрах от захваченного сектора. Ближайший сектор в %2 метрах.</Russian>
             <Italian>Impossibile creare la nuova FOB qui, devi essere almeno %1 metri distante dalla Zona catturabile più vicina. La Zona Catturabile più vicina si trova a %2 metri.</Italian>
             <Chinesesimp>无法在此部署前哨，前哨与战区之间的距离不得低于%1米。最近的战区在%2米开外。</Chinesesimp>
-            <Chinese>無法在此佈署前線基地，前線基地與戰區之間的距離不得低於 %1 公尺，最近的戰區離此 %2 公尺。</Chinese>
+            <Chinese>無法在此部署前線基地，前線基地與戰區之間的距離不得低於 %1 公尺，最近的戰區離此 %2 公尺。</Chinese>
             <Turkish>Buraya FOB kurulamaz, düşman bölgelerinden en az %1 metre uzakta olmalısın. Şuan en yakın düşman bölgelesi %2 metre uzakta.</Turkish>
             <Portuguese>Não é possível instalar a FOB aqui, você precisa estar no mínimo a %1 metros de distância de qualquer setor capturável. O setor mais próima está a %2 metros.</Portuguese>
             <Korean>전초기지를 설치할 수 없습니다. 점령지에서 %1 미터 떨어져 있어야 합니다. 현재 가장 가까운 점령지는 %2 미터 떨어져 있습니다.</Korean>
@@ -575,7 +578,7 @@
             <Russian>ПЕРЕМЕЩЕНИЕ</Russian>
             <Italian>SCHIERAMENTO</Italian>
             <Chinesesimp>部署</Chinesesimp>
-            <Chinese>佈署</Chinese>
+            <Chinese>部署</Chinese>
             <Turkish>CANLANMA</Turkish>
             <Portuguese>MOBILIZAÇÃO</Portuguese>
             <Korean>배치될 전초기지 선택</Korean>
@@ -589,7 +592,7 @@
             <Russian>Перемещение</Russian>
             <Italian>Schierati</Italian>
             <Chinesesimp>部署</Chinesesimp>
-            <Chinese>佈署</Chinese>
+            <Chinese>部署</Chinese>
             <Turkish>Canlan</Turkish>
             <Portuguese>Mobilizar</Portuguese>
             <Korean>배치</Korean>
@@ -603,7 +606,7 @@
             <Russian>-- ПЕРЕМЕСТИТЬСЯ --</Russian>
             <Italian>-- RISCHIERAMENTO --</Italian>
             <Chinesesimp>-- 重新部署 --</Chinesesimp>
-            <Chinese>-- 重新佈署 --</Chinese>
+            <Chinese>-- 重新部署 --</Chinese>
             <Turkish>-- YENİDEN SEÇ --</Turkish>
             <Portuguese>-- REMOBILIZAR --</Portuguese>
             <Korean>-- 재배치 --</Korean>
@@ -953,7 +956,7 @@
             <Russian>СЕКТОР АТАКОВАН</Russian>
             <Italian>SETTORE SOTTO ATTACCO</Italian>
             <Chinesesimp>战区遭到攻击</Chinesesimp>
-            <Chinese>戰區遭到襲擊</Chinese>
+            <Chinese>戰區遭受攻擊</Chinese>
             <Turkish>SEKTÖR SALDIRI ALTINDA</Turkish>
             <Portuguese>SETOR ATACADO</Portuguese>
             <Korean>거점 공격</Korean>
@@ -1037,7 +1040,7 @@
             <Russian>НОВАЯ FOB ПОСТРОЕНА</Russian>
             <Italian>NUOVA FOB COSTRUITA</Italian>
             <Chinesesimp>新的前哨部署完成</Chinesesimp>
-            <Chinese>新的前線基地佈署完畢</Chinese>
+            <Chinese>新的前線基地部署完畢</Chinese>
             <Turkish>YENİ FOB KURULDU</Turkish>
             <Portuguese>NOVA FOB CONSTRUÍDA</Portuguese>
             <Korean>신규 전초기지 설치</Korean>
@@ -1093,6 +1096,7 @@
             <Russian>FOB АТАКОВАНА</Russian>
             <Italian>FOB SOTTO ATTACCO</Italian>
             <Chinesesimp>前哨遭到攻击</Chinesesimp>
+            <Chinese>前線基地遭受攻擊</Chinese>
             <Turkish>FOB SALDIRI ALTINDA</Turkish>
             <Portuguese>FOB ATACADA</Portuguese>
             <Korean>전초기지 방어중</Korean>
@@ -1106,7 +1110,7 @@
             <Russian>FOB %1 атакована!</Russian>
             <Italian>la FOB %1 è sotto attacco!</Italian>
             <Chinesesimp>%1前哨受到了攻击！</Chinesesimp>
-            <Chinese>前線基地 %1 受到攻擊！</Chinese>
+            <Chinese>前線基地 %1 遭受攻擊！</Chinese>
             <Turkish>FOB %1 Saldırı altında</Turkish>
             <Portuguese>FOB %1 está sob ataque!</Portuguese>
             <Korean>전초기지 %1 이 공격받고 있습니다.</Korean>
@@ -1134,6 +1138,7 @@
             <Russian>FOB %1 была уничтожена!</Russian>
             <Italian>La FOB %1 è stata distrutta!</Italian>
             <Chinesesimp>%1前哨被摧毁了！</Chinesesimp>
+            <Chinese>前線基地 %1 已被摧毀</Chinese>
             <Turkish>FOB %1 yok edildi!</Turkish>
             <Portuguese>FOB %1 foi destruída!</Portuguese>
             <Korean>전초기지 %1 이 파괴되었습니다!</Korean>
@@ -1194,48 +1199,6 @@
             <Portuguese>FOB hostil nas proximidades de %1.</Portuguese>
             <Korean>적군 전초기지 %1 가 근처에 있습니다!</Korean>
             <Czech>Nepřátelské FOB poblíž %1.</Czech>
-        </Key>
-        <Key ID="STR_NOTIFICATION_CIV_SUPPLIES_TEXT">
-            <Original>Civil authorities request supplies at %1.</Original>
-            <French>Les autorités civiles demandent des fournitures à %1.</French>
-            <German>Zivilbehörden fordern Lieferungen an bei %1.</German>
-            <Spanish>Las autoridades civiles solicitan suministros en %1</Spanish>
-            <Russian>Гражданские власти запрашивают поставки в %1.</Russian>
-            <Italian>Le autorità civili richiedono forniture a %1.</Italian>
-            <Chinesesimp>%1民政当局在。</Chinesesimp>
-            <Chinese>%1 民政當局在。</Chinese>
-            <Turkish>Sivil makamlar, %1 konumunda malzeme talep ediyor.</Turkish>
-            <Portuguese>Autoridades civis solicitam suprimentos em %1.</Portuguese>
-            <Korean>시민 당국은 %1에서 공급을 요청합니다.!</Korean>
-            <Czech>Civilní úřady požadují dodávky v %1.</Czech>
-        </Key>
-        <Key ID="STR_NOTIFICATION_CIV_SUPPLIES_COMPLETE_TEXT">
-            <Original>Supplies have been delivered. The civilians are thankful for your help!</Original>
-            <French>Les fournitures ont été livrées. Les civils sont reconnaissants pour votre aide!</French>
-            <German>Nachschub wurde geliefert. Die Zivilisten sind dankbar für Ihre Hilfe!</German>
-            <Spanish>Se han entregado los suministros. ¡Los civiles están agradecidos por su ayuda!</Spanish>
-            <Russian>Поставки доставлены. Гражданские благодарны за вашу помощь!</Russian>
-            <Italian>Le forniture sono state consegnate. I civili sono grati per il tuo aiuto!</Italian>
-            <Chinesesimp>物资已送达。平民感谢您的帮助！</Chinesesimp>
-            <Chinese>物資已送達。平民感謝您的幫助！</Chinese>
-            <Turkish>Malzemeler teslim edildi. Siviller yardımınız için minnettar!</Turkish>
-            <Portuguese>Os suprimentos foram entregues. Os civis agradecem a sua ajuda!</Portuguese>
-            <Korean>물품이 배송되었습니다. 시민 여러분의 도움에 감사드립니다!</Korean>
-            <Czech>Dodávky byly dodány. Civilisté jsou vděční za vaši pomoc!</Czech>
-        </Key>
-		    <Key ID="STR_NOTIFICATION_CIV_SUPPLIES_NO_ROOM">
-            <Original>Nno friendly towns in the area to deliver supplies to. Liberate one!</Original>
-            <French>Il n'y a pas de villes amies dans la région où livrer des fournitures. Libérez-en un avant de tenter cette mission.</French>
-            <German>Es gibt keine freundlichen Städte in der Umgebung, in die man Vorräte liefern könnte. Befreien Sie einen, bevor Sie diese Mission versuchen.</German>
-            <Spanish>No hay ciudades amigas en el área para entregar suministros. Libera a uno antes de intentar esta misión.</Spanish>
-            <Russian>В этом районе нет дружественных городов, в которые можно было бы доставлять припасы. Освободите одного перед выполнением этой миссии.</Russian>
-            <Italian>Non ci sono città amiche nella zona a cui consegnare rifornimenti. Liberane uno prima di tentare questa missione.</Italian>
-            <Chinesesimp>该地区没有友好城镇可以运送物资。在尝试此任务之前解放一个。</Chinesesimp>
-            <Chinese>該地區沒有友好城鎮可以運送物資。在嘗試此任務之前解放一個。</Chinese>
-            <Turkish>Bölgede erzak teslim edilecek dostane kasaba yok. Bu görevi denemeden önce birini serbest bırakın.</Turkish>
-            <Portuguese>Não há cidades amigáveis ​​na área para entregar suprimentos. Libere um antes de tentar esta missão.</Portuguese>
-            <Korean>이 지역에는 보급품을 배달할 우호적인 마을이 없습니다. 이 임무를 시도하기 전에 하나를 해방하십시오.</Korean>
-            <Czech>V této oblasti neexistují žádná spřátelená města, kam byste dodávali zásoby. Před pokusem o tuto misi jednoho osvobodte.</Czech>
         </Key>
         <Key ID="STR_NOTIFICATION_PRISONER_TEXT">
             <Original>We have interrogated a prisoner.</Original>
@@ -1370,7 +1333,7 @@
             <Russian>Продолжительность дня (часов)</Russian>
             <Italian>Durata del giorno (In ore)</Italian>
             <Chinesesimp>每日时长（小时）</Chinesesimp>
-            <Chinese>美日時長（單位：小時）</Chinese>
+            <Chinese>每日時長（單位：小時）</Chinese>
             <Turkish>Gün uzunluğu (saat)</Turkish>
             <Portuguese>Duração do dia (horas)</Portuguese>
             <Korean>1일기간설정(시간)</Korean>
@@ -1426,7 +1389,7 @@
             <Russian>Нормально</Russian>
             <Italian>Normale</Italian>
             <Chinesesimp>正常</Chinesesimp>
-            <Chinese>正常</Chinese>
+            <Chinese>普通</Chinese>
             <Turkish>Normal</Turkish>
             <Portuguese>Normal</Portuguese>
             <Korean>보통</Korean>
@@ -1522,7 +1485,7 @@
             <Russian>Множитель ресурсов</Russian>
             <Italian>Moltiplicatore di risorse</Italian>
             <Chinesesimp>资源乘数</Chinesesimp>
-            <Chinese>資源乘數</Chinese>
+            <Chinese>資源倍數</Chinese>
             <Turkish>Kaynak arttırıcı çarpan</Turkish>
             <Portuguese>Multiplicador de recursos</Portuguese>
             <Korean>군수물자 생산 비율</Korean>
@@ -1564,7 +1527,7 @@
             <Russian>Кино во время размещения</Russian>
             <Italian>Filmato di Schieramento</Italian>
             <Chinesesimp>部署动画</Chinesesimp>
-            <Chinese>佈署動畫</Chinese>
+            <Chinese>部署動畫</Chinese>
             <Turkish>Başlangıç sinematiği</Turkish>
             <Portuguese>Introdução cinemática de mobilização</Portuguese>
             <Korean>배포 영상</Korean>
@@ -1606,7 +1569,7 @@
             <Russian>Начать кампанию, когда первая FOB размещена</Russian>
             <Italian>Comincia la campagna costruendo la prima FOB</Italian>
             <Chinesesimp>部署起始前哨</Chinesesimp>
-            <Chinese>佈署起始前線基地</Chinese>
+            <Chinese>部署起始前線基地</Chinese>
             <Turkish>Oyunu ilk FOB kurulu olarak başlatır</Turkish>
             <Portuguese>Iniciar a campanha com a primeira FOB já construída</Portuguese>
             <Korean>이미 설치된 전초기지에서 시작하기</Korean>
@@ -1662,7 +1625,7 @@
             <Russian>50% - Рекомендуется для локального хостинга</Russian>
             <Italian>50% - Raccomandato per host locali</Italian>
             <Chinesesimp>50% - 适用于本地主机</Chinesesimp>
-            <Chinese>50% - 適合本地 HOST 遊戲使用</Chinese>
+            <Chinese>50% - 適合本地主機使用</Chinese>
             <Turkish>50% - Yerel sunucu için uygun</Turkish>
             <Portuguese>50% - Recomendado para hospedagem local</Portuguese>
             <Korean>50% - 서버 실행 및 게임을 1대에서 실행할때 권장</Korean>
@@ -1676,7 +1639,7 @@
             <Russian>75% - Выделенный сервер рекомендуется</Russian>
             <Italian>75% - Raccomandato per server dedicati</Italian>
             <Chinesesimp>75% - 适用于服务器</Chinesesimp>
-            <Chinese>75% - 適合伺服器使用</Chinese>
+            <Chinese>75% - 適合獨立伺服器使用</Chinese>
             <Turkish>75% - Dedicated sunucu için önerilen</Turkish>
             <Portuguese>75% - Recomendado para servidor dedicado</Portuguese>
             <Korean>75% - 전용서버에서 실행할때 권장</Korean>
@@ -1690,7 +1653,7 @@
             <Russian>100% - Выделенный сервер рекомендуется</Russian>
             <Italian>100% - Raccomandato per server dedicati</Italian>
             <Chinesesimp>100% - 适用于服务器</Chinesesimp>
-            <Chinese>100% - 適合伺服器使用</Chinese>
+            <Chinese>100% - 適合獨立伺服器使用</Chinese>
             <Turkish>100% - Dedicated sunucu için önerilen</Turkish>
             <Portuguese>100% - Recomendado para servidor dedicado</Portuguese>
             <Korean>100% - 전용서버에서 실행할때 권장</Korean>
@@ -2260,7 +2223,7 @@
             <Russian>Мобилизовать отряд</Russian>
             <Italian>Schieramento Squadra</Italian>
             <Chinesesimp>班组部署</Chinesesimp>
-            <Chinese>班級佈署</Chinese>
+            <Chinese>班級部署</Chinese>
             <Turkish>Tim çıkar</Turkish>
             <Portuguese>Mobilizar Grupo de Combate</Portuguese>
             <Korean>분대 배치</Korean>
@@ -2908,18 +2871,21 @@
             <Spanish>Interface de Zeus limitada</Spanish>
             <Russian>Ограниченный интерфейс Zeus</Russian>
             <Korean>제한된 제우스 인터페이스</Korean>
+            <Chinese>限制宙斯介面</Chinese>
             <Turkish>Sınırlı Zeus Arayüzü</Turkish>
             <Czech>Omezené rozhraní Zeus</Czech>
         </Key>
         <Key ID="STR_PARAM_COMMANDERZEUS">
             <Original>Zeus for Commander</Original>
             <German>Zeus für Kommandant</German>
+            <Chinese>給予指揮官宙斯能力</Chinese>
         </Key>
         <Key ID="STR_PARAM_ALLOW_ENEMIES_IN_IMMOBILE">
             <Original>Chance that enemies will stay in immobile/damaged vehicles</Original>
             <German>Chance, dass Feinde in fahrunfähigen/beschädigten Fahrzeugen verbleiben</German>
             <Spanish>Probabilidad de que los enemigos se quedarán dentro de un vehículo inmovilziado/dañado</Spanish>
             <Russian>Шанс того, что враги будут оставаться в неподвижных/поврежденных автомобилях</Russian>
+            <Chinese>敵人會留在癱瘓/受損的載具內機率</Chinese>
             <Turkish>Düşmanların hasarlı araçların içinde kalma şansı</Turkish>
             <Czech>Šance, že nepřátelé zůstanou v nepohyblivých / poškozených vozidlech</Czech>
         </Key>
@@ -2932,7 +2898,7 @@
             <Russian>Развертывание в процессе...</Russian>
             <Italian>In attesa del lancio ...</Italian>
             <Chinesesimp>正在部署中...</Chinesesimp>
-            <Chinese>正在佈署中...</Chinese>
+            <Chinese>正在部署中...</Chinese>
             <Turkish>Atlama süreci devam ediyor...</Turkish>
             <Portuguese>Mobilização em andamento...</Portuguese>
             <Czech>Probíhá výsadek...</Czech>
@@ -3141,7 +3107,7 @@
             <Russian>Место развертывания:</Russian>
             <Italian>Luogo di Schieramento:</Italian>
             <Chinesesimp>部署地点：</Chinesesimp>
-            <Chinese>佈署地點：</Chinese>
+            <Chinese>部署地點：</Chinese>
             <Turkish>Doğma noktası:</Turkish>
             <Portuguese>Local para mobilização:</Portuguese>
             <Korean>재투입 위치:</Korean>
@@ -3661,7 +3627,7 @@
             <Russian>Вам не разрешено развертывать более %1 FOB одновременно.</Russian>
             <Italian>Non sei autorizzato a costruire piè di %1 FOB allo stesso tempo</Italian>
             <Chinesesimp>你不能同时部署超过%1个前哨。</Chinesesimp>
-            <Chinese>你不能佈署超過 %1 個前線基地。</Chinese>
+            <Chinese>你不能部署超過 %1 個前線基地。</Chinese>
             <Turkish>Buraya %1 den fazla FOB koyamazsınız.</Turkish>
             <Portuguese>Você não está autorizado a instalar mais de %1 FOB(s) ao mesmo tempo.</Portuguese>
             <Korean>%1 보다 더 많은 전진기지를 건설할 수 없습니다.</Korean>
@@ -4877,7 +4843,7 @@
             <Italian>&lt;br/&gt;&lt;br/&gt;La campagna partirà dalla USS Freedom, o dalla base Chimera, sono zone sicure che il nemico non oserà attaccare. Prima di tutto bisogna scegliere dove schierarsi. All'inizio ci si può solo schierare nelle posizioni citate prima, ma mentre si progredisce, saranno disponibili ulteriori opzioni quali FOB e respawn mobili.&lt;br/&gt; &lt;br/&gt;Nella posizione iniziale puoi scegliere la tua attrezzatura da un completo Arsenale. Troverete anche la prima FOB imballata all'interno di un container, l'elicottero Spartan-01 e qualche altro piccolo elicottero da trasporto.&lt;br/&gt; &lt;br/&gt;Dovrete trasportare quel container con lo Spartan-01 (o scegliere di iniziare con la prima FOB già costruita). Puoi costruire la FOB dove vuoi (finché sei a 1 km dalla posizione iniziale e 300 metri da qualsiasi settore), quindi stà a voi scegliere il posto giusto per iniziare l'offensiva della vostra campagna.&lt;br/&gt; &lt;br/&gt;</Italian>
             <Russian>&lt;br/&gt;&lt;br/&gt;Вы начинаете кампанию либо на борту Авионосца, либо на базе Химеры, в безопасных зонах, которые враг не посмеет атаковать. Ваш первый выбор - выбрать, где вы хотите развернуться. Сначала вы можете развертывать только в начальной позиции, но по мере продвижения вперед будут доступны дополнительные опции, такие как Forward Operating Bases (FOB) и мобильные КШМ.&lt;br/&gt; &lt;br/&gt;На стартовой позиции вы можете выбрать свое снаряжение из полного арсенала. Вы также найдете свой первый FOB, упакованный в контейнер, вертолет Spartan-01 и несколько других небольших транспортных вертолетов.&lt;br/&gt; &lt;br/&gt;Вам придется переправить этот контейнер с помощью Spartan-01 (или начать с первого уже построенного FOB). Вы можете развернуть этот первый FOB везде, где хотите (пока вы в 1 км от стартовой позиции и 300 м от любого сектора), поэтому вам решать, какое место выбрать для начала наступления в вашей кампании.&lt;br/&gt; &lt;br/&gt;</Russian>
             <Chinesesimp>&lt;br/&gt;&lt;br/&gt;自由号航母或奇美拉基地——敌人绝不敢招惹的安全地带，将作为你作战的出发点。你的首个选择就是部署地点。一开始你仅能在出发点部署，但随着进度的深入，前进基地（前哨）和机动复活点等选项将会开启。&lt;br/&gt; &lt;br/&gt;你可以在开始地点从军火库中选择你的装备。你也会在这里找到自己被打包在部署柜里的首个前哨、斯巴达1号直升机以及一些其它小型运输直升机。&lt;br/&gt; &lt;br/&gt;你必须通过斯巴达1号来吊运前哨部署柜（或在游戏开始设置中开启部署起始前哨）。你可以将第一个前哨部署在任何想放置的地方（只要你在距离出发点1公里和战区300米之外的地方），因此，发起进攻的地点完全取决于你的选择。&lt;br/&gt; &lt;br/&gt;</Chinesesimp>
-            <Chinese>&lt;br/&gt;&lt;br/&gt;起始的作戰基地，這裡是敵人絕對不敢招惹的安全地帶，也會是我們這次反攻號角的第一個音符。這裡會是你的作戰出發點，而你首先要進行的就是佈署地點。一開始你僅能在起始作戰基地佈署，但隨著戰線的深入，前線基地和機動復活點將會被啟用。&lt;br/&gt; &lt;br/&gt;你可以在開始地點從軍火庫中自訂你的裝備，你也會在這裡找到已經被打包好的前線基地貨櫃、代號「斯巴達一號」的大型運輸直升機與其他空中載具。&lt;br/&gt; &lt;br/&gt;你必須透過斯巴達一號來吊掛你的前線基地貨櫃進行佈署（或是在遊戲設定中選擇佈署起始前線基地）。你可以將第一個前線基地放置在任何你想放置的位置（只要距離起始作戰基地一公里、戰區三百公尺之外），因此，何時、何地發起進攻，將會全權由你掌握。&lt;br/&gt; &lt;br/&gt;</Chinese>
+            <Chinese>&lt;br/&gt;&lt;br/&gt;起始的作戰基地，這裡是敵人絕對不敢招惹的安全地帶，也會是我們這次反攻號角的第一個音符。這裡會是你的作戰出發點，而你首先要進行的就是部署地點。一開始你僅能在起始作戰基地部署，但隨著戰線的深入，前線基地和機動復活點將會被啟用。&lt;br/&gt; &lt;br/&gt;你可以在開始地點從軍火庫中自訂你的裝備，你也會在這裡找到已經被打包好的前線基地貨櫃、代號「斯巴達一號」的大型運輸直升機與其他空中載具。&lt;br/&gt; &lt;br/&gt;你必須透過斯巴達一號來吊掛你的前線基地貨櫃進行部署（或是在遊戲設定中選擇部署起始前線基地）。你可以將第一個前線基地放置在任何你想放置的位置（只要距離起始作戰基地一公里、戰區三百公尺之外），因此，何時、何地發起進攻，將會全權由你掌握。&lt;br/&gt; &lt;br/&gt;</Chinese>
             <Turkish>Görevinize USS Freedom'da başlayacaksınız veya Chimera Bölgesinde yani düşmanların saldıramayacağı güvenli bölgelerde. İlk işiniz nereye atlayacağınız olacaktır, siz bölgeleri aldıkça yeni FOB'ler ve mobil spawn merkezleri de açacaksınız.&lt;br/&gt; &lt;br/&gt;Başladığınızda Arsenal (Cephanelik) den istediğiniz ekipmanı seçebilirsiniz. Bir FOB Konteynırı, SPARTAN-01 helikopteri ve birkaç taşıma helikopterine de ayrıca sahipsiniz.&lt;br/&gt; &lt;br/&gt;SPARTAN-01 ile FOB Konteynırını istediğiniz yere götürüp bir FOB Bölgesi (başlangıç noktasından 1km diğer sektörlerden 300mt uzakta olmanız gerekli) açabilirsiniz ve saldırmaya o FOB'den devam edebilirsiniz.&lt;br/&gt; &lt;br/&gt;</Turkish>
             <Portuguese>&lt;br/&gt;&lt;br/&gt;Você iniciará a campanha abordo do porta-aviões USS Fredom ou na base operacional Chimera, instalações que o inimigo não se atreverá a atacar. Sua primeira escolha será definir onde irá mobilizar. Primeiramente somente poderá mobilizar na sua posição inicial, entretanto, conforme progredir, mais alternativas se tornarão disponíveis, como a Base de Operações Avançadas (FOB) e os respawns móveis.&lt;br/&gt; &lt;br/&gt;Em sua posição inicial, você poderá escolher seu equipamento através de um arsenal completo. Você terá à sua disposição sua primeira FOB transportável, dentro de um contêiner. Também estará disponível o transporte aéreo de callsign Spartan-01 e mais alguns helicópteros de transporte.&lt;br/&gt; &lt;br/&gt;Você deverá mover o mencionado contêiner utilizando a Spartan-01 (ou escolha começar com a primeira FOB já construída). Você poderá mobilizar esta FOB para onde desejar (desde que esteja a 1km do ponto inicial e a 300 metros de qualquer setor). Assim, depende apenas de você escolher o local ideal para iniciar sua campanha ofensiva.&lt;br/&gt; &lt;br/&gt;</Portuguese>
             <Korean>&lt;br/&gt;&lt;br/&gt;최초의 작전 기지는 적이 절대로 건드리지 못할 안전지대로, 아군의 반격 나팔 소리의 첫 음표이기도 하며, 이번 반격 작전의 출발점이 될 것이다. 처음에는 작전 기지만 배치할 수 있었으나, 반격작전이 진행됨에 따라 FOB(전초기지) 또는 재투입차량에도 배치될 것이다.&lt;br/&gt; &lt;br/&gt;또한 최초의 작전 기지에서 '무기고'를 이용하여 무장을 갖출수 있고, 이미 건설된 건초기지가 있거나 또는 전초기지(FOB)차량을 1대 찾을 수 있을 것이다. 또한 운이 좋다면 재투입차량 또는 트럭이나 공중 탑재 장비등도 찾을 수 있을 것이다.&lt;br/&gt; &lt;br/&gt;당신이 처음으로 해야할 일은 무장을 갖추고, 이미 건설된 건초기지가 있다면 거기에서부터, 만약 전초기지(FOB)차량이 있다면 그 것을 찾아 FOB(전초기지)를 적당한 곳(최초의 작전기지로부터 1km, 도시로부터 300m 떨어진 곳)에 설치해야 한다. 이 지점이 바로 첫번째 반격이 시작되는 곳으로 반격을 시작하는 지점은 전적으로 당신의 선택에 달려 있다.&lt;br/&gt; &lt;br/&gt;만약 당신이 반격작전이 진행중인 상황에서 투입된다면, 먼저 지도를 살펴보라. 현재 아군이 어디서 전투중인지 알 것이다. 아군에게 무전으로 물어보거나 채팅으로 물어보면서 전투에 참여하라. 행운을 빈다.&lt;br/&gt; &lt;br/&gt;</Korean>
@@ -4956,7 +4922,7 @@
             <Italian>&lt;br/&gt;&lt;br/&gt;In questa campagna è necessario gestire, memorizzare e proteggere tre tipi di risorse:&lt;br/&gt; &lt;br/&gt;&lt;t color='#00ff00'&gt;APPROVVIGIONAMENTI:&lt;/t&gt; Questi sono i più essenziali. Senza approvvigionamenti, non sarete in grado di distribuire soldati o richiedere qualsiasi hardware militare. In quanto tale, HQ raccomanda di dare priorità a queste risorse per prime!&lt;br/&gt; &lt;br/&gt;&lt;t color='#ff0000'&gt;MUNIZIONI:&lt;/t&gt; Utilizzate per lo stoccaggio di veicoli armati come APC e MBT, nonché soldati di élite (e pesantemente armati).&lt;br/&gt; &lt;br/&gt;&lt;t color='#ffff00'&gt;CARBURANTE:&lt;/t&gt; Ogni veicolo ha bisogno di carburante, alcuni hanno più sete di altri.&lt;br/&gt; &lt;br/&gt;Puoi incontrare tutte e tre le risorse in qualsiasi settore, ma per una fornitura considerevole e costante, devi catturare i PDI e le Fabbriche! Una volta catturati, entrambi richiedono un'area di stoccaggio (menu rotellina) e poi un PDI richiederà anche la costruzione di strutture (nuovamente, menu rotellina). Tutte e tre le strutture possono essere costruite in qualsiasi PDI ma dovete fornire un costo iniziale per impostare queste strutture! Costo 50 della risorsa specifica e 100 delle altre due.&lt;br/&gt; &lt;br/&gt;</Italian>
             <Russian>&lt;br/&gt;&lt;br/&gt;В этой кампании вы должны управлять, хранить и защищать три типа ресурсов:&lt;br/&gt; &lt;br/&gt;&lt;t color='#00ff00'&gt;ПРИПАСЫ:&lt;/t&gt; Это самое важное. Без припасов вы не сможете развернуть дополнительных солдат или реквизировать любую военную технику. Таким образом, HQ рекомендует расставить приоритеты первым!&lt;br/&gt; &lt;br/&gt;&lt;t color='#ff0000'&gt;БОЕПРИПАСЫ:&lt;/t&gt; Используется для оснащения вооруженных автомобилей, а также элитных (и хорошо вооруженных) солдат.&lt;br/&gt; &lt;br/&gt;&lt;t color='#ffff00'&gt;ТОПЛИВО:&lt;/t&gt; Каждому транспортному средству нужно топливо,некоторым требуется больше, чем другим.&lt;br/&gt; &lt;br/&gt;Вы можете встретить все три ресурса в любом секторе, но для значительного и постоянного снабжения вы должны захватывать Заводы! После захвата, заводы требуют склада (действие меню прокрутки) и тогда они смогут приступить к производству ресурсов. Вы также можете улучшить заводы для производства двух остальных ресурсов.&lt;br/&gt; &lt;br/&gt;</Russian>
             <Chinesesimp>&lt;br/&gt;&lt;br/&gt;这个战役中你必须管理、囤积并保护三种资源：&lt;br/&gt; &lt;br/&gt;&lt;t color='#00ff00'&gt;补给：&lt;/t&gt;最关键的物资。没有补给，你将无法部署更多步兵或军事资源。因此，指挥部建议优先谋取此类资源！&lt;br/&gt; &lt;br/&gt;&lt;t color='#ff0000'&gt;弹药：&lt;/t&gt;用于采购步战车（APC）和主战坦克（MBT）等装甲载具，亦用于武装精英（且重装）士兵。&lt;br/&gt; &lt;br/&gt;&lt;t color='#ffff00'&gt;燃料：&lt;/t&gt;载具离不了燃料，更不用说胃口极大的那些。&lt;br/&gt; &lt;br/&gt;你能在任意战区中找到以上三种资源，但想要稳定而高效的补给就需要你去占领PoI和工厂战区了！两者在占领后都需要一个仓储区（用滚轮动作菜单建立），而PoI还需要建立额外资源生产设施（依旧是滚轮动作菜单）。一个PoI能够同时容纳全部三种设施，但你必须先行投资才能将这些设施建立起来！建造设施需要消耗50点指定资源以及100点另外两种资源。&lt;br/&gt; &lt;br/&gt;</Chinesesimp>
-            <Chinese>&lt;br/&gt;&lt;br/&gt;在這次作戰中你必須管理、囤積與保護三種資源：&lt;br/&gt; &lt;br/&gt;&lt;t color='#00ff00'&gt;補給：&lt;/t&gt;最關鍵的物資。一旦沒有補給，你將無法佈署更多士兵或其餘軍事資源，因此，指揮部建議優先謀取這項資源！&lt;br/&gt; &lt;br/&gt;&lt;t color='#ff0000'&gt;彈藥：&lt;/t&gt;用來採購步兵戰車（APC）和主戰坦克（MBT）等裝甲載具，同時也被用於招募武裝菁英的重裝士兵。&lt;br/&gt; &lt;br/&gt;&lt;t color='#ffff00'&gt;油料：&lt;/t&gt;載具的必需品，任何載具都需要油料，尤其是那些「大胃王」的大型載具們。&lt;br/&gt; &lt;br/&gt;在作戰過程中你或許能在任意戰區內搜刮到以上三種資源，但是為了解放這個區域，你勢必需要更穩定而有效的補給線，這時候你就需要去佔領興趣點(PoI)和工廠了！兩者都能在占領後建立一個倉儲區（用滾輪動作選單來建立），而興趣點還需要額外建立資源生產設施（依舊是滾輪動作選單)。一個PoI能夠同時建立三種生產設施，但你必須先投資才能全數建立起來！建造設施需要 50 點對應的資源與其餘兩個資源各 100 點。&lt;br/&gt; &lt;br/&gt;</Chinese>
+            <Chinese>&lt;br/&gt;&lt;br/&gt;在這次作戰中你必須管理、囤積與保護三種資源：&lt;br/&gt; &lt;br/&gt;&lt;t color='#00ff00'&gt;補給：&lt;/t&gt;最關鍵的物資。一旦沒有補給，你將無法部署更多士兵或其餘軍事資源，因此，指揮部建議優先謀取這項資源！&lt;br/&gt; &lt;br/&gt;&lt;t color='#ff0000'&gt;彈藥：&lt;/t&gt;用來採購步兵戰車（APC）和主戰坦克（MBT）等裝甲載具，同時也被用於招募武裝菁英的重裝士兵。&lt;br/&gt; &lt;br/&gt;&lt;t color='#ffff00'&gt;油料：&lt;/t&gt;載具的必需品，任何載具都需要油料，尤其是那些「大胃王」的大型載具們。&lt;br/&gt; &lt;br/&gt;在作戰過程中你或許能在任意戰區內搜刮到以上三種資源，但是為了解放這個區域，你勢必需要更穩定而有效的補給線，這時候你就需要去佔領興趣點(PoI)和工廠了！兩者都能在占領後建立一個倉儲區（用滾輪動作選單來建立），而興趣點還需要額外建立資源生產設施（依舊是滾輪動作選單)。一個PoI能夠同時建立三種生產設施，但你必須先投資才能全數建立起來！建造設施需要 50 點對應的資源與其餘兩個資源各 100 點。&lt;br/&gt; &lt;br/&gt;</Chinese>
             <Portuguese>&lt;br/&gt;&lt;br/&gt;Nesta campanha você deverá gerir, estocar e proteger três tipos de recursos.:&lt;br/&gt; &lt;br/&gt;&lt;t color='#00ff00'&gt;SUPRIMENTOS:&lt;/t&gt; Este é o recurso essencial. Sem suprimentos, será impossível mobilizar infantaria adicional ou requisitar equipamentos militares. Desse modo, o QG recomenda priorizar estes recursos!&lt;br/&gt; &lt;br/&gt;&lt;t color='#ff0000'&gt;MUNIÇÃO:&lt;/t&gt; Utilizada para abastecer veículos blindados armados, bem como soldados de elite de equipamento bélico pesado.&lt;br/&gt; &lt;br/&gt;&lt;t color='#ffff00'&gt;COMBUSTÍVEL:&lt;/t&gt; Todo veículo precisa de combustível, alguns consomem mais que outros.&lt;br/&gt; &lt;br/&gt;Você cruzará com todos os três tipos de recursos dispersos pelos setores, porém para adquirir uma quantidade considerável e abastecimento constante, você deverá capturar setores com fábricas/refinarias. Uma vez capturadas, as fábricas precisarão de um depósito (use o scroll do mouse) e então poderão imediatamente iniciar a produção do recurso pretendido. Se puder arcar com os custos, as fábricas poderão ser aprimoradas para produzir os demais recursos. &lt;br/&gt; &lt;br/&gt;</Portuguese>
             <Korean>&lt;br/&gt;&lt;br/&gt;군수물자는 총 3가지 종류가 있다.&lt;br/&gt; &lt;br/&gt;&lt;t color='#00ff00'&gt;보급품:&lt;/t&gt; 보급품(S)은 가장 중요한 군수물자로, 보급품이 없으면 AI 보병을 비롯하여 모든 장비를 배치(생산)할 수 없다.&lt;br/&gt; &lt;br/&gt;또한 장비를 배치(생산)할 때 가장 많이 소비되는 보급품이다.&lt;br/&gt; &lt;br/&gt;&lt;t color='#ff0000'&gt;탄약:&lt;/t&gt; 탄약(A)은 무장한 장비를 배치(생산)할 때 필요하다.&lt;br/&gt; &lt;br/&gt;&lt;t color='#ffff00'&gt;연료:&lt;/t&gt; 연료(F)는 장비을 움직이기 위해서 꼭 필요한 보급품이며, 대형 장비는 더 많은 연료를 소비한다.&lt;br/&gt; &lt;br/&gt;각 군수물자는 지도에서 주유기 표시로 된 '공장 '에서 생산된다. 이 지역의 경우 도시 이름 옆에 (S),(A),(F)가 표기되어 있는데 이는 생산 가능한 보급품의 종류를 나타낸다. 즉 보급품은 (S), 탄약은 (A), 연료는 (F)이다.&lt;br/&gt; &lt;br/&gt;이 지역을 아군이 점령하게 되면 왼쪽 상단 메뉴안에 --저장창고건설-- 이라는 메뉴가 생성된다. 도시내 적당한 곳에 저장창고를 건설하면 이 곳에 이 마을에서 생산된 군수물자가 저장된다. 이 군수물자를 AI수송부대를 이용하여 전초기지로 운반하면 장비를 생산하는데 사용할 수 있게 된다.&lt;br/&gt; &lt;br/&gt;만약 이 '생산공장'에서 생산중인 물품을 변경하고자 한다면, 도시내에 설치한 저장창고로 공장건설에 필요한 군수물자(생산하고자 하는 군수물자 50, 나머지 두가지 군수물자 100)을 운반한 후 변경하고자 하는 군수물자의 생산공장을 건설하면 된다.&lt;br/&gt; &lt;br/&gt;생산품은 '생산 설정' 에서 변경할 수 있고, AI 수송부대는 물류 개요' 에서 편성할 수 있다.&lt;br/&gt; &lt;br/&gt;아군 AI 수송부대의 트럭은 1회에 1대당 최대 200개의 군수물자를 운반할 수 있다.&lt;br/&gt; &lt;br/&gt;</Korean>
             <Czech>&lt;br/&gt;&lt;br/&gt;V této kampani musíte spravovat, ukládat a chránit tři typy zdrojů:&lt;br/&gt; &lt;br/&gt;&lt;t color ='#00ff00'&gt;SUROVINY:&lt;/t&gt; Toto jsou nejdůležitější. Bez spotřebního materiálu nebudete moci nasadit další vojáky ani zabavit vojenskou techniku. Velitelství jako takové doporučuje prioritu těchto prvních!&lt;br/&gt; &lt;br/&gt;&lt;t color ='#ff0000' &gt;MUNICE:&lt;/t&gt;Používá se k zásobě ozbrojených vozidel, jako jsou APC a MBT, stejně jako elity (a těžce vyzbrojení) vojáci.&lt;br/&gt; &lt;br/&gt;&lt;t color = '#ffff00'&gt;PALIVO:&lt;/t&gt;Každé vozidlo potřebuje palivo, některé jsou více žíznivé než ostatní.&lt;br/&gt; &lt;br/&gt;Možná narazíte na všechny tři zdroje v jakémkoli sektoru, ale pro značnou a stálou dodávku musíte zachytit tovární sektory! Jakmile jsou továrny zachyceny, vyžadují úložný prostor (akce nabídky posouvání) a poté mohou okamžitě začít vyrábět zamýšlený zdroj. Pokud si to můžete dovolit, může být každá továrna upgradována tak, aby vytvořila další dva zdroje. &lt;br/&gt; &lt;br/&gt;</Czech>
@@ -4969,7 +4935,7 @@
             <Russian>6. Уровень обеспокоенности</Russian>
             <Italian>6. Livello di Allerta</Italian>
             <Chinesesimp>6. 警戒等级</Chinesesimp>
-            <Chinese>6. 威脅度</Chinese>
+            <Chinese>6. 警戒度</Chinese>
             <Turkish>6. Uyarı Seviyesi</Turkish>
             <Portuguese>6. Nível de Alerta</Portuguese>
             <Korean>6. 경고수준</Korean>
@@ -5008,7 +4974,7 @@
             <Italian>&lt;br/&gt;&lt;br/&gt;Per aiutarti a riuscire nella tua missione, ogni FOB ti permette di creare fanteria, veicoli, difese, fortificazioni e così via nella posizione specifica.&lt;br/&gt; &lt;br/&gt;Anche se la fanteria, i veicoli e le difese costano risorse, le fortificazioni come strutture, sandbags e muri non lo faranno.&lt;br/&gt; &lt;br/&gt;Il sistema di costruzione sarà disponibile quando si è a 100 metri da qualsiasi FOB.&lt;br/&gt; &lt;br/&gt;</Italian>
             <Russian>&lt;br/&gt;&lt;br/&gt;Чтобы помочь вам добиться успеха в ваших начинаниях, у вас есть возможность строительства на каждом FOB, что позволяет вам развертывать пехоту, транспортные средства, оборонительные сооружения, укрепления и т.д. В вашем конкретном месте.&lt;br/&gt; &lt;br/&gt;Хотя пехота, транспортные средства и средства защиты будут стоить ресурсов, тогда как укрепления, конструкции, мешки с песком и стены бесплатны.&lt;br/&gt; &lt;br/&gt;Система строительства будет доступна, если вы находитесь не дальше чем 100 метров от любого FOB.&lt;br/&gt; &lt;br/&gt;</Russian>
             <Chinesesimp>&lt;br/&gt;&lt;br/&gt;为了帮助你走向成功，每个前哨都拥有能让你在限定范围内部署步兵、载具、防御、工事等军备的建造能力。&lt;br/&gt; &lt;br/&gt;步兵、载具和防御设备需要消耗资源，但建筑、沙袋、墙体等工事是完全免费的。&lt;br/&gt; &lt;br/&gt;你可以在前哨100米半径范围内启用建造系统。&lt;br/&gt; &lt;br/&gt;</Chinesesimp>
-            <Chinese>&lt;br/&gt;&lt;br/&gt;為了協助你成功解放這裡，指揮部允許你在每個前線基地周遭限定的範圍內佈署步兵、載具、防禦工事等軍備設施與建造工事。&lt;br/&gt; &lt;br/&gt;步兵、載具和防禦設備（如固定式武器）需要消耗資源，但建築、沙包、掩體等工事是完全免費的。&lt;br/&gt; &lt;br/&gt;你可以在前線基地半徑 100 公尺內使用建造系統。&lt;br/&gt; &lt;br/&gt;</Chinese>
+            <Chinese>&lt;br/&gt;&lt;br/&gt;為了協助你成功解放這裡，指揮部允許你在每個前線基地周遭限定的範圍內部署步兵、載具、防禦工事等軍備設施與建造工事。&lt;br/&gt; &lt;br/&gt;步兵、載具和防禦設備（如固定式武器）需要消耗資源，但建築、沙包、掩體等工事是完全免費的。&lt;br/&gt; &lt;br/&gt;你可以在前線基地半徑 100 公尺內使用建造系統。&lt;br/&gt; &lt;br/&gt;</Chinese>
             <Portuguese>&lt;br/&gt;&lt;br/&gt;Para auxiliar no sucesso de sua iniciativa, você terá a capacidade de construir em todas suas bases avançadas, que o permitirá mobilizar infantaria, veículos, defesas, fortificações e etc para sua localidade.&lt;br/&gt; &lt;br/&gt;Embora infantaria, veículos e defesas exijam recursos para seu desenvolvimento, fortificações como estruturas, sacos de areia e muros não terão custo.&lt;br/&gt; &lt;br/&gt;O sistema de construção estará disponível quando você estiver a 100 metros de qualquer FOB.&lt;br/&gt; &lt;br/&gt;</Portuguese>
             <Korean>&lt;br/&gt;&lt;br/&gt;전초기지나 장비 또는 AI 보병을 건설(배치)하기 위해선 우선 관리자로부터 권한을 획득해야 한다. 권한을 획득한 후 제한된 갯수의 전초기지를 건설 할 수 있고, 전초기지를 건설한 후 125m거리 이내에서 장비를 생산(배치) 할 수 있다.&lt;br/&gt; &lt;br/&gt;전초기지를 건설하게 되면 제일 먼저 소형 또는 대형 저장 창고부터 건설해야 한다. 이 창고로 AI 수송부대를 이용하여 각 거점에서 생산된 군수물자를 운반, 필요한 장비를 건설(배치)해야 한다. 각 전초기지에 보관중인 보급품은 공유할 수 없다.&lt;br/&gt; &lt;br/&gt;따라서 전선이 이동하게 되면, 후방의 전초기지에 저장중인 군수물자를 새로이 건설한 전방의 전초기지로 AI 수송부대를 이용하여 운반해야 한다.&lt;br/&gt; &lt;br/&gt;아군 AI 수송부대의 트럭은 1회에 1대당 최대 200개의 군수물자를 운반할 수 있다.&lt;br/&gt; &lt;br/&gt;주의! 지역 민간인들의 지지가 없다면 적 민병대가 출현하여 아군 AI 수송부대를 습격, 군수물자를 파괴하거나 도난 당할 수 있으니 작전시 민간인을 학살하거나 재산을 약탈하지 않는다.&lt;br/&gt; &lt;br/&gt;</Korean>
             <Czech>&lt;br/&gt;&lt;br/&gt;Abyste uspěly ve své snaze, máte možnost stavět jednotky, vozidla a opevnění. Samozřejmě v závislosti na zdrojích.&lt;br/&gt; &lt;br/&gt;Ačkoli pěchota, vozidla a obrana budou stát zdroje, opevnění, jako jsou budovy, pytle s pískem a zdi, nikoliv.&lt;br/&gt; &lt;br/&gt;Systém stavění je dostupný do 100 metrů od FOB. Tehdy se vám objeví možnost stavět v kontextové nabídce.&lt;br/&gt; &lt;br/&gt;</Czech>
@@ -5034,7 +5000,7 @@
             <Italian>&lt;br/&gt;&lt;br/&gt;Per costruire una nuova FOB, vai nel menu di costruzione e poi alla scheda logistica e costruisci un contenitore FOB o un camion FOB (la stessa cosa, solo con ruote). Quindi è possibile posizionare il contenitore / camion FOB. Tuttavia, tenere presente che non è possibile costruire un FOB entro 1 km dalla posizione iniziale, ed entro 300 metri da qualsiasi settore, o entro 2 km da qualsiasi altra FOB.&lt;br/&gt; &lt;br/&gt;Sarebbe semplicemente ridondante!&lt;br/&gt; &lt;br/&gt;</Italian>
             <Russian>&lt;br/&gt;&lt;br/&gt;Чтобы построить совершенно новый FOB, перейдите в меню постройки, а затем вкладку логистики и постройте контейнер FOB или грузовик FOB (то же самое, только с колесами). Затем вы можете разместить контейнер / грузовик FOB, где вы хотите развернуть свой новый новый FOB. Однако имейте в виду, что вы не можете построить FOB в пределах 1 км от начальной позиции, в пределах 300 м от любого сектора или в пределах 2 км от любого другого FOB.&lt;br/&gt; &lt;br/&gt;Это было бы просто излишним!&lt;br/&gt; &lt;br/&gt;</Russian>
             <Chinesesimp>&lt;br/&gt;&lt;br/&gt;要建立一个新前哨，打开建造菜单的后勤面板并建造一个前哨部署柜或前哨部署车（一样的东西，只是多了轮子罢了）。然后你就可以将前哨部署柜/车安置到想部署的地方了。注意，你不能在距离出发点1公里内、战区300米内和其它前哨2公里内部署前哨。&lt;br/&gt; &lt;br/&gt;因为搞那么多前哨实在太多余了！&lt;br/&gt; &lt;br/&gt;</Chinesesimp>
-            <Chinese>&lt;br/&gt;&lt;br/&gt;要建立一个新的前線基地，打開建造選單的後勤面板，並建立一個前線基地貨櫃或前線基地載具（一樣的東西，只是多個輪子）。然後你就能帶著前線基地貨櫃或前線基地車到任何你想佈署的位置進行佈署了。注意，你不能在起始作戰基地 1 公里內、戰區 300 公尺内，或是其它前線基地 2 公里内部署前線基地。&lt;br/&gt; &lt;br/&gt;因為這麼多前線基地實在是太多餘了！&lt;br/&gt; &lt;br/&gt;</Chinese>
+            <Chinese>&lt;br/&gt;&lt;br/&gt;要建立一个新的前線基地，打開建造選單的後勤面板，並建立一個前線基地貨櫃或前線基地載具（一樣的東西，只是多個輪子）。然後你就能帶著前線基地貨櫃或前線基地車到任何你想部署的位置進行部署了。注意，你不能在起始作戰基地 1 公里內、戰區 300 公尺内，或是其它前線基地 2 公里内部署前線基地。&lt;br/&gt; &lt;br/&gt;因為這麼多前線基地實在是太多餘了！&lt;br/&gt; &lt;br/&gt;</Chinese>
             <Portuguese>&lt;br/&gt;&lt;br/&gt;Para construir uma nova FOB, acesse o menu de construção, selecione a aba de logística e então construir FOB no conteiner ou uma FOB transportável (é a mesma coisa, mas com rodas). Em seguida, poderá posicionar sua linda e nova FOB (transportável ou no conteiner) onde desejar. No entanto, esteja ciente de que não poderá construir a FOB dentro de 1km da sua posição inicial, dentro de 300 metros de qualquer setor ou dentro de 2km de outra FOB.&lt;br/&gt; &lt;br/&gt;Seria simplesmente redundante!&lt;br/&gt; &lt;br/&gt;</Portuguese>
             <Korean>&lt;br/&gt;&lt;br/&gt;최초 작전 기지 또는 이미 건설된 전초기지의 건설(배치)메뉴에서 FOB container 또는 FOB truck을 찾을 수 있을 것이다. FOB truck을 선택하여 생산한 후 배치하고 싶은 지역으로 이동하여 건설(설치)하면 된다.&lt;br/&gt; &lt;br/&gt;단, 최초 작전기지로 부터 1Km, 거점으로부터 300m, 다른 전초기지로부터 2Km 이내에는 설치를 할 수 없다.&lt;br/&gt; &lt;br/&gt;7항 건설(배치)에서 설명하였듯이 전초기지를 건설하게 되면 제일 먼저 소형 또는 대형 저장 창고부터 건설해야 한다. 이 후 AI 수송부대를 이용하여 각 거점 또는 후방의 전초기지에 보관중인 군수물자를 운반, 필요한 장비를 건설(배치) 하면 된다.&lt;br/&gt; &lt;br/&gt;주의! 지역 민간인들의 지지가 없다면 적 민병대가 출현하여 아군 AI 수송부대를 습격, 군수물자를 파괴하거나 도난 당할 수 있으니 작전시 민간인을 학살하거나 재산을 약탈하지 않는다.&lt;br/&gt; &lt;br/&gt;</Korean>
             <Czech>&lt;br/&gt;&lt;br/&gt;K postavení nového FOB, jděte do stavebního menu a pote do logistické záložky, poté postavte FOB kontejner nebo FOB náklaďák (to je to samé ale na kolech).&lt;br/&gt; &lt;br/&gt;Poté přesuňte kontejner na místo kde rozložíte z brusu nové FOB. Mějte se však na pozoru, FOB nelze postavit uvnitř obsazeného sektoru nebo ve vzdálenosti 2km od jiného FOB a 1km od startovní základny.&lt;br/&gt; &lt;br/&gt;To by bylo prostě zbytečné!&lt;br/&gt; &lt;br/&gt;</Czech>
@@ -7063,6 +7029,77 @@
             <Original>UNDER ATTACK</Original>
             <German>WIRD ANGEGRIFFEN</German>
         </Key>
+        <!-- Added/Changed for pull request #894 : New Secondary Objective 'Humanitarian Aid'-->
+        <Key ID="STR_NOTIFICATION_CIV_SUPPLIES_TEXT">
+            <Original>Civil authorities request supplies at %1.</Original>
+            <French>Les autorités civiles demandent des fournitures à %1.</French>
+            <German>Zivilbehörden fordern Lieferungen an bei %1.</German>
+            <Spanish>Las autoridades civiles solicitan suministros en %1</Spanish>
+            <Russian>Гражданские власти запрашивают поставки в %1.</Russian>
+            <Italian>Le autorità civili richiedono forniture a %1.</Italian>
+            <Chinesesimp>补给物资的请求地点在 %1。</Chinesesimp>
+            <Chinese>補給物資的請求地點在 %1。</Chinese>
+            <Turkish>Sivil makamlar, %1 konumunda malzeme talep ediyor.</Turkish>
+            <Portuguese>Autoridades civis solicitam suprimentos em %1.</Portuguese>
+            <Korean>시민 당국은 %1에서 공급을 요청합니다.!</Korean>
+            <Czech>Civilní úřady požadují dodávky v %1.</Czech>
+        </Key>
+        <Key ID="STR_NOTIFICATION_CIV_SUPPLIES_COMPLETE_TEXT">
+            <Original>Supplies have been delivered. The civilians are thankful for your help!</Original>
+            <French>Les fournitures ont été livrées. Les civils sont reconnaissants pour votre aide!</French>
+            <German>Nachschub wurde geliefert. Die Zivilisten sind dankbar für Ihre Hilfe!</German>
+            <Spanish>Se han entregado los suministros. ¡Los civiles están agradecidos por su ayuda!</Spanish>
+            <Russian>Поставки доставлены. Гражданские благодарны за вашу помощь!</Russian>
+            <Italian>Le forniture sono state consegnate. I civili sono grati per il tuo aiuto!</Italian>
+            <Chinesesimp>物资已送达。民眾感谢您的帮助！</Chinesesimp>
+            <Chinese>物資已送達。民眾感謝您的幫助！</Chinese>
+            <Turkish>Malzemeler teslim edildi. Siviller yardımınız için minnettar!</Turkish>
+            <Portuguese>Os suprimentos foram entregues. Os civis agradecem a sua ajuda!</Portuguese>
+            <Korean>물품이 배송되었습니다. 시민 여러분의 도움에 감사드립니다!</Korean>
+            <Czech>Dodávky byly dodány. Civilisté jsou vděční za vaši pomoc!</Czech>
+        </Key>
+		    <Key ID="STR_NOTIFICATION_CIV_SUPPLIES_NO_ROOM">
+            <Original>Nno friendly towns in the area to deliver supplies to. Liberate one!</Original>
+            <French>Il n'y a pas de villes amies dans la région où livrer des fournitures. Libérez-en un avant de tenter cette mission.</French>
+            <German>Es gibt keine freundlichen Städte in der Umgebung, in die man Vorräte liefern könnte. Befreien Sie einen, bevor Sie diese Mission versuchen.</German>
+            <Spanish>No hay ciudades amigas en el área para entregar suministros. Libera a uno antes de intentar esta misión.</Spanish>
+            <Russian>В этом районе нет дружественных городов, в которые можно было бы доставлять припасы. Освободите одного перед выполнением этой миссии.</Russian>
+            <Italian>Non ci sono città amiche nella zona a cui consegnare rifornimenti. Liberane uno prima di tentare questa missione.</Italian>
+            <Chinesesimp>该地区没有友好城镇可以运送物资。在尝试此任务之前解放一个。</Chinesesimp>
+            <Chinese>該地區沒有友好城鎮可以運送物資。解放一個城鎮後，再嘗試此任務。</Chinese>
+            <Turkish>Bölgede erzak teslim edilecek dostane kasaba yok. Bu görevi denemeden önce birini serbest bırakın.</Turkish>
+            <Portuguese>Não há cidades amigáveis ​​na área para entregar suprimentos. Libere um antes de tentar esta missão.</Portuguese>
+            <Korean>이 지역에는 보급품을 배달할 우호적인 마을이 없습니다. 이 임무를 시도하기 전에 하나를 해방하십시오.</Korean>
+            <Czech>V této oblasti neexistují žádná spřátelená města, kam byste dodávali zásoby. Před pokusem o tuto misi jednoho osvobodte.</Czech>
+        </Key>
+        <Key ID="STR_SECONDARY_MISSION3">
+            <Original>Humanitarian Aid</Original>
+            <French>Recherche et Sauvetage</French>
+            <German>Helikopterbergung</German>
+            <Spanish>Búsqueda y rescate</Spanish>
+            <Russian>Найти и Спасти</Russian>
+            <Italian>Cerca e Soccorri</Italian>
+            <Chinesesimp>人道救援行动</Chinesesimp>
+            <Chinese>人道救援行動</Chinese>
+            <Turkish>Ara ve kurtar</Turkish>
+            <Portuguese>Busca e Resgate</Portuguese>
+            <Korean>수색 및 구출</Korean>
+            <Czech>Záchranná mise</Czech>
+        </Key>
+        <Key ID="STR_SECONDARY_BRIEFING3">
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;HUMANITARIAN AID&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;A nearby settlement has requested supplies, head out and deliver them to the highlighted settlement.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;This will help win hearts and minds in the local region and ultimately help limit any locals engaging us in open and guerilla combat.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Reward: 5% increase in Civil Reputation.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Original>
+            <French>&lt;t size='1.3' color='#ffa000'&gt;RECHERCHE ET SAUVETAGE&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Nous avons perdu le contact avec un helicoptère de reconnaissance en mission derrière les lignes ennemies. Il a probablement été abattu par les forces hostiles.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;L'hélicopter a pu finir sa course dans une large zone autour de sa dernière position connue. Votre mission est de retrouver l'équipage et sa précieuse intel. Les forces hostiles les auront peut-être déjà retrouvés, votre action doit donc être rapide et décisive.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cout: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Récompense: 20 points d'intel (10 pour chaque équipage vivant).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</French>
+            <German>&lt;t size='1.3' color='#ffa000'&gt;SUCHEN UND ZERSTÖREN&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Wir haben den Kontakt mit einem Aufklärungshelikopter, der auf einer Mission hinter feindlichen Linien war, verloren. Wir vermuten, dass der Helikotper von feindlichen Kräften abgeschossen wurde.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Der Helikopter muss irgendwo in einem größeren Bereich um seine letzte bekannte Position notgelandet sein. Ihr Auftrag ist es, die Besatzung zu finden und deren Aufklärungsbericht zu beschaffen. Feindliche Kräfte könnten sie bereits gefunden haben, also müssen sie schnell, vorsichtig und auf alles vorbereitet sein.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Reward: 20 intel points (10 for each crew alive).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</German>
+            <Spanish>&lt;t size='1.3' color='#ffa000'&gt;BÚSQUEDA Y RESCATE&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Hemos perdido contacto con un helicóptero de reconocimiento durante una misión tras las líneas enemigas. Creemos que el helicóptero ha sido derribado por las fuerzas hostiles.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;El helicóptero habría aterrizado forzosamente en alguna parte alrededor de su última posición conocida. Tu misión consiste en traer de vuelta a su tripulación y a la preciada información de interligencia que allí se encuentra. Las fuerzas hostiles pueden haberlos encontrado antes, así que hay que ser rápidos, cuidadosos y estar preparados para enfrentarse.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Coste: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Recompensa: 20 puntos de intel (10 por cada tripulante).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Spanish>
+            <Russian>&lt;t size='1.3' color='#ffa000'&gt;НАЙТИ И СПАСТИ&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Мы потеряли связь с вертолетом спецотряда, на задании в тылу врага. Мы считаем, что вертолет был сбит вражескими силами.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Вертолет, возможно, упал где-то в большой зоне вокруг последнего известного положения. Ваша миссия состоит в том, чтобы спасти экипаж вертолета и их драгоценные разведданные. Враги, возможно, нашли их первыми, поэтому вы должны быть быстрым, внимательным, и готовы к битве.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Стоимость: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Награда: 20 разведданных (10 за каждого живого экипажа вертолета)&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Russian>
+            <Italian>&lt;t size='1.3' color='#ffa000'&gt;CERCA E SOCCORRI&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Abbiamo perso il contatto con un elicottero da ricognizione in missione dietro le linee nemiche. Riteniamo che l'elicottero sia stato abbattuto da forze ostili.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;L'elicottero può essersi schiantato ovunque in una vasta zona attorno alla sua ultima posizione nota. La vostra missione è quella di recuperare l'equipaggio  e la loro preziosa Intel. Forze ostili possono averli trovati prima di voi, quindi è necessario essere rapidi, attenti e pronto a tutto.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;20 Punti Intel (10 per ogni membro in vita).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Italian>
+            <Chinesesimp>&lt;t size='1.3' color='#ffa000'&gt;人道救援行动&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;附近的城镇要求进行补给，将 5 箱以上的『补给』物资运送到标示的城镇。 &lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;这将有助于赢得当地的民心，并最终有助于阻止当地人参与对我方的游击战。 &lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;花费：10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;奖励：5% 民心值。 &lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Chinesesimp>
+            <Chinese>&lt;t size='1.3' color='#ffa000'&gt;人道救援行動&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;附近的城鎮要求進行補給，將 5 箱以上的『補給』物資運送到標示的城鎮。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;這將有助於贏得當地的民心，並最終有助於阻止當地人參與對我方的游擊戰。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;花費：10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;獎勵：5% 民心值。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Chinese>
+            <Turkish>&lt;t size='1.3' color='#ffa000'&gt;ARA VE KURTAR&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Dost bir keşif helikopterini düşman sahasında kaybettik. Helikopterin düşman kuvvetleri tarafından vurulduğuna inanıyoruz.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Helikopter son görülen yerde düştüğünü biliyoruz. Göreviniz helikopter personelini bulup ve taşıdığı önemli istihbaratı getirmenizdir. Düşman kuvvetler onu önceden bulabilirler dikkatli olun ve saldırıya açık olun.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Ödül: 20 istihbarat puanı (Her yaşayan kişi için 10).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Turkish>
+            <Portuguese>&lt;t size='1.3' color='#ffa000'&gt;BUSCA E RESGATE&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Perdemos contato com um helicóptero de reconhecimento presente em uma missão atrás das linhas inimigas. Acreditamos que o helicóptero foi abatido por forças hostis.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;O helicóptero pode ter feito um pouso forçado em local próximo de sua última posição conhecida. Sua missão é recuperar a tripulação do helicóptero e sua preciosa inteligência. Forças hostis podem tê-los localizado primeiro, portanto seja rápido, cuidadoso e esteja pronto para engajar o inimigo.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Recompensa: 20 pontos de inteligência (10 para cada membro vivo da tripulação).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Portuguese>
+            <Korean>&lt;t size='1.3' color='#ffa000'&gt;수색 및 구출&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;적군 후방지역에서 정찰임무를 수행하던 아군 정찰기와 교신이 끊어졌습니다. 현 상황으로 판단할때 적군에게 격추당한 것 같습니다.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;아군의 임무는 마지막 교신 위치를 중심으로 아군 정찰기의 흔적을 찾는 것입니다. 적군이 먼저 발견하기전에 아군 정찰기의 흔적을 찾아 승무원 구출 및 다른 정보들을 획득, 복귀해야 합니다. 교전이 벌어질 수 있습니다.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;소요되는 정보 점수: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;보상: 정보 점수가 20점 추가됩니다. 또한 구출한 인원 1명당 정보 점수가 10점 추가됩니다.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Korean>
+            <Czech>&lt;t size='1.3' color='#ffa000'&gt;ZÁCHRANNÁ MISE&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Ztratili jsme kontakt s průzkumným vrtulníkem za nepřátelskými liniemi. Věříme že ji sestřelily nepřátelské jednotky.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Vrtulník mohl havarovat kdekoliv ve velké vzdálenosti od místa kde jsme s ní ztratily kontakt. Cílem mise je najít a zachránit přeživší posádku. Nepřátelské jednotky tam mohou být jako první, proto musíme jednat rychle, opatrně a být připraveni k boji.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cena: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Odměna: 20 zpravodajských bodů (10 za každého člena posádky).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Czech>
+        </Key>
     </Package>
 
     <Package name="KPPLM">
@@ -7358,35 +7395,6 @@
             <German>KP Spielermenü v1.0.2\nvon Wyqer</German>
             <Spanish>Menú de Jugador KP v1.0.2\npor Wyqer</Spanish>
             <Czech>KP Player Menu v1.0.2\nby Wyqer</Czech>
-        </Key>
-		
-		<Key ID="STR_SECONDARY_MISSION3">
-            <Original>Humanitarian Aid</Original>
-            <French>Recherche et Sauvetage</French>
-            <German>Helikopterbergung</German>
-            <Spanish>Búsqueda y rescate</Spanish>
-            <Russian>Найти и Спасти</Russian>
-            <Italian>Cerca e Soccorri</Italian>
-            <Chinesesimp>搜索与营救</Chinesesimp>
-            <Chinese>搜索與營救</Chinese>
-            <Turkish>Ara ve kurtar</Turkish>
-            <Portuguese>Busca e Resgate</Portuguese>
-            <Korean>수색 및 구출</Korean>
-            <Czech>Záchranná mise</Czech>
-        </Key>
-        <Key ID="STR_SECONDARY_BRIEFING3">
-            <Original>&lt;t size='1.3' color='#ffa000'&gt;HUMANITARIAN AID&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;A nearby settlement has requested supplies, head out and deliver them to the highlighted settlement.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;This will help win hearts and minds in the local region and ultimately help limit any locals engaging us in open and guerilla combat.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 5&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Reward: 5% increase in Civil Reputation.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Original>
-            <French>&lt;t size='1.3' color='#ffa000'&gt;RECHERCHE ET SAUVETAGE&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Nous avons perdu le contact avec un helicoptère de reconnaissance en mission derrière les lignes ennemies. Il a probablement été abattu par les forces hostiles.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;L'hélicopter a pu finir sa course dans une large zone autour de sa dernière position connue. Votre mission est de retrouver l'équipage et sa précieuse intel. Les forces hostiles les auront peut-être déjà retrouvés, votre action doit donc être rapide et décisive.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cout: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Récompense: 20 points d'intel (10 pour chaque équipage vivant).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</French>
-            <German>&lt;t size='1.3' color='#ffa000'&gt;SUCHEN UND ZERSTÖREN&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Wir haben den Kontakt mit einem Aufklärungshelikopter, der auf einer Mission hinter feindlichen Linien war, verloren. Wir vermuten, dass der Helikotper von feindlichen Kräften abgeschossen wurde.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Der Helikopter muss irgendwo in einem größeren Bereich um seine letzte bekannte Position notgelandet sein. Ihr Auftrag ist es, die Besatzung zu finden und deren Aufklärungsbericht zu beschaffen. Feindliche Kräfte könnten sie bereits gefunden haben, also müssen sie schnell, vorsichtig und auf alles vorbereitet sein.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Reward: 20 intel points (10 for each crew alive).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</German>
-            <Spanish>&lt;t size='1.3' color='#ffa000'&gt;BÚSQUEDA Y RESCATE&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Hemos perdido contacto con un helicóptero de reconocimiento durante una misión tras las líneas enemigas. Creemos que el helicóptero ha sido derribado por las fuerzas hostiles.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;El helicóptero habría aterrizado forzosamente en alguna parte alrededor de su última posición conocida. Tu misión consiste en traer de vuelta a su tripulación y a la preciada información de interligencia que allí se encuentra. Las fuerzas hostiles pueden haberlos encontrado antes, así que hay que ser rápidos, cuidadosos y estar preparados para enfrentarse.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Coste: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Recompensa: 20 puntos de intel (10 por cada tripulante).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Spanish>
-            <Russian>&lt;t size='1.3' color='#ffa000'&gt;НАЙТИ И СПАСТИ&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Мы потеряли связь с вертолетом спецотряда, на задании в тылу врага. Мы считаем, что вертолет был сбит вражескими силами.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Вертолет, возможно, упал где-то в большой зоне вокруг последнего известного положения. Ваша миссия состоит в том, чтобы спасти экипаж вертолета и их драгоценные разведданные. Враги, возможно, нашли их первыми, поэтому вы должны быть быстрым, внимательным, и готовы к битве.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Стоимость: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Награда: 20 разведданных (10 за каждого живого экипажа вертолета)&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Russian>
-            <Italian>&lt;t size='1.3' color='#ffa000'&gt;CERCA E SOCCORRI&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Abbiamo perso il contatto con un elicottero da ricognizione in missione dietro le linee nemiche. Riteniamo che l'elicottero sia stato abbattuto da forze ostili.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;L'elicottero può essersi schiantato ovunque in una vasta zona attorno alla sua ultima posizione nota. La vostra missione è quella di recuperare l'equipaggio  e la loro preziosa Intel. Forze ostili possono averli trovati prima di voi, quindi è necessario essere rapidi, attenti e pronto a tutto.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;20 Punti Intel (10 per ogni membro in vita).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Italian>
-            <Chinesesimp>&lt;t size='1.3' color='#ffa000'&gt;搜索与营救&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;我军一架侦察直升机在敌后执行任务时失联了。我们有理由相信是敌军打下了它。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;直升机有可能坠落在其最后已知位置的一大片地区中。你的任务是营救机组成员和他们宝贵的情报。敌军部队很有可能已经抓捕了他们，因此你必须尽快、谨慎的行动，并做好交战的准备。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;花费：8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;奖励：20情报点（每名幸存组员价值10点）。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Chinesesimp>
-            <Chinese>&lt;t size='1.3' color='#ffa000'&gt;搜索與營救&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;我們的一架直升機在敵後進行任務時失去了聯繫，我们有理由相信是敵軍打下了它。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;戰情單位已經協助標示出直升機的最後已知地区，你的任務是前往進行搜索並營救出直升機機組員們與他們任務中取得的寶貴情報。敵軍部隊很有可能已經派出部隊前往搜捕他們，所有你們亦須盡快而謹慎的行動，時刻做好交戰的準備。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;花費：8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;獎勵：20 點情報點（每位倖存的機組員價值 10 點情報點）。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Chinese>
-            <Turkish>&lt;t size='1.3' color='#ffa000'&gt;ARA VE KURTAR&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Dost bir keşif helikopterini düşman sahasında kaybettik. Helikopterin düşman kuvvetleri tarafından vurulduğuna inanıyoruz.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Helikopter son görülen yerde düştüğünü biliyoruz. Göreviniz helikopter personelini bulup ve taşıdığı önemli istihbaratı getirmenizdir. Düşman kuvvetler onu önceden bulabilirler dikkatli olun ve saldırıya açık olun.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Ödül: 20 istihbarat puanı (Her yaşayan kişi için 10).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Turkish>
-            <Portuguese>&lt;t size='1.3' color='#ffa000'&gt;BUSCA E RESGATE&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Perdemos contato com um helicóptero de reconhecimento presente em uma missão atrás das linhas inimigas. Acreditamos que o helicóptero foi abatido por forças hostis.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;O helicóptero pode ter feito um pouso forçado em local próximo de sua última posição conhecida. Sua missão é recuperar a tripulação do helicóptero e sua preciosa inteligência. Forças hostis podem tê-los localizado primeiro, portanto seja rápido, cuidadoso e esteja pronto para engajar o inimigo.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Recompensa: 20 pontos de inteligência (10 para cada membro vivo da tripulação).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Portuguese>
-            <Korean>&lt;t size='1.3' color='#ffa000'&gt;수색 및 구출&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;적군 후방지역에서 정찰임무를 수행하던 아군 정찰기와 교신이 끊어졌습니다. 현 상황으로 판단할때 적군에게 격추당한 것 같습니다.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;아군의 임무는 마지막 교신 위치를 중심으로 아군 정찰기의 흔적을 찾는 것입니다. 적군이 먼저 발견하기전에 아군 정찰기의 흔적을 찾아 승무원 구출 및 다른 정보들을 획득, 복귀해야 합니다. 교전이 벌어질 수 있습니다.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;소요되는 정보 점수: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;보상: 정보 점수가 20점 추가됩니다. 또한 구출한 인원 1명당 정보 점수가 10점 추가됩니다.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Korean>
-            <Czech>&lt;t size='1.3' color='#ffa000'&gt;ZÁCHRANNÁ MISE&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Ztratili jsme kontakt s průzkumným vrtulníkem za nepřátelskými liniemi. Věříme že ji sestřelily nepřátelské jednotky.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Vrtulník mohl havarovat kdekoliv ve velké vzdálenosti od místa kde jsme s ní ztratily kontakt. Cílem mise je najít a zachránit přeživší posádku. Nepřátelské jednotky tam mohou být jako první, proto musíme jednat rychle, opatrně a být připraveni k boji.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cena: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Odměna: 20 zpravodajských bodů (10 za každého člena posádky).&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;</Czech>
         </Key>
     </Package>
 </Project>
