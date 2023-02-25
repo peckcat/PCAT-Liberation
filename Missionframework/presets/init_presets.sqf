@@ -217,6 +217,7 @@ KPLIB_aiResupplySources                     = KPLIB_aiResupplySources           
     Fetch arrays with only classnames from the blufor preset build arrays
     Beware that all classnames are converted to lowercase. Important for e.g. `in` checks, as it's case-sensitive.
 */
+PCAT_b_basic_uniform                        = getText (configFile >> "CfgVehicles" >> (infantry_units#0)#0 >> "uniformClass");
 KPLIB_b_infantry_classes                    = infantry_units                            apply {toLower (_x select 0)};
 KPLIB_b_light_classes                       = light_vehicles                            apply {toLower (_x select 0)};
 KPLIB_b_heavy_classes                       = heavy_vehicles                            apply {toLower (_x select 0)};

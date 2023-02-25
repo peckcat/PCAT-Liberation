@@ -85,7 +85,6 @@ light_vehicles = [
     ["rhsusf_m1045_w",120,80,50],                                       // M1045A2 (TOW)
     ["rhsusf_m998_w_2dr_fulltop",100,0,50],                             // M1097A2 (2D)
     ["rhsusf_m998_w_2dr_halftop",100,0,50],                             // M1097A2 (2D / open back)
-
     ["rhsusf_m1043_w_m2",120,45,50],                                    //M1043a2 (M2)
     ["rhsusf_m1043_w",120,0,50],                                        //(1043a2)
     ["rhsusf_m1043_w_mk19",120,65,50],                                  //m1043a2 (mk19)
@@ -98,7 +97,6 @@ light_vehicles = [
     ["rhsusf_m1151_m2_v2_usarmy_w",125,45,50],                          //m1151a1 (o-gpk/m2)
     ["rhsusf_m1151_m240_v2_usarmy_w",125,30,50],                        //m1151a1 (o-gpk/m240)
     ["rhsusf_m1151_mk19_v2_usarmy_w",125,70,50],                        //m1151a1 (o-gpk/mk19) 
-
     ["rhsusf_M1220_usarmy_wd",120,0,60],                                // M1220
     ["rhsusf_M1220_M2_usarmy_wd",120,40,60],                            // M1220 (M2)
     ["rhsusf_M1220_MK19_usarmy_wd",120,60,60],                          // M1220 (Mk19)

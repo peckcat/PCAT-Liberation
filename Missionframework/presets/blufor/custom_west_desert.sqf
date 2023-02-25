@@ -86,7 +86,6 @@ light_vehicles = [
     ["rhsusf_m1045_d",120,80,50],                                       // M1045A2 (TOW)
     ["rhsusf_m998_d_2dr_fulltop",100,0,50],                             // M1097A2 (2D)
     ["rhsusf_m998_d_2dr_halftop",100,0,50],                             // M1097A2 (2D / open back)
-
     ["rhsusf_m1043_d_m2",120,45,50],                                    //M1043a2 (M2)
     ["rhsusf_m1043_d",120,0,50],                                        //(1043a2)
     ["rhsusf_m1043_d_mk19",120,65,50],                                  //m1043a2 (mk19)

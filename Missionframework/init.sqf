@@ -61,7 +61,7 @@ if ((isNil {player getVariable "bis_revive_ehHandleHeal"} || isDedicated) && !(b
 private _playableUnits = playableUnits + switchableUnits;
 
 // 取得可建造步兵單位清單的第一個單位種類預設制服
-private _basic_uniform = getText (configFile >> "CfgVehicles" >> (infantry_units#0)#0 >> "uniformClass");
+private _basic_uniform = PCAT_b_basic_uniform;
 {
     [
         [_x,_basic_uniform],
