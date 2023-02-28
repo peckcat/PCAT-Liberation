@@ -545,6 +545,7 @@ KP_liberation_allowed_items_extension = [
     "rhs_rpg26_mag",
     "rhs_rshg2_mag",
     "rhs_weap_M136_used",
+    "rhsusf_acc_anpeq15_bk_h",
     "rhsusf_acc_anpeq15_bk_light_h",
     "sma_spitfire_03_rds_low_ard_red",
     "UK3CB_BAF_AT4_CS_AP_Mag",
