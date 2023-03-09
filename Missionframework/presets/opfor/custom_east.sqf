@@ -200,9 +200,9 @@ opfor_air = [
     "RHS_Su25SM_vvs",                                                   // Su-25
     "RHS_Su25SM_vvs",                                                   // Su-25
     "RHS_Su25SM_vvs",                                                   // Su-25
-    "rhs_mig29sm_vmf",                                                  // MiG-29SM
-    "rhs_mig29sm_vmf",                                                  // MiG-29SM
-    "rhs_mig29sm_vmf",                                                  // MiG-29SM
+    "rhs_mig29sm_vvs",                                                  // MiG-29SM
+    "rhs_mig29sm_vvs",                                                  // MiG-29SM
+    "rhs_mig29sm_vvs",                                                  // MiG-29SM
     "JS_JC_SU35",                                                       // Su-35
     "JS_JC_SU35",                                                       // Su-35
     "RHS_T50_vvs_generic_ext"                                           // T-50

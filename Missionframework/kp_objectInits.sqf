@@ -24,6 +24,41 @@
 */
 
 KPLIB_objectInits = [
+    [
+        ["RHS_su25_base"],
+        {
+             if ( (side _this) isEqualTo OPFOR ) then {
+                _this setPylonLoadout [1, "rhs_mag_b8m1_s8t"];
+                _this setPylonLoadout [2, "rhs_mag_b8m1_s8t"];
+                _this setPylonLoadout [3, "rhs_mag_b8m1_s8df"];
+                _this setPylonLoadout [4, "rhs_mag_b8m1_s8df"];
+                _this setPylonLoadout [5, "rhs_mag_kh25ML"];
+                _this setPylonLoadout [6, "rhs_mag_kh25MP"];
+                _this setPylonLoadout [7, "rhs_mag_R73M"];
+                _this setPylonLoadout [8, "rhs_mag_R73M"];
+                _this setPylonLoadout [9, "rhs_mag_R60M"];
+                _this setPylonLoadout [10, "rhs_mag_R60M"];
+                _this setPylonLoadout [11, "rhs_ASO2_CMFlare_Chaff_Magazine_x4"];
+            };
+        },
+        true
+    ],
+    [
+        ["rhs_mig29s_base"],
+        {
+             if ( (side _this) isEqualTo OPFOR ) then {
+                _this setPylonLoadout [1, "rhs_mag_R77M_AKU170_MIG29"];
+                _this setPylonLoadout [2, "rhs_mag_R77M_AKU170_MIG29"];
+                _this setPylonLoadout [3, "rhs_mag_b8m1_bd3_umk2a_s8df"];
+                _this setPylonLoadout [4, "rhs_mag_b8m1_bd3_umk2a_s8t"];
+                _this setPylonLoadout [5, "rhs_mag_R73M_APU73"];
+                _this setPylonLoadout [6, "rhs_mag_R73M_APU73"];
+                _this setPylonLoadout [7, "rhs_mag_ptb1500"];
+                _this setPylonLoadout [8, "rhs_BVP3026_CMFlare_Chaff_Magazine_x2"];
+            };
+        },
+        true
+    ],
     // Make sure no AI can not enter any artillery vehicle's gunner role.
     [
         PCAT_allArtillery_classes,
