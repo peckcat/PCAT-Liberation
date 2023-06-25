@@ -1,5 +1,5 @@
 /*
-    RHS-USAF Arsenal Preset
+    RHS-USAF & Vanilla Arsenal Preset
     Author: Peckcat
     Last Update: 2023.2.25
 
@@ -13,74 +13,80 @@
         - ACRE          - https://steamcommunity.com/sharedfiles/filedetails/?id=751965892
         - TFAR          - https://steamcommunity.com/sharedfiles/filedetails/?id=894678801
         
+    Caliber List:
+        // -- 9x19 mm
+        // -- 9x21 mm
+        // -- 11.43×23mm (.45 ACP)
+        // -- Flare
+        // -- 4.6x30 mm
+        // -- 5.7x28 mm
+        // -- 5.56x45 mm
+        // -- 7.62x51 mm
+        // -- 7.62x67 mm (.300 Win Mag)
+        // -- 6.5×39 mm Grendel
+        // -- 8.58×70 mm (.338 Lapua Magnum)
+        // -- .338 Norma Magnum
+        // -- 10.36×77 mm (.408 CheyTac)
+        // -- 12.7x99 mm (.50 BMG)
+        // -- 12 Gauge
+        // -- 40 mm Grenades
+        // -- etc.
 */
 
 GRLIB_arsenal_weapons = [
     // Main Weapoons -----------------------------------------------------------
-    "arifle_SDAR_F",                                                // SDAR 5.56 mm
-    "arifle_SPAR_03_blk_F",                                         // HK417A2
-    "arifle_SPAR_03_khk_F",                                         // HK417A2 (Khaki)
-    "arifle_SPAR_03_snd_F",                                         // HK417A2 (Sand)
-    "arifle_TRG20_F",                                               // CTAR-21
-    "SMG_03C_TR_black",                                             // P90 TR black
-    "SMG_03C_TR_camo",                                              // P90 TR camo
-    "SMG_03C_TR_khaki",                                             // P90 TR khaki
-    "SMG_05_F",                                                     // MP-5
-    "srifle_DMR_02_camo_F",                                         // MAR-10 .338 camo
-    "srifle_DMR_02_F",                                              // MAR-10 .338
-    "srifle_LRR_camo_F",                                            // M200 (Camo)
-    "srifle_LRR_F",                                                 // M200
-    "srifle_LRR_tna_F",                                             // M200 (Tropic)
+    // -- 9x21 mm
+    "SMG_05_F",                                                     // Protector
+    // -- 11.43×23mm (.45 ACP)
+    "SMG_01_F",                                                     // Vermin SMG
+    // -- 5.7x28 mm
+    "SMG_03C_TR_black",                                             // ADR-97C TR 5.7x28 (Black)
+    "SMG_03C_TR_camo",                                              // ADR-97C TR 5.7x28 (Camo)
+    "SMG_03C_TR_khaki",                                             // ADR-97C TR 5.7x28 (Khaki)
+    // -- 5.56x45 mm
+    "arifle_TRG20_F",                                               // TRG-20 5.56x45
+    "arifle_TRG21_F",                                               // TRG-21 5.56x45
+    "arifle_SDAR_F",                                                // SDAR 5.56x45
+    // -- 7.62x51 mm
+    "arifle_SPAR_03_blk_F",                                         // SPAR-17 7.62x51 (Black)
+    "arifle_SPAR_03_khk_F",                                         // SPAR-17 7.62x51 (Khaki)
+    "arifle_SPAR_03_snd_F",                                         // SPAR-17 7.62x51 (Sand)
+    // -- 8.58×70 mm (.338 Lapua Magnum)
+    "srifle_DMR_02_F",                                              // MAR-10 .338 (Black)
+    "srifle_DMR_02_camo_F",                                         // MAR-10 .338 (Camo)
+    "srifle_DMR_02_sniper_F",                                       // MAR-10 .338 (Sand)
+    // -- 10.36×77 mm (.408 CheyTac)
+    "srifle_LRR_F",                                                 // M320 LRR .408
+	"srifle_LRR_tna_F",                                             // M320 LRR .408 (Tropic)
+    "srifle_LRR_camo_F",                                            // M320 LRR .408 (Camo)
     // - RHS USAF
-    "rhs_weap_hk416d10_LMT_d",                                      // HK416 D10 (SOPMOD Stock/Desert)
-    "rhs_weap_hk416d10_LMT_wd",                                     // HK416 D10 (SOPMOD Stock/Woodland)
-    "rhs_weap_hk416d10_LMT",                                        // HK416 D10 (SOPMOD Stock)
-    "rhs_weap_hk416d10_m320",                                       // HK416 D10 (M320)
-    "rhs_weap_hk416d10",                                            // HK416 D10
-    "rhs_weap_hk416d145_d_2",                                       // HK416 D14.5 (Desert Net)
-    "rhs_weap_hk416d145_d",                                         // HK416 D14.5 (Desert Grass)
-    "rhs_weap_hk416d145_m320",                                      // HK416 D14.5 (M320)
-    "rhs_weap_hk416d145_wd_2",                                      // HK416 D14.5 (Woodland Net)
-    "rhs_weap_hk416d145_wd",                                        // HK416 D14.5 (Woodland Grass)
-    "rhs_weap_hk416d145",                                           // HK416 D14.5
-    "rhs_weap_M107_d",                                              // M107 (Desert)
-    "rhs_weap_M107_w",                                              // M107 (Woodland)
-    "rhs_weap_M107",                                                // M107
-    "rhs_weap_m14ebrri",                                            // M14 EBR-RI
+    // -- 12 Gauge
+    "rhs_weap_M590_8RD",                                            // M590A1 (Long)
+    "rhs_weap_M590_5RD",                                            // M590A1 (Short)
+    // -- 4.6x30 mm
+    "rhsusf_weap_MP7A2",                                            // MP7A2 
+    "rhsusf_weap_MP7A2_aor1",                                       // MP7A2 (AOR1)
+    "rhsusf_weap_MP7A2_desert",                                     // MP7A2 (Desert)
+    "rhsusf_weap_MP7A2_winter",                                     // MP7A2 (Winter)
+    // -- 5.56x45 mm
+    "rhs_weap_m16a4",                                               // M16A4
     "rhs_weap_m16a4_carryhandle_M203",                              // M16A4 (Carryhandle/M203)
     "rhs_weap_m16a4_carryhandle",                                   // M16A4 (Carryhandle)
     "rhs_weap_m16a4_imod_M203",                                     // M16A4 (IMOD Stock/M203)
     "rhs_weap_m16a4_imod",                                          // M16A4 (IMOD Stock)
-    "rhs_weap_m16a4",                                               // M16A4
-    "rhs_weap_m240B",                                               // M240B
-    "rhs_weap_m240G",                                               // M240G
-    "rhs_weap_m249_light_L",                                        // M249 PIP (Long/Ltwt.)
-    "rhs_weap_m249_light_S",                                        // M249 PIP (Short/Ltwt.)
-    "rhs_weap_m249_pip_L_para",                                     // M249 PIP (Long/Para)
-    "rhs_weap_m249_pip_L",                                          // M249 PIP (Long/Savit)
-    "rhs_weap_m249_pip_ris",                                        // M249 PIP (RIS)
-    "rhs_weap_m249_pip_S_para",                                     // M249 PIP (Short/Para)
-    "rhs_weap_m249_pip_S",                                          // M249 PIP (Short/Savit)
-    "rhs_weap_m249_pip",                                            // M249 PIP
-    "rhs_weap_m249",                                                // M249
-    "rhs_weap_m24sws_d",                                            // M24 SWS (Desert)
-    "rhs_weap_m24sws_wd",                                           // M24 SWS (Woodland)
-    "rhs_weap_m24sws",                                              // M24 SWS
-    "rhs_weap_m27iar_grip",                                         // M27 IAR (KAC Grip)
-    "rhs_weap_m27iar",                                              // M27 IAR
-    "rhs_weap_m32",                                                 // M32 MGL
-    "rhs_weap_m4_carryhandle_m203",                                 // M4 (Carryhandle/M203)
-    "rhs_weap_m4_carryhandle_m203S",                                // M4 (Carryhandle/M203S)
-    "rhs_weap_m4_carryhandle_mstock",                               // M4 (Carryhandle/Magpull Stock)
-    "rhs_weap_m4_carryhandle",                                      // M4 (Carryhandle)
+    "rhs_weap_m4",                                                  // M4
+    "rhs_weap_m4_mstock",                                           // M4 (Magpull Stock)
     "rhs_weap_m4_m203",                                             // M4 (M203)
     "rhs_weap_m4_m203S",                                            // M4 (M203S)
     "rhs_weap_m4_m320",                                             // M4 (M320)
-    "rhs_weap_m4_mstock",                                           // M4 (Magpull Stock)
-    "rhs_weap_m4",                                                  // M4
-    "rhs_weap_m40a5_d",                                             // M40A5 (Desert)
-    "rhs_weap_m40a5_wd",                                            // M40A5 (Woodland)
-    "rhs_weap_m40a5",                                               // M40A5
+    "rhs_weap_m4_carryhandle",                                      // M4 (Carryhandle)
+    "rhs_weap_m4_carryhandle_m203",                                 // M4 (Carryhandle/M203)
+    "rhs_weap_m4_carryhandle_m203S",                                // M4 (Carryhandle/M203S)
+    "rhs_weap_m4_carryhandle_mstock",                               // M4 (Carryhandle/Magpull Stock)
+    "rhs_weap_m4a1_carryhandle",                                    // M4A1
+    "rhs_weap_m4a1_carryhandle_m203",                               // M4A1 (M203)
+    "rhs_weap_m4a1_carryhandle_m203S",                              // M4A1 (M203S)
+    "rhs_weap_m4a1_carryhandle_mstock",                             // M4A1 (Magpull Stock)
     "rhs_weap_m4a1_blockII_bk",                                     // M4A1 Block II (Black Rail)
     "rhs_weap_m4a1_blockII_d",                                      // M4A1 Block II (Desert)
     "rhs_weap_m4a1_blockII_KAC_bk",                                 // M4A1 Block II (Black Rail/SOPMOD Stock)
@@ -93,26 +99,28 @@ GRLIB_arsenal_weapons = [
     "rhs_weap_m4a1_blockII_M203",                                   // M4A1 Block II (M203)
     "rhs_weap_m4a1_blockII_wd",                                     // M4A1 Block II (Woodland)
     "rhs_weap_m4a1_blockII",                                        // M4A1 Block II
-    "rhs_weap_m4a1_carryhandle_m203",                               // M4A1 (M203)
-    "rhs_weap_m4a1_carryhandle_m203S",                              // M4A1 (M203S)
-    "rhs_weap_m4a1_carryhandle_mstock",                             // M4A1 (Magpull Stock)
-    "rhs_weap_m4a1_carryhandle",                                    // M4A1
-    "rhs_weap_m4a1_d_mstock",                                       // M4A1 PIP (Desert/Magpull Stock)
-    "rhs_weap_m4a1_d",                                              // M4A1 PIP (Desert)
+    "rhs_weap_m4a1",                                                // M4A1 PIP
+    "rhs_weap_m4a1_mstock",                                         // M4A1 PIP (Magpull Stock)
     "rhs_weap_m4a1_m203",                                           // M4A1 PIP (M203)
-    "rhs_weap_m4a1_m203s_d",                                        // M4A1 PIP (Desert/M203S)
-    "rhs_weap_m4a1_m203s_wd",                                       // M4A1 PIP (Woodland/M203S)
     "rhs_weap_m4a1_m203s",                                          // M4A1 PIP (M203S)
     "rhs_weap_m4a1_m320",                                           // M4A1 PIP (M320)
-    "rhs_weap_m4a1_mstock",                                         // M4A1 PIP (Magpull Stock)
-    "rhs_weap_m4a1_wd_mstock",                                      // M4A1 PIP (Woodland/Magpull Stock)
+    "rhs_weap_m4a1_d",                                              // M4A1 PIP (Desert)
+    "rhs_weap_m4a1_d_mstock",                                       // M4A1 PIP (Desert/Magpull Stock)
+    "rhs_weap_m4a1_m203s_d",                                        // M4A1 PIP (Desert/M203S)
     "rhs_weap_m4a1_wd",                                             // M4A1 PIP (Woodland)
-    "rhs_weap_m4a1",                                                // M4A1 PIP
-    "rhs_weap_M590_5RD",                                            // M590A1 (Short)
-    "rhs_weap_M590_8RD",                                            // M590A1 (Long)
-    "rhs_weap_mk17_CQC",                                            // Mk 17 Mod 0 (CQC)
-    "rhs_weap_mk17_LB",                                             // Mk 17 Mod 0 (LB)
-    "rhs_weap_mk17_STD",                                            // Mk 17 Mod 0 (STD)
+    "rhs_weap_m4a1_wd_mstock",                                      // M4A1 PIP (Woodland/Magpull Stock)
+    "rhs_weap_m4a1_m203s_wd",                                       // M4A1 PIP (Woodland/M203S)
+    "rhs_weap_hk416d10",                                            // HK416 D10
+    "rhs_weap_hk416d10_m320",                                       // HK416 D10 (M320)
+    "rhs_weap_hk416d10_LMT",                                        // HK416 D10 (SOPMOD Stock)
+    "rhs_weap_hk416d10_LMT_d",                                      // HK416 D10 (SOPMOD Stock/Desert)
+    "rhs_weap_hk416d10_LMT_wd",                                     // HK416 D10 (SOPMOD Stock/Woodland)
+    "rhs_weap_hk416d145",                                           // HK416 D14.5
+    "rhs_weap_hk416d145_m320",                                      // HK416 D14.5 (M320)
+    "rhs_weap_hk416d145_d_2",                                       // HK416 D14.5 (Desert Net)
+    "rhs_weap_hk416d145_d",                                         // HK416 D14.5 (Desert Grass)
+    "rhs_weap_hk416d145_wd_2",                                      // HK416 D14.5 (Woodland Net)
+    "rhs_weap_hk416d145_wd",                                        // HK416 D14.5 (Woodland Grass)
     "rhs_weap_mk18_bk",                                             // Mk 18 Mod 1 (Black Rail)
     "rhs_weap_mk18_d",                                              // Mk 18 Mod 1 (Desert)
     "rhs_weap_mk18_KAC_bk",                                         // Mk 18 Mod 1 (Black Rail/SOPMOD Stock)
@@ -122,44 +130,74 @@ GRLIB_arsenal_weapons = [
     "rhs_weap_mk18_m320",                                           // Mk 18 Mod 1 (M320)
     "rhs_weap_mk18_wd",                                             // Mk 18 Mod 1 (Woodland)
     "rhs_weap_mk18",                                                // Mk 18 Mod 1
-    "rhs_weap_SCARH_USA_CQC",                                       // SCAR-H (USA/CQC)
-    "rhs_weap_SCARH_USA_LB",                                        // SCAR-H (USA/LB)
-    "rhs_weap_SCARH_USA_STD",                                       // SCAR-H (USA/STD)
+    "rhs_weap_m27iar_grip",                                         // HK M27 IAR (KAC Grip)
+    "rhs_weap_m27iar",                                              // HK M27 IAR
+    "rhs_weap_m249_pip",                                            // M249 PIP
+    "rhs_weap_m249_light_L",                                        // M249 PIP (Long/Ltwt.)
+    "rhs_weap_m249_light_S",                                        // M249 PIP (Short/Ltwt.)
+    "rhs_weap_m249_pip_L_para",                                     // M249 PIP (Long/Para)
+    "rhs_weap_m249_pip_L",                                          // M249 PIP (Long/Savit)
+    "rhs_weap_m249_pip_ris",                                        // M249 PIP (RIS)
+    "rhs_weap_m249_pip_S_para",                                     // M249 PIP (Short/Para)
+    "rhs_weap_m249_pip_S",                                          // M249 PIP (Short/Savit)
+    // -- 7.62x51 mm
+    "rhs_weap_m14ebrri",                                            // M14 EBR-RI
+    "rhs_weap_m40a5_d",                                             // M40A5 (Desert)
+    "rhs_weap_m40a5_wd",                                            // M40A5 (Woodland)
+    "rhs_weap_m40a5",                                               // M40A5
+    "rhs_weap_m24sws_d",                                            // M24 SWS (Desert)
+    "rhs_weap_m24sws_wd",                                           // M24 SWS (Woodland)
+    "rhs_weap_m24sws",                                              // M24 SWS
+    "rhs_weap_sr25",                                                // Mk 11 Mod 0
     "rhs_weap_sr25_d",                                              // Mk 11 Mod 0 (Desert)
+    "rhs_weap_sr25_wd",                                             // Mk 11 Mod 0 (Woodland)
     "rhs_weap_sr25_ec_d",                                           // Mk 11 Mod 0 (EC/Desert)
     "rhs_weap_sr25_ec_wd",                                          // Mk 11 Mod 0 (EC/Woodland)
     "rhs_weap_sr25_ec",                                             // Mk 11 Mod 0 (EC)
-    "rhs_weap_sr25_wd",                                             // Mk 11 Mod 0 (Woodland)
-    "rhs_weap_sr25",                                                // Mk 11 Mod 0
+    "rhs_weap_mk17_CQC",                                            // Mk 17 Mod 0 (CQC)
+    "rhs_weap_mk17_STD",                                            // Mk 17 Mod 0 (STD)
+    "rhs_weap_mk17_LB",                                             // Mk 17 Mod 0 (LB)
+    "rhs_weap_m240B",                                               // M240B
+    "rhs_weap_m240G",                                               // M240G
+    // -- 7.62x67mm (.300 WM)
     "rhs_weap_XM2010_d",                                            // M2010 ESR (Desert)
     "rhs_weap_XM2010_sa",                                           // M2010 ESR (Semi-arid)
     "rhs_weap_XM2010_wd",                                           // M2010 ESR (Camo)
     "rhs_weap_XM2010",                                              // M2010 ESR
-    "rhsusf_weap_MP7A2_aor1",                                       // MP7A2 (AOR1)
-    "rhsusf_weap_MP7A2_desert",                                     // MP7A2 (Desert)
-    "rhsusf_weap_MP7A2_winter",                                     // MP7A2 (Winter)
-    "rhsusf_weap_MP7A2",                                            // MP7A2
+    // -- 12.7x99mm (.50 BMG)
+    "rhs_weap_M107_d",                                              // M107 (Desert)
+    "rhs_weap_M107_w",                                              // M107 (Woodland)
+    "rhs_weap_M107",                                                // M107
+    // -- 40 mm Grenade
+    "rhs_weap_m32",                                                 // M32 MGL
     // - RHS GREF
     "rhs_weap_m1garand_sa43",                                       // M1 Garand
 
-    // Handguns ----------------------------------------------------------------
-    "hgun_Pistol_heavy_01_F",                                       // FNX-45
-    "hgun_Pistol_heavy_01_green_F",                                 // FNX-45(green)
+    // Handguns -------------------------------------------------------------
+    // -- 11.43×23mm (.45 ACP)
+    "hgun_Pistol_heavy_01_F",                                       // 4-five .45 ACP
+    "hgun_Pistol_heavy_01_green_F",                                 // 4-five .45 ACP (Green)
+    // Flare
+    "hgun_Pistol_Signal_F",                                         // Starter Pistol
     // - RHS USAF
-    "rhs_weap_M320",                                                // M320 GLM
+    // -- 9×19mm
     "rhsusf_weap_glock17g4",                                        // Glock 17
-    "rhsusf_weap_m1911a1",                                          // M1911A1
     "rhsusf_weap_m9",                                               // M9 Beretta
+    // -- 4.6x30 mm
+    "rhsusf_weap_MP7A2_folded",                                     // MP7A2 (Folded)
     "rhsusf_weap_MP7A2_folded_aor1",                                // MP7A2 (Folded/AOR1)
     "rhsusf_weap_MP7A2_folded_desert",                              // MP7A2 (Folded/Desert)
     "rhsusf_weap_MP7A2_folded_winter",                              // MP7A2 (Folded/AOR1)
-    "rhsusf_weap_MP7A2_folded",                                     // MP7A2 (Folded)
+    // -- 11.43×23mm (.45 ACP)
+    "rhsusf_weap_m1911a1",                                          // M1911A1
+    // -- 40 mm Grenade
+    "rhs_weap_M320",                                                // M320 GLM
 
-    // Launcher ----------------------------------------------------------------
-    "launch_MRAWS_green_F",                                         // MRAWS Mk4 Mod1(green)
-    "launch_MRAWS_olive_F",                                         // MRAWS Mk4 Mod1(olive)
-    "launch_MRAWS_sand_F",                                          // MRAWS Mk4 Mod1(sand)
-    "launch_NLAW_F",                                                // NLAW
+    // Launcher -------------------------------------------------------------
+    "launch_MRAWS_green_F",                                         // MAAWS Mk4 Mod 1 (Green)
+    "launch_MRAWS_olive_F",                                         // MAAWS Mk4 Mod 1 (Olive)
+    "launch_MRAWS_sand_F",                                          // MAAWS Mk4 Mod 1 (Sand)
+    "launch_NLAW_F",                                                // PCML
     // - RHS USAF
     "rhs_weap_fgm148",                                              // FGM-148 Javelin
     "rhs_weap_fim92",                                               // FIM-92F
@@ -174,59 +212,93 @@ GRLIB_arsenal_weapons = [
 
 GRLIB_arsenal_magazines = [
     // Ammunition --------------------------------------------------------------
-    "10Rnd_338_Mag",                                                // 10rnd .338 LM Mag
+    // - Vanila
+    // -- 9x21 mm
+    "16Rnd_9x21_Mag",                                               // 9x21 16Rnd Mag
+    "16Rnd_9x21_red_Mag",                                           // 9x21 16Rnd Reload Tracer (Red) Mag
+    "16Rnd_9x21_green_Mag",                                         // 9x21 16Rnd Reload Tracer (Green) Mag
+    "16Rnd_9x21_yellow_Mag",                                        // 9x21 16Rnd Reload Tracer (Yellow) Mag
+    "30Rnd_9x21_Mag",                                               // 9x21 30Rnd Mag
+    "30Rnd_9x21_Red_Mag",                                           // 9x21 30Rnd Reload Tracer (Red) Mag
+    "30Rnd_9x21_Yellow_Mag",                                        // 9x21 30Rnd Reload Tracer (Yellow) Mag
+    "30Rnd_9x21_Green_Mag",                                         // 9x21 30Rnd Reload Tracer (Green) Mag
+    // -- 11.43×23mm (.45 ACP)
+    "9Rnd_45ACP_Mag",                                               // .45 ACP 9Rnd Mag
+    "11Rnd_45ACP_Mag",                                              // .45 ACP 11Rnd Mag
+    // -- Flare
+    "6Rnd_GreenSignal_F",                                           // 6Rnd Green Signal Flare
+    "6Rnd_RedSignal_F",                                             // 6Rnd Red Signal Flare
+    // -- 5.7x28 mm
+    "50Rnd_570x28_SMG_03",                                          // 5.7mm 50Rnd Mag
+    // -- 5.56x45 mm
     "20Rnd_556x45_UW_mag",                                          // 20Rnd 5.56*45 Dual Purpose Mag
+    // -- 7.62x51 mm
     "20Rnd_762x51_Mag",                                             // 20Rnd 7.62x51 Mag
-    "30Rnd_9x21_Mag_SMG_02_Tracer_Green",                           // 30rnd 9mm Green Tracer Mag
-    "30Rnd_9x21_Mag_SMG_02_Tracer_Red",                             // 30rnd 9mm Red Tracer Mag
-    "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow",                          // 30rnd 9mm Yellow Tracer Mag
-    "30Rnd_9x21_Mag_SMG_02",                                        // 30rnd 9mm Mag
-    "50Rnd_570x28_SMG_03",                                          // 5.7mm 50Rnd Mag 
-    "50Rnd_570x28_SMG_03",                                          // 50rnd 5.7 mm 50Rnd ADR-97 Mag
-    "7Rnd_408_Mag",                                                 // 7rnd .408
+    // -- 8.58×70 mm (.338 Lapua Magnum)
+    "10Rnd_338_Mag",                                                // .338 LM 10Rnd Mag
+    // -- .408 Chey Tac
+    "7Rnd_408_Mag",                                                 // .408 7Rnd Mag
+    // -- Launcher ammo
     "MRAWS_HE_F",                                                   // MRAWS HE 44
     "MRAWS_HEAT_F",                                                 // MRAWS HE 75
     "MRAWS_HEAT55_F",                                               // MRAWS HE 55
-    "NLAW_F",
+    "NLAW_F",                                                       // PCML Missile
     // - ACE
-    "ACE_10Rnd_338_300gr_HPBT_Mag",                                 // .338 LM 10Rnd Mag(300gr Lapua Scenar)
-    "ACE_10Rnd_338_API526_Mag",                                     // .338 LM 10Rnd Mag(API526)
+    // -- 5.56x45 mm
+    "ACE_30Rnd_556x45_Stanag_M995_AP_mag",                          // 5.56x45 30Rnd M995 AP
+    "ACE_30Rnd_556x45_Stanag_Mk262_mag",                            // 5.56x45 30Rnd Mk262
+    "ACE_30Rnd_556x45_Stanag_Mk318_mag",                            // 5.56x45 30Rnd Mk318
+    "ACE_30Rnd_556x45_Stanag_Tracer_Dim",                           // 5.56x45 30Rnd Dim Tracer
+    // -- 7.62x51 mm
+    "ACE_10Rnd_762x51_M118LR_Mag",                                  // 7.62x51 10Rnd M118LR
+    "ACE_10Rnd_762x51_M993_AP_Mag",                                 // 7.62x51 10Rnd M993 AP
+    "ACE_10Rnd_762x51_Mag_SD",                                      // 7.62x51 10Rnd SD
+    "ACE_10Rnd_762x51_Mag_Tracer_Dim",                              // 7.62x51 10Rnd Dim Tracer
+    "ACE_10Rnd_762x51_Mag_Tracer",                                  // 7.62x51 10Rnd Tracer
+    "ACE_10Rnd_762x51_Mk316_Mod_0_Mag",                             // 7.62x51 10Rnd Mk316
+    "ACE_10Rnd_762x51_Mk319_Mod_0_Mag",                             // 7.62x51 10Rnd Mk319
+    "ACE_20Rnd_762x51_M118LR_Mag",                                  // 7.62x51 20Rnd M118LR
+    "ACE_20Rnd_762x51_M993_AP_Mag",                                 // 7.62x51 20Rnd M993 AP
+    "ACE_20Rnd_762x51_Mag_SD",                                      // 7.62x51 20Rnd SD
+    "ACE_20Rnd_762x51_Mag_Tracer_Dim",                              // 7.62x51 20Rnd Dim Tracer
+    "ACE_20Rnd_762x51_Mag_Tracer",                                  // 7.62x51 20Rnd Tracer
+    "ACE_20Rnd_762x51_Mk316_Mod_0_Mag",                             // 7.62x51 20Rnd Mk316
+    "ACE_20Rnd_762x51_Mk319_Mod_0_Mag",                             // 7.62x51 20Rnd Mk319
+    // -- 7.62x67 mm (.300 Win Mag)
     "ACE_10Rnd_762x67_Mk248_Mod_0_Mag",                             // .300 WM 10Rnd Mag(Mk248 Mod 0)
     "ACE_10Rnd_762x67_Mk248_Mod_1_Mag",                             // .300 WM 10Rnd Mag(Mk248 Mod 1)
-    "ACE_20Rnd_762x51_M118LR_Mag",                                  // 20Rnd 7.62x51 M118LR 
-    "ACE_20Rnd_762x51_M993_AP_Mag",                                 // 20Rnd 7.62x51 M993 AP
-    "ACE_20Rnd_762x51_Mag_SD",                                      // 20Rnd 7.62x51 SD
-    "ACE_20Rnd_762x51_Mag_Tracer_Dim",                              // 20Rnd 7.62x51 Dim Tracer
-    "ACE_20Rnd_762x51_Mag_Tracer",                                  // 20Rnd 7.62x51 Tracer
-    "ACE_20Rnd_762x51_Mk316_Mod_0_Mag",                             // 20Rnd 7.62x51 Mk316
-    "ACE_20Rnd_762x51_Mk319_Mod_0_Mag",                             // 20Rnd 7.62x51 Mk319
-    "ACE_30Rnd_556x45_Stanag_M995_AP_mag",                          // 30Rnd 5.56*45 M995 AP
-    "ACE_30Rnd_556x45_Stanag_Mk262_mag",                            // 30Rnd 5.56*45 Mk262
-    "ACE_30Rnd_556x45_Stanag_Mk318_mag",                            // 30Rnd 5.56*45 Mk318
-    "ACE_30Rnd_556x45_Stanag_Tracer_Dim",                           // 30Rnd 5.56*45 Dim Tracer
-    "ACE_40mm_Flare_ir",                                            // M992 紅外線照明彈
-    "ACE_5Rnd_127x99_AMAX_Mag",                                     // 5rnd 12.7x99 AMAX
-    "ACE_5Rnd_127x99_API_Mag",                                      // 5rnd 12.7x99 API
-    "ACE_5Rnd_127x99_Mag",                                          // 5rnd 12.7x99
-    "ACE_7Rnd_408_305gr_Mag",                                       // 7rnd .408 305gr
-    "ACE_HuntIR_M203",                                              // 高空戰術成像器彈藥
+    // -- 8.58×70 mm (.338 Lapua Magnum)
+    "ACE_10Rnd_338_API526_Mag",                                     // .338 LM 10Rnd Mag(API526)
+    "ACE_10Rnd_338_300gr_HPBT_Mag",                                 // .338 LM 10Rnd Mag(300gr Lapua Scenar)
+    // -- 10.36×77 mm (.408 CheyTac)
+    "ACE_7Rnd_408_305gr_Mag",                                       // .408 7Rnd 305gr 
+    // -- 12.7x99 mm (.50 BMG)
+    "ACE_5Rnd_127x99_Mag",                                          // 12.7x99 5rnd
+    "ACE_5Rnd_127x99_AMAX_Mag",                                     // 12.7x99 5rnd AMAX
+    "ACE_5Rnd_127x99_API_Mag",                                      // 12.7x99 API
+    // -- 40 mm Grenades
+    "ACE_40mm_Flare_ir",                                            // 40 mm Flare Round (IR)
+    "ACE_HuntIR_M203",                                              // 40 mm HuntIR Round
+    // -- etc.
     "Laserbatteries",                                               // Designator Batteries
     // - RHS USAF
+    // -- 9x19 mm
+    "rhsusf_mag_15Rnd_9x19_FMJ",                                    // 15rnd M9 M882 FMJ
+    "rhsusf_mag_15Rnd_9x19_JHP",                                    // 15rnd M9 Mk243 JHP
+    "rhsusf_mag_17Rnd_9x19_FMJ",                                    // 17rnd Glock M882 FMJ
+    "rhsusf_mag_17Rnd_9x19_JHP",                                    // 17rnd Glock Mk243 JHP
+    // -- 11.43×23mm (.45 ACP)
+    "rhsusf_mag_7x45acp_MHP",                                       // 7rnd M1911 HP
     "11Rnd_45ACP_Mag",                                              // .45 ACP 15Rnd Mag
-    "rhs_fgm148_magazine_AT",                                       // Javelin AT
-    "rhs_fgm172a_magazine_AT",                                      // FGM172A SRAW
-    "rhs_fgm172b_magazine_MPV",                                     // FGM172B SRAW-MPV
-    "rhs_fim92_mag",                                                // FIM-92F
+    // -- 4.6x30 mm
+    "rhsusf_mag_40Rnd_46x30_AP",                                    // 40rnd MP7 SX AP
+    "rhsusf_mag_40Rnd_46x30_FMJ",                                   // 40rnd MP7 SX FMJ
+    "rhsusf_mag_40Rnd_46x30_JHP",                                   // 40rnd MP7 SX JHP
+    // -- 5.56x45 mm
     "rhs_mag_100Rnd_556x45_M855A1_cmag_mixed",                      // 100rnd C-Mag M855A1 (Mixed)
     "rhs_mag_100Rnd_556x45_M855A1_cmag",                            // 100rnd C-Mag M855A1
     "rhs_mag_100Rnd_556x45_Mk262_cmag",                             // 100rnd C-Mag Mk262 Mod 1
     "rhs_mag_100Rnd_556x45_Mk318_cmag",                             // 100rnd C-Mag Mk262 Mod 0
-    "rhs_mag_20Rnd_SCAR_762x51_m118_special",                       // 20rnd SCAR M118 Ball
-    "rhs_mag_20Rnd_SCAR_762x51_m61_ap",                             // 20rnd SCAR M61 AP
-    "rhs_mag_20Rnd_SCAR_762x51_m62_tracer",                         // 20rnd SCAR M62 (Tracer)
-    "rhs_mag_20Rnd_SCAR_762x51_m80_ball",                           // 20rnd SCAR M80
-    "rhs_mag_20Rnd_SCAR_762x51_m80a1_epr",                          // 20rnd SCAR M80A1 EPR
-    "rhs_mag_20Rnd_SCAR_762x51_mk316_special",                      // 20rnd SCAR Mk316 Mod 0
     "rhs_mag_30Rnd_556x45_M193_Stanag",                             // 30rnd STANAG M193
     "rhs_mag_30Rnd_556x45_M196_Stanag_Tracer_Red",                  // 30rnd STANAG M196 (Tracer)
     "rhs_mag_30Rnd_556x45_M200_Stanag",                             // 30rnd STANAG M200 (Blank)
@@ -244,6 +316,73 @@ GRLIB_arsenal_magazines = [
     "rhs_mag_30Rnd_556x45_Mk262_PMAG",                    
     "rhs_mag_30Rnd_556x45_Mk318_PMAG_Tan",                    
     "rhs_mag_30Rnd_556x45_Mk318_PMAG",                    
+    "rhsusf_100Rnd_556x45_M200_soft_pouch_ucp",                     // 100rnd M249 Softpack M200
+    "rhsusf_100Rnd_556x45_M200_soft_pouch",                         // 100rnd M249 Softpack M200
+    "rhsusf_100Rnd_556x45_mixed_soft_pouch_coyote",                 // 100rnd M249 Softpack M855A1 (Mixed)
+    "rhsusf_100Rnd_556x45_mixed_soft_pouch_ucp",                    // 100rnd M249 Softpack M855A1 (Mixed)
+    "rhsusf_100Rnd_556x45_mixed_soft_pouch",                        // 100rnd M249 Softpack M855A1 (Mixed)
+    "rhsusf_100Rnd_556x45_soft_pouch_coyote",                       // 100rnd M249 Softpack M855A1
+    "rhsusf_100Rnd_556x45_soft_pouch_ucp",                          // 100rnd M249 Softpack M855A1
+    "rhsusf_100Rnd_556x45_soft_pouch",                              // 100rnd M249 Softpack M855A1
+    "rhsusf_200Rnd_556x45_box",                                     // 200rnd M249 Box M855A1
+    "rhsusf_200rnd_556x45_mixed_box",                               // 200rnd M249 Box M855A1 (Mixed)
+    "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",                 // 200rnd M249 Softpack M855A1 (Mixed)
+    "rhsusf_200Rnd_556x45_mixed_soft_pouch_ucp",                    // 200rnd M249 Softpack M855A1 (Mixed)
+    "rhsusf_200Rnd_556x45_mixed_soft_pouch",                        // 200rnd M249 Softpack M855A1 (Mixed)
+    "rhsusf_200Rnd_556x45_soft_pouch_coyote",                       // 200rnd M249 Softpack M855A1
+    "rhsusf_200Rnd_556x45_soft_pouch_ucp",                          // 200rnd M249 Softpack M855A1
+    "rhsusf_200Rnd_556x45_soft_pouch",                              // 200rnd M249 Softpack M855A1
+    // -- 7.62x51 mm
+    "rhs_mag_20Rnd_SCAR_762x51_m118_special",                       // 20rnd SCAR M118 Ball
+    "rhs_mag_20Rnd_SCAR_762x51_m61_ap",                             // 20rnd SCAR M61 AP
+    "rhs_mag_20Rnd_SCAR_762x51_m62_tracer",                         // 20rnd SCAR M62 (Tracer)
+    "rhs_mag_20Rnd_SCAR_762x51_m80_ball",                           // 20rnd SCAR M80
+    "rhs_mag_20Rnd_SCAR_762x51_m80a1_epr",                          // 20rnd SCAR M80A1 EPR
+    "rhs_mag_20Rnd_SCAR_762x51_mk316_special",                      // 20rnd SCAR Mk316 Mod 0
+    "rhsusf_100Rnd_762x51_m61_ap",                                  // 100rnd M240 Box M61 AP
+    "rhsusf_100Rnd_762x51_m62_tracer",                              // 100rnd M240 Box M62 (Tracer)
+    "rhsusf_100Rnd_762x51_m80a1epr",                                // 100rnd M240 Box M80A1 EPR
+    "rhsusf_100Rnd_762x51_m82_blank",                               // 100rnd M240 Box M82 (Blank)
+    "rhsusf_100Rnd_762x51",                                         // 100rnd M240 Box M80
+    "rhsusf_10Rnd_762x51_m118_special_Mag",                         // 10rnd AICS M118
+    "rhsusf_10Rnd_762x51_m62_Mag",                                  // 10rnd AICS M62 (Tracer)
+    "rhsusf_10Rnd_762x51_m993_Mag",                                 // 10rnd AICS M993 AP
+    "rhsusf_20Rnd_762x51_m118_special_Mag",                         // 20rnd M14 M118
+    "rhsusf_20Rnd_762x51_m62_Mag",                                  // 20rnd M14 M62 (Tracer)
+    "rhsusf_20Rnd_762x51_m993_Mag",                                 // 20rnd M14 M993AP
+    "rhsusf_20Rnd_762x51_SR25_m118_special_Mag",                    // 20rnd SR-25 M118
+    "rhsusf_20Rnd_762x51_SR25_m62_Mag",                             // 20rnd SR-25 M62 (Tracer)
+    "rhsusf_20Rnd_762x51_SR25_m993_Mag",                            // 20rnd SR-25 M993 AP
+    "rhsusf_20Rnd_762x51_SR25_mk316_special_Mag",                   // 20rnd SR-25 Mk316 Mod 0
+    "rhsusf_50Rnd_762x51_m61_ap",                                   // 50rnd M240 Softpack M61 AP
+    "rhsusf_50Rnd_762x51_m62_tracer",                               // 50rnd M240 Softpack M62 (Tracer)
+    "rhsusf_50Rnd_762x51_m80a1epr",                                 // 50rnd M240 Softpack M80A1 EPR
+    "rhsusf_50Rnd_762x51_m82_blank",                                // 50rnd M240 Belt M82 (Blank)
+    "rhsusf_50Rnd_762x51",                                          // 50rnd M240 Softpack M80
+    "rhsusf_5Rnd_762x51_AICS_m118_special_Mag",                     // 5Rnd AICS M118
+    "rhsusf_5Rnd_762x51_AICS_m62_Mag",                              // 5Rnd AICS M62 (Tracer)
+    "rhsusf_5Rnd_762x51_AICS_m993_Mag",                             // 5Rnd AICS M993 AP
+    "rhsusf_5Rnd_762x51_m118_special_Mag",                          // 5Rnd M118
+    "rhsusf_5Rnd_762x51_m62_Mag",                                   // 5Rnd M62 (Tracer)
+    "rhsusf_5Rnd_762x51_m993_Mag",                                  // 5Rnd M993 AP
+    // -- 7.62x67 mm (.300 Win Mag)
+    "rhsusf_5Rnd_300winmag_xm2010",                                 // 5Rnd .300WM Mk248 MOD 1
+    // -- 8.58×70 mm (.338 Lapua Magnum)
+    // -- .338 Norma Magnum
+    // -- 10.36×77mm (.408 CheyTac)
+    // -- 12.7x99mm (.50 BMG)
+    "rhsusf_mag_10Rnd_STD_50BMG_M33",                               // 10rnd M107 M33
+    "rhsusf_mag_10Rnd_STD_50BMG_mk211",                             // 10rnd M107 Mk211
+    // -- 12 Gauge
+    "rhsusf_5Rnd_00Buck",                                           // 5Rnd .00 Buckshot
+    "rhsusf_5Rnd_FRAG",                                             // 5Rnd 12g FRAG
+    "rhsusf_5Rnd_HE",                                               // 5Rnd 12g HE-EP
+    "rhsusf_5Rnd_Slug",                                             // 5Rnd 12g Slug
+    "rhsusf_8Rnd_00Buck",                                           // 8Rnd .00 Buckshot
+    "rhsusf_8Rnd_FRAG",                                             // 8Rnd 12g FRAG
+    "rhsusf_8Rnd_HE",                                               // 8Rnd 12g HE-EP
+    "rhsusf_8Rnd_Slug",                                             // 8Rnd 12g Slug
+    // -- 40 mm Grenades
     "rhs_mag_M397_HET",                                             // M397 HET Grenade Round
     "rhs_mag_m4009",                                                // GL Stun Grenade Round
     "rhs_mag_M433_HEDP",                                            // M433 HEDP Grenade Round
@@ -257,71 +396,6 @@ GRLIB_arsenal_magazines = [
     "rhs_mag_m715_Green",                                           // M715 Green Smoke Round
     "rhs_mag_m716_yellow",                                          // M716 Yellow Smoke Round
     "rhs_mag_M781_Practice",                                        // M781 Practice Round
-    "rhs_mag_maaws_HE",                                             // FFV441 HE
-    "rhs_mag_maaws_HEAT",                                           // FFV751 HEAT
-    "rhs_mag_maaws_HEDP",                                           // FFV502 HEDP
-    "rhs_mag_smaw_HEAA",                                            // Mk.6 HEAA
-    "rhs_mag_smaw_HEDP",                                            // Mk.3 HEDP
-    "rhsusf_100Rnd_556x45_M200_soft_pouch_ucp",                     // 100rnd M249 Softpack M200
-    "rhsusf_100Rnd_556x45_M200_soft_pouch",                         // 100rnd M249 Softpack M200
-    "rhsusf_100Rnd_556x45_mixed_soft_pouch_coyote",                 // 100rnd M249 Softpack M855A1 (Mixed)
-    "rhsusf_100Rnd_556x45_mixed_soft_pouch_ucp",                    // 100rnd M249 Softpack M855A1 (Mixed)
-    "rhsusf_100Rnd_556x45_mixed_soft_pouch",                        // 100rnd M249 Softpack M855A1 (Mixed)
-    "rhsusf_100Rnd_556x45_soft_pouch_coyote",                       // 100rnd M249 Softpack M855A1
-    "rhsusf_100Rnd_556x45_soft_pouch_ucp",                          // 100rnd M249 Softpack M855A1
-    "rhsusf_100Rnd_556x45_soft_pouch",                              // 100rnd M249 Softpack M855A1
-    "rhsusf_100Rnd_762x51_m61_ap",                                  // 100rnd M240 Box M61 AP
-    "rhsusf_100Rnd_762x51_m62_tracer",                              // 100rnd M240 Box M62 (Tracer)
-    "rhsusf_100Rnd_762x51_m80a1epr",                                // 100rnd M240 Box M80A1 EPR
-    "rhsusf_100Rnd_762x51_m82_blank",                               // 100rnd M240 Box M82 (Blank)
-    "rhsusf_100Rnd_762x51",                                         // 100rnd M240 Box M80
-    "rhsusf_10Rnd_762x51_m118_special_Mag",                         // 10rnd AICS M118
-    "rhsusf_10Rnd_762x51_m62_Mag",                                  // 10rnd AICS M62 (Tracer)
-    "rhsusf_10Rnd_762x51_m993_Mag",                                 // 10rnd AICS M993 AP
-    "rhsusf_200Rnd_556x45_box",                                     // 200rnd M249 Box M855A1
-    "rhsusf_200rnd_556x45_mixed_box",                               // 200rnd M249 Box M855A1 (Mixed)
-    "rhsusf_200Rnd_556x45_mixed_soft_pouch_coyote",                 // 200rnd M249 Softpack M855A1 (Mixed)
-    "rhsusf_200Rnd_556x45_mixed_soft_pouch_ucp",                    // 200rnd M249 Softpack M855A1 (Mixed)
-    "rhsusf_200Rnd_556x45_mixed_soft_pouch",                        // 200rnd M249 Softpack M855A1 (Mixed)
-    "rhsusf_200Rnd_556x45_soft_pouch_coyote",                       // 200rnd M249 Softpack M855A1
-    "rhsusf_200Rnd_556x45_soft_pouch_ucp",                          // 200rnd M249 Softpack M855A1
-    "rhsusf_200Rnd_556x45_soft_pouch",                              // 200rnd M249 Softpack M855A1
-    "rhsusf_20Rnd_762x51_m118_special_Mag",                         // 20rnd M14 M118
-    "rhsusf_20Rnd_762x51_m62_Mag",                                  // 20rnd M14 M62 (Tracer)
-    "rhsusf_20Rnd_762x51_m993_Mag",                                 // 20rnd M14 M993AP
-    "rhsusf_20Rnd_762x51_SR25_m118_special_Mag",                    // 20rnd SR-25 M118
-    "rhsusf_20Rnd_762x51_SR25_m62_Mag",                             // 20rnd SR-25 M62 (Tracer)
-    "rhsusf_20Rnd_762x51_SR25_m993_Mag",                            // 20rnd SR-25 M993 AP
-    "rhsusf_20Rnd_762x51_SR25_mk316_special_Mag",                   // 20rnd SR-25 Mk316 Mod 0
-    "rhsusf_50Rnd_762x51_m61_ap",                                   // 50rnd M240 Softpack M61 AP
-    "rhsusf_50Rnd_762x51_m62_tracer",                               // 50rnd M240 Softpack M62 (Tracer)
-    "rhsusf_50Rnd_762x51_m80a1epr",                                 // 50rnd M240 Softpack M80A1 EPR
-    "rhsusf_50Rnd_762x51_m82_blank",                                // 50rnd M240 Belt M82 (Blank)
-    "rhsusf_50Rnd_762x51",                                          // 50rnd M240 Softpack M80
-    "rhsusf_5Rnd_00Buck",                                           // 5Rnd .00 Buckshot
-    "rhsusf_5Rnd_300winmag_xm2010",                                 // 5Rnd .300WM Mk248 MOD 1
-    "rhsusf_5Rnd_762x51_AICS_m118_special_Mag",                     // 5Rnd AICS M118
-    "rhsusf_5Rnd_762x51_AICS_m62_Mag",                              // 5Rnd AICS M62 (Tracer)
-    "rhsusf_5Rnd_762x51_AICS_m993_Mag",                             // 5Rnd AICS M993 AP
-    "rhsusf_5Rnd_762x51_m118_special_Mag",                          // 5Rnd M118
-    "rhsusf_5Rnd_762x51_m62_Mag",                                   // 5Rnd M62 (Tracer)
-    "rhsusf_5Rnd_762x51_m993_Mag",                                  // 5Rnd M993 AP
-    "rhsusf_5Rnd_FRAG",                                             // 5Rnd 12g FRAG
-    "rhsusf_5Rnd_HE",                                               // 5Rnd 12g HE-EP
-    "rhsusf_5Rnd_Slug",                                             // 5Rnd 12g Slug
-    "rhsusf_8Rnd_00Buck",                                           // 8Rnd .00 Buckshot
-    "rhsusf_8Rnd_FRAG",                                             // 8Rnd 12g FRAG
-    "rhsusf_8Rnd_HE",                                               // 8Rnd 12g HE-EP
-    "rhsusf_8Rnd_Slug",                                             // 8Rnd 12g Slug
-    "rhsusf_mag_10Rnd_STD_50BMG_M33",                               // 10rnd M107 M33
-    "rhsusf_mag_10Rnd_STD_50BMG_mk211",                             // 10rnd M107 Mk211
-    "rhsusf_mag_15Rnd_9x19_FMJ",                                    // 15rnd M9 M882 FMJ
-    "rhsusf_mag_15Rnd_9x19_JHP",                                    // 15rnd M9 Mk243 JHP
-    "rhsusf_mag_17Rnd_9x19_FMJ",                                    // 17rnd Glock M882 FMJ
-    "rhsusf_mag_17Rnd_9x19_JHP",                                    // 17rnd Glock Mk243 JHP
-    "rhsusf_mag_40Rnd_46x30_AP",                                    // 40rnd MP7 SX AP
-    "rhsusf_mag_40Rnd_46x30_FMJ",                                   // 40rnd MP7 SX FMJ
-    "rhsusf_mag_40Rnd_46x30_JHP",                                   // 40rnd MP7 SX JHP
     "rhsusf_mag_6Rnd_M397_HET",                                     // 6rnd M397 HET Grenades
     "rhsusf_mag_6Rnd_m4009",                                        // 6rnd. GL Stun Grenade Round
     "rhsusf_mag_6Rnd_M433_HEDP",                                    // 6rnd M433 HEDP Grenades
@@ -335,11 +409,20 @@ GRLIB_arsenal_magazines = [
     "rhsusf_mag_6Rnd_M715_green",                                   // 6rnd. M715 Green Smoke Round
     "rhsusf_mag_6Rnd_M716_yellow",                                  // 6rnd. M716 Yellow Smoke Round
     "rhsusf_mag_6Rnd_M781_Practice",                                // 6rnd. M751 Practice Round
-    "rhsusf_mag_7x45acp_MHP",                                       // 7rnd M1911 HP
+    // -- Launcher ammo
+    "rhs_fgm148_magazine_AT",                                       // Javelin AT
+    "rhs_fgm172a_magazine_AT",                                      // FGM172A SRAW
+    "rhs_fgm172b_magazine_MPV",                                     // FGM172B SRAW-MPV
+    "rhs_fim92_mag",                                                // FIM-92F
+    "rhs_mag_maaws_HE",                                             // FFV441 HE
+    "rhs_mag_maaws_HEAT",                                           // FFV751 HEAT
+    "rhs_mag_maaws_HEDP",                                           // FFV502 HEDP
+    "rhs_mag_smaw_HEAA",                                            // Mk.6 HEAA
+    "rhs_mag_smaw_HEDP",                                            // Mk.3 HEDP
     // - RHS GREF
     "rhsgref_8Rnd_762x63_Tracer_M1T_M1rifle",                       // 8Rnd .30-06 M1 (Tracer)
     "rhsgref_8Rnd_762x63_M2B_M1rifle",                              // 8Rnd .30-06 M2
-    "rhsgref_5Rnd_762x54_m38",                                      // 5rnd 7.62*54Rmm clip
+    "rhsgref_5Rnd_762x54_m38",                                      // 5rnd 7.62*54Rmm clip (for Mosin Nagant)
 
     // Grenades ----------------------------------------------------------------
     "B_IR_Grenade",                                                 // IR Grenade [NATO]
@@ -349,17 +432,17 @@ GRLIB_arsenal_magazines = [
     "Chemlight_yellow",                                             // Chemlight (Yellow)
     "MiniGrenade",                                                  // V40 Mini-Grenade
     // - ACE
-    "ACE_Chemlight_IR",                    
-    "ACE_Chemlight_Orange",                    
-    "ACE_Chemlight_UltraHiBlue",                    
-    "ACE_Chemlight_UltraHiGreen",                    
-    "ACE_Chemlight_UltraHiOrange",                    
-    "ACE_Chemlight_UltraHiRed",                    
-    "ACE_Chemlight_UltraHiWhite",                    
-    "ACE_Chemlight_UltraHiYellow",                    
-    "ACE_Chemlight_White",                    
-    "ACE_M14",                    
-    "ACE_M84",                    
+    "ACE_Chemlight_IR",                                             // Chemlight (IR)
+    "ACE_Chemlight_Orange",                                         // Chemlight (Orange)
+    "ACE_Chemlight_UltraHiBlue",                                    // Chemlight (Ultra Hi Blue)
+    "ACE_Chemlight_UltraHiGreen",                                   // Chemlight (Ultra Hi Green)
+    "ACE_Chemlight_UltraHiOrange",                                  // Chemlight (Ultra Hi Orange)
+    "ACE_Chemlight_UltraHiRed",                                     // Chemlight (Ultra Hi Red)
+    "ACE_Chemlight_UltraHiWhite",                                   // Chemlight (Ultra Hi White)
+    "ACE_Chemlight_UltraHiYellow",                                  // Chemlight (Ultra Hi Yellow)
+    "ACE_Chemlight_White",                                          // Chemlight (White)
+    "ACE_M14",                                                      // AN-M14 Incendiary Grenade
+    "ACE_M84",                                                      // M84 Stun Grenade
     // - RHS USAF
     "rhs_mag_an_m14_th3",                                           // AN-M14 TH3 Invendenary Grenade
     "rhs_mag_an_m8hc",                                              // AN-M8HC White Smooke
@@ -403,9 +486,6 @@ GRLIB_arsenal_magazines = [
     "rhsusf_mine_m49a1_10m_mag",                                    // M49A1 (10m)
     "rhsusf_mine_m49a1_3m_mag",                                     // M49A1 (3m)
     "rhsusf_mine_m49a1_6m_mag"                                      // M49A1 (6m)
-
-    //"rhs_mag_six12_slug",                                           // Six-12 Slug
-    //"rhs_mag_smaw_SR",                                              // Mk.217 Spotting
 ];
 
 GRLIB_arsenal_items = [
@@ -620,9 +700,8 @@ GRLIB_arsenal_items = [
     "U_B_FullGhillie_ard",                                          // Full Ghillie (Arid) [NATO]
     "U_B_FullGhillie_lsh",                                          // Full Ghillie (Lush) [NATO]
     "U_B_FullGhillie_sard",                                         // Full Ghillie (Semi-Arid) [NATO]
-    "U_B_HeliPilotCoveralls",                                       // 直升機飛行員連身衣[北約]
+    "U_B_GhillieSuit",                                              // Ghillie Suit [NATO]
     "U_B_HeliPilotCoveralls",                                       // Heli Pilot Coveralls [NATO]
-    "U_B_PilotCoveralls",                                           // Pilot Coveralls [NATO]
     "U_B_PilotCoveralls",                                           // Pilot Coveralls [NATO]
     "U_B_T_FullGhillie_tna_F",                                      // Full Ghillie (Jungle) [NATO]
     "U_B_Wetsuit",                                                  // Wetsuit [NATO]
@@ -651,12 +730,12 @@ GRLIB_arsenal_items = [
     "rhs_uniform_g3_mc",                                            // G3 Uniform (Multicam)
     
     // Vests  ------------------------------------------------------------------
-    "V_Chestrig_blk",                                               // 胸掛背心(黑色)
-    "V_PlateCarrier2_blk",                                          // 大容量胸掛背心(黑色)
-    "V_PlateCarrierGL_blk",                                         // 大容量榴彈胸掛背心(黑色)
-    "V_PlateCarrierSpec_blk",                                       // 大容量特殊胸掛背心(黑色)
+    "V_Chestrig_blk",                                               // Chest Rig (Black)
     "V_RebreatherB",                                                // Rebreather [NATO]
-    "V_TacVest_blk",                                                // 戰術背心(黑色)
+    "V_TacVest_blk",                                                // Tactical Vest (Black)
+    "V_PlateCarrierGL_blk",                                         // Carrier GL Rig (Black)
+    "V_PlateCarrier2_blk",                                          // Carrier Rig (Black)
+    "V_PlateCarrierSpec_blk",                                       // Carrier Special Rig (Black)
     // - RHS USAF
     "rhsusf_iotv_ocp_Grenadier",                                    // IOTV (Grenadier/OEF-CP)
     "rhsusf_iotv_ocp_Medic",                                        // IOTV (Medic/OEF-CP)
@@ -759,12 +838,10 @@ GRLIB_arsenal_items = [
     "rhsusf_shemagh2_white",                                        // Shemagh (White/alt)
 
     // Nightvision -------------------------------------------------------------
-    "NVGoggles_OPFOR",                                              // NV Googles (Gen3, Black)
     // - ACE
-    "ACE_NVG_Gen1",                                                 // NV Goggles (Gen1)
-    "ACE_NVG_Gen2",                                                 // NV Goggles (Gen2)
-    "ACE_NVG_Gen4",                                                 // NV Goggles (Gen4)
-    "ACE_NVG_Wide",                                                 // NV Goggles (Wide)
+    "ACE_NVG_Gen4",                                                 // NV Goggles (Gen4, Brown)
+    "ACE_NVG_Gen4_Black",                                           // NV Goggles (Gen4, Black)
+    "ACE_NVG_Gen4_Green",                                           // NV Goggles (Gen4, Green)
     // - RHS USAF
     "rhsusf_ANPVS_14",                                              // AN/PVS-14
     "rhsusf_ANPVS_15",                                              // AN/PVS-15
@@ -805,11 +882,11 @@ GRLIB_arsenal_items = [
     "ACE_Altimeter",                                                // Altimeter Watch
 
     // Sights ------------------------------------------------------------------
-    "optic_dms_ghex_f",                                             // Burris XTR II (Green Hex)
-    "optic_dms",                                                    // Burris XTR II
-    "optic_mrco",                                                   // IOR-Valdada Pitbull 2
+    "optic_DMS_ghex_F",                                             // DMS (Green Hex)
+    "optic_DMS",                                                    // DMS
+    "optic_mrco",                                                   // MRCO
     "optic_mrd_black",                                              // MRD (Black)
-    "optic_mrd",                                                    // 掛盾式設計瞄準鏡
+    "optic_mrd",                                                    // MRD
     // - ACE
     "ace_optic_hamr_2d",                                            // Leupold Mark 4 HAMR (2D)
     "ace_optic_lrps_2d",                                            // Nightforce NXS(2d)
@@ -933,12 +1010,12 @@ GRLIB_arsenal_items = [
     "rhsusf_acc_wmx_bk",                                            // WMX Flashlight (Black)
     "rhsusf_acc_wmx",                                               // WMX Flashlight
     // Muzzle Attachments ------------------------------------------------------
-    "muzzle_snds_338_black",                                        // sound Suppressor(.338,Black)
-    "muzzle_snds_338_green",                                        // sound Suppressor(.338,green)
-    "muzzle_snds_338_sand",                                         // sound Suppressor(.338,sand)
+    "muzzle_snds_L",                                                // Sound Suppressor (9x21)
+    "muzzle_snds_acp",                                              // Sound Suppressor (.45 ACP)
     "muzzle_snds_570",                                              // sound Suppressor(5.7mm)
-    "muzzle_snds_acp",                                              // 消音器(.45ACP)
-    "muzzle_snds_L",                                                // 消音器(9mm)
+    "muzzle_snds_338_black",                                        // Sound Suppressor (.338, Black)
+    "muzzle_snds_338_green",                                        // Sound Suppressor (.338, Green)
+    "muzzle_snds_338_sand",                                         // Sound Suppressor (.338, Sand)
     // - ACE
     "ace_muzzle_mzls_338",                                          // Flash Suppressor(.338)
     // - RHS USAF
@@ -996,6 +1073,7 @@ GRLIB_arsenal_items = [
     "dzn_tripod_rifle",
     "dzn_tripod_rifle_od",
     "dzn_tripod_rifle_tan",
+    "dzn_mg_tripod_universal",                                      //Bipod for MG
     "dzn_mg_tripod_m122a1_m249mount_rhs",
     "dzn_mg_tripod_m122a1_m240mount_rhs",
 
@@ -1043,10 +1121,10 @@ GRLIB_arsenal_items = [
     "ACE_morphine",                                                 // Morphine autoinjector
     "ACE_muzzle_mzls_338",                                          // Flash Suppressor (.338)
     "ACE_muzzle_mzls_93mmg",                                        // Flash Suppressor (9.3 mm)
-    "ACE_muzzle_mzls_B",                                            // Flash Suppressor (7.62 mm)
-    "ACE_muzzle_mzls_H",                                            // Flash Suppressor (6.5 mm)
+    "ACE_muzzle_mzls_B",                                            // Flash Suppressor (7.62x51)
+    "ACE_muzzle_mzls_H",                                            // Flash Suppressor (6.5x39)
     "ACE_muzzle_mzls_smg_01",                                       // FLash Suppressor (.45 ACP)
-    "ACE_muzzle_mzls_smg_02",                                       // Flash Suppressor (9 mm)
+    "ACE_muzzle_mzls_smg_02",                                       // Flash Suppressor (9x21)
     "ACE_packingBandage",                                           // Bandage (Packing)
     "ACE_personalAidKit",                                           // Personal Aid Kit
     "ACE_plasmaIV_250",                                             // Plasma IV (250 ml)
@@ -1102,13 +1180,14 @@ GRLIB_arsenal_items = [
 
 GRLIB_arsenal_backpacks = [
     // Backpacks ---------------------------------------------------------------
-    "B_AssaultPack_blk",                                            // Assualt Pack (Black)
+    "B_AssaultPack_blk",                                            // Assault Pack (Black)
     "B_Bergen_dgtl_F",                                              // Bergen Backpack (Digital)
     "B_Bergen_hex_F",                                               // Bergen Backpack (Hex)
     "B_Bergen_mcamo_F",                                             // Bergen Backpack (MTP)
     "B_Bergen_tna_F",                                               // Bergen Backpack (Tropic)
     "B_Carryall_cbr",                                               // Carryall Backpack (Coyote)
     "B_Carryall_khk",                                               // Carryall Backpack (Khaki)
+    "B_Carryall_mcamo",                                             // Carryall Backpack (MTP)
     "B_Carryall_oli",                                               // Carryall Backpack (Olive)
     "B_FieldPack_blk",                                              // Field Pack (Black)
     "B_FieldPack_cbr",                                              // Field Pack (Coyote)
@@ -1118,12 +1197,12 @@ GRLIB_arsenal_backpacks = [
     "B_Kitbag_rgr",                                                 // Kitbag (Green)
     "B_Kitbag_tan",                                                 // Kitbag (Tan)
     "B_Parachute",                                                  // Steerable Parachute
-    "B_rhsusf_B_BACKPACK",                                          // Eagle A-III OCP (Raven)
     "B_TacticalPack_blk",                                           // Tatical Backpack (Black)
-    // - ACE
+    // - ACE Backpacks
     "ACE_NonSteerableParachute",                                    // Non-Steerable Parachute
     "ACE_TacticalLadder_Pack",                                      // Telescopic Ladder
     // - RHS - USAF
+    "B_rhsusf_B_BACKPACK",                                          // Eagle A-III OCP (Raven)
     "rhsusf_assault_eagleaiii_coy",                                 // Eagle A-III Coyote
     "rhsusf_assault_eagleaiii_ocp",                                 // Eagle A-III OEF-CP
     "rhsusf_assault_eagleaiii_ucp",                                 // Eagle A-III UCP
@@ -1131,7 +1210,7 @@ GRLIB_arsenal_backpacks = [
     "rhsusf_falconii_coy",                                          // Falcon-II Coyote
     "rhsusf_falconii_mc",                                           // Falcon-II MC
     "rhsusf_falconii",                                              // Falcon-II RGR
-    // - TFAR
+    // - ILBE Assault Pack
     "tfw_ilbe_whip_alpine",                    
     "tfw_ilbe_whip_arid",                    
     "tfw_ilbe_whip_black",                    
@@ -1142,27 +1221,5 @@ GRLIB_arsenal_backpacks = [
     "tfw_ilbe_whip_mct",                    
     "tfw_ilbe_whip_ocp",                    
     "tfw_ilbe_whip_wd",                    
-    "tfw_ilbe_whip_wd2",                    
-    // - ROC MOD
-    "ROC_army_Assault_Pack",                    
-    "ROC_army_assauly_eagleIII",                    
-    "ROC_army_Carryall",                    
-    "ROC_army_Kitbag",                    
-    "ROC_ASF_Assault_Pack",                    
-    "ROC_ASF_assauly_eagleIII",                    
-    "ROC_ASF_Carryall",                    
-    "ROC_ASF_Kitbag",                    
-    "ROC_CGA_Assault_Pack",                    
-    "ROC_CGA_assauly_eagleIII",                    
-    "ROC_CGA_Carryall",                    
-    "ROC_CGA_Kitbag",                    
-    "ROC_MC_Assault_Pack",                    
-    "ROC_MC_assauly_eagleIII",                    
-    "ROC_MC_Carryall",                    
-    "ROC_MC_Kitbag",                    
-    "ROC_UCP_Assault_Pack",                    
-    "ROC_UCP_assauly_eagleIII",                    
-    "ROC_UCP_Carryall",                    
-    "ROC_UCP_Kitbag"
+    "tfw_ilbe_whip_wd2"
 ];
-
