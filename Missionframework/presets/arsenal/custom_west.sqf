@@ -1,6 +1,7 @@
 /*
-    RHS United States Armed Forces Arsenal Preset
-    Last Update: 2020-05-08
+    RHS-USAF Arsenal Preset
+    Author: Peckcat
+    Last Update: 2023.2.25
 
     Needed:
         - RHSUSAF - https://steamcommunity.com/sharedfiles/filedetails/?id=843577117

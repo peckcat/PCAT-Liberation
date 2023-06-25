@@ -82,9 +82,10 @@ KP_liberation_ace_crates = [
 If you want to change a preset, it's recommended to set all four presets to 0 and edit the appropriate custom.sqf files in the preset folders.*/
 
 /* BLUFOR preset:
-31 = Custom (mostly vanilla + RHS USAF Desert)
-32 = Custom (mostly vanilla + RHS USAF Woodland)
-33 = Custom (mostly vanilla + RHS AFRF)
+31 = Custom USAF-Desert (mostly vanilla + RHS USAF Desert)
+32 = Custom USAF-Woodland (mostly vanilla + RHS USAF Woodland)
+33 = Custom AFRF (mostly vanilla + RHS AFRF)
+34 = Custom NATO (mostly vanilla)
 
 0  = Custom (default vanilla with many optional mods supported)
 1  = Apex Tanoa (apex vanilla with many optional mods supported)
@@ -174,6 +175,7 @@ KP_liberation_preset_civilians = 0;
 /* Which arsenal preset should be used?
 17 = Custom West (mostly vanilla + RHS USAF)
 18 = Custom East (mostly vanilla + RHS AFRF)
+19 = Custom NATO (mostly vanilla + ACE3)
 0  = Use the default blacklist method (defined below)
 1  = Custom arsenal preset (edit the custom.sqf in the arsenal_presets\ folder to change things for your own versions and tweaks)
 2  = RHS USAF arsenal preset

@@ -37,7 +37,7 @@
     },
     {
         "sourceFolder": "kp_liberation.vt7",
-        "missionName": "PCAT-Liberation(Virolahti)",
+        "missionName": "PCAT-Liberation-(Virolahti)",
         "map": "vt7",
         "mapDisplay": "Virolahti",
         "configFile": "kp_liberation_config.sqf",
@@ -50,7 +50,7 @@
     },
     {
         "sourceFolder": "kp_liberation.tem_anizay",
-        "missionName": "PCAT-Liberation(Anizay)",
+        "missionName": "PCAT-Liberation-(Anizay)",
         "map": "tem_anizay",
         "mapDisplay": "Anizay",
         "configFile": "kp_liberation_config.sqf",
@@ -63,7 +63,7 @@
     },
     {
         "sourceFolder": "kp_liberation.Chernarus",
-        "missionName": "PCAT-Liberation(Chernarus_Autumn)",
+        "missionName": "PCAT-Liberation-(Chernarus_Autumn)",
         "map": "Chernarus",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
@@ -76,7 +76,7 @@
     },
     {
         "sourceFolder": "kp_liberation.Chernarus_Summer",
-        "missionName": "PCAT-Liberation(Chernarus_Summer)",
+        "missionName": "PCAT-Liberation-(Chernarus_Summer)",
         "map": "Chernarus_Summer",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
@@ -89,7 +89,7 @@
     },
     {
         "sourceFolder": "kp_liberation.Chernarus_Winter",
-        "missionName": "PCAT-Liberation(Chernarus_Winter)",
+        "missionName": "PCAT-Liberation-(Chernarus_Winter)",
         "map": "Chernarus_Winter",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
@@ -115,7 +115,7 @@
     },
     {
         "sourceFolder": "kp_liberation.panthera3",
-        "missionName": "PCAT-Liberation(Panthera)",
+        "missionName": "PCAT-Liberation-(Panthera)",
         "map": "panthera3",
         "mapDisplay": "Panthera",
         "configFile": "kp_liberation_config.sqf",
@@ -128,7 +128,7 @@
     },
     {
         "sourceFolder": "kp_liberation.Sara",
-        "missionName": "PCAT-Liberation(Sahrani)",
+        "missionName": "PCAT-Liberation-(Sahrani)",
         "map": "Sara",
         "mapDisplay": "Sahrani",
         "configFile": "kp_liberation_config.sqf",
@@ -141,7 +141,7 @@
     },
     {
         "sourceFolder": "kp_liberation.pja305",
-        "missionName": "PCAT-Liberation(N'ziwasogo)",
+        "missionName": "PCAT-Liberation-(N'ziwasogo)",
         "map": "pja305",
         "mapDisplay": "G.O.S N'ziwasogo v2 Apex",
         "configFile": "kp_liberation_config.sqf",
@@ -154,7 +154,7 @@
     },
     {
         "sourceFolder": "kp_liberation.pja310",
-        "missionName": "PCAT-Liberation(Al_Rayak)",
+        "missionName": "PCAT-Liberation-(Al_Rayak)",
         "map": "pja310",
         "mapDisplay": "G.O.S Al Rayak",
         "configFile": "kp_liberation_config.sqf",
@@ -167,7 +167,7 @@
     },
     {
         "sourceFolder": "kp_liberation.UMB_Colombia",
-        "missionName": "PCAT-Liberation(UMB_Colombia)",
+        "missionName": "PCAT-Liberation-(UMB_Colombia)",
         "map": "UMB_Colombia",
         "mapDisplay": "Colombia",
         "configFile": "kp_liberation_config.sqf",
@@ -213,6 +213,19 @@
             "KP_liberation_preset_opfor"      : 32,
             "KP_liberation_preset_resistance" :  9,
             "KP_liberation_arsenal"           : 18
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.vt7",
+        "missionName": "PCAT-Liberation-NATO-(Virolahti)",
+        "map": "vt7",
+        "mapDisplay": "Virolahti",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 34,
+            "KP_liberation_preset_opfor"      : 0,
+            "KP_liberation_preset_resistance" : 0,
+            "KP_liberation_arsenal"           : 19
         }
     }
 ]

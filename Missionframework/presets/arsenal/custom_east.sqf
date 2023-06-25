@@ -1,15 +1,17 @@
-    /*
-    RHS United States Armed Forces Arsenal Preset
-    Last Update: 2020-05-08
+/*
+    RHS-AFRF Arsenal Preset
+    Author: Peckcat
+    Last Update: 2023.2.25
 
     Needed:
         - RHSUSAF - https://steamcommunity.com/sharedfiles/filedetails/?id=843577117
 
     Optional:
-        - ACE                     - https://steamcommunity.com/sharedfiles/filedetails/?id=463939057
-        - ACRE                    - https://steamcommunity.com/sharedfiles/filedetails/?id=751965892
-        - Ctab Devastator Edition -
         - MS IFF Strobe - 
+        - TFAR(Beta!!!) -
+        - ACE           - https://steamcommunity.com/sharedfiles/filedetails/?id=463939057
+        - ACRE          - https://steamcommunity.com/sharedfiles/filedetails/?id=751965892
+        - TFAR          - https://steamcommunity.com/sharedfiles/filedetails/?id=894678801
         
 */
 

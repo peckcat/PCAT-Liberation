@@ -18,6 +18,7 @@ switch (KP_liberation_arsenal) do {
     case  16: {[] call compileFinal preprocessFileLineNumbers "presets\arsenal\vanilla_ldf.sqf";};
     case  17: {[] call compileFinal preprocessFileLineNumbers "presets\arsenal\custom_west.sqf";};
     case  18: {[] call compileFinal preprocessFileLineNumbers "presets\arsenal\custom_east.sqf";};
+    case  19: {[] call compileFinal preprocessFileLineNumbers "presets\arsenal\custom_NATO.sqf";};
     default  {GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];};
 };
 

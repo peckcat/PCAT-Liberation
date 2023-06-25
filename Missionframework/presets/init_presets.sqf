@@ -42,6 +42,7 @@ switch (KP_liberation_preset_blufor) do {
     case 31: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_west_desert.sqf";};
     case 32: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_west_woodland.sqf";};
     case 33: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_east.sqf";};
+    case 34: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_NATO.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
 };
 
