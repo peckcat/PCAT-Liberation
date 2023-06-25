@@ -62,30 +62,52 @@ GRLIB_arsenal_weapons = [
     "arifle_SPAR_03_snd_F",                                         // SPAR-17 7.62 mm (Sand)	
     
     // Handgun
+    "hgun_ACPC2_F",                                                 // ACP-C2 .45 ACP
+    "hgun_Pistol_heavy_01_F",                                       // 4-five .45 ACP
+    "hgun_Pistol_heavy_01_green_F",                                 // 4-five .45 ACP (Green)
     "hgun_P07_F",                                                   // P07 9 mm
     "hgun_P07_khk_F",                                               // P07 9 mm (Khaki)
     "hgun_P07_blk_F",                                               // P07 9 mm (Black)
-    "hgun_Pistol_heavy_01_F",                                       // 4-five .45 ACP
+    "hgun_Pistol_heavy_02_F",                                       // Zubr .45 ACP
+    "hgun_Pistol_Signal_F",                                         // Starter Pistol
     
     // Launcher
     "launch_NLAW_F",                                                // PCML
     "launch_B_Titan_F",                                             // Titan MPRL (Sand)
-    "launch_B_Titan_short_F",                                       // Titan MPRL Compact (Sand)
+    "launch_B_Titan_olive_F",                                       // Titan MPRL (Olive)
     "launch_B_Titan_tna_F",                                         // Titan MPRL (Tropic)
+    "launch_B_Titan_short_F",                                       // Titan MPRL Compact (Sand)
     "launch_B_Titan_short_tna_F",                                   // Titan MPRL Compact (Tropic)
     "launch_MRAWS_green_F",                                         // MAAWS Mk4 Mod 1 (Green)
+    "launch_MRAWS_olive_F",                                         // MAAWS Mk4 Mod 1 (Olive)
     "launch_MRAWS_sand_F"                                           // MAAWS Mk4 Mod 1 (Sand)
 ];
 
 GRLIB_arsenal_magazines = [
     // Ammunition --------------------------------------------------------------
-    "10Rnd_338_Mag",                                                // 10rnd .338 LM Mag
-    "20Rnd_556x45_UW_mag",                                          // 20Rnd 5.56*45 Dual Purpose Mag
-    "20Rnd_762x51_Mag",                                             // 20Rnd 7.62x51 Mag
+    // - Vanila
+    // -- Hangun ammo
+    "9Rnd_45ACP_Mag",                                               // 9Rnd .45 ACP Mag
+    "11Rnd_45ACP_Mag",                                              // 11Rnd .45 ACP Mag
+    "16Rnd_9x21_Mag",                                               // 16Rnd 9 mm Mag
+    "16Rnd_9x21_red_Mag",                                           // 16Rnd 9 mm Red Tracer Mag
+    "16Rnd_9x21_green_Mag",                                         // 16Rnd 9 mm Green Tracer Mag
+    "16Rnd_9x21_yellow_Mag",                                        // 16Rnd 9 mm Yellow Tracer Mag
+    "30Rnd_9x21_Mag",                                               // 30Rnd 9 mm Mag
+    "30Rnd_9x21_Red_Mag",                                           // 30Rnd 9 mm Red Tracer Mag
+    "30Rnd_9x21_Yellow_Mag",                                        // 30Rnd 9 mm Yellow Tracer Mag
+    "30Rnd_9x21_Green_Mag",                                         // 30Rnd 9 mm Green Tracer Mag
+    "6Rnd_45ACP_Cylinder",                                          // 6Rnd .45 ACP Cylinder
+    "6Rnd_GreenSignal_F",                                           // 6Rnd Green Signal Flare
+    "6Rnd_RedSignal_F",                                             // 6Rnd Red Signal Flare
+    // -- SMG/Rifle/MG ammo
     "30Rnd_9x21_Mag_SMG_02_Tracer_Green",                           // 30rnd 9mm Green Tracer Mag
     "30Rnd_9x21_Mag_SMG_02_Tracer_Red",                             // 30rnd 9mm Red Tracer Mag
     "30Rnd_9x21_Mag_SMG_02_Tracer_Yellow",                          // 30rnd 9mm Yellow Tracer Mag
     "30Rnd_9x21_Mag_SMG_02",                                        // 30rnd 9mm Mag
+    "10Rnd_338_Mag",                                                // 10rnd .338 LM Mag
+    "20Rnd_556x45_UW_mag",                                          // 20Rnd 5.56*45 Dual Purpose Mag
+    "20Rnd_762x51_Mag",                                             // 20Rnd 7.62x51 Mag
     "130Rnd_338_Mag",                                               // .338 NM 130Rnd Belt
     "30Rnd_65x39_caseless_mag",                                     // 6.5 mm 30Rnd Sand Mag
     "30Rnd_65x39_caseless_khaki_mag",                               // 6.5 mm 30Rnd Khaki Mag
@@ -100,6 +122,34 @@ GRLIB_arsenal_magazines = [
     "100Rnd_65x39_caseless_khaki_mag_tracer",                       // 6.5 mm 100Rnd Tracer Khaki Mag	
     "100Rnd_65x39_caseless_black_mag_tracer",                       // 6.5 mm 100Rnd Tracer Black Mag		
     "7Rnd_408_Mag",                                                 // 7rnd .408
+    // -- Rifle grenade ammo
+    "1Rnd_HE_Grenade_shell",                                        // 40mm HE Grenade Round
+    "UGL_FlareWhite_F",                                             // 40mm White Flare Round
+    "UGL_FlareGreen_F",                                             // 40mm Green Flare Round
+    "UGL_FlareRed_F",                                               // 40mm Red Flare Round
+    "UGL_FlareYellow_F",                                            // 40mm Yellow Flare Round
+    "UGL_FlareCIR_F",                                               // 40mm IR Flare Round
+    "1Rnd_Smoke_Grenade_shell",                                     // 40mm Smoke Round (White)
+    "1Rnd_SmokeRed_Grenade_shell",                                  // 40mm Smoke Round (Red)
+    "1Rnd_SmokeGreen_Grenade_shell",                                // 40mm Smoke Round (Green)
+    "1Rnd_SmokeYellow_Grenade_shell",                               // 40mm Smoke Round (Yellow)
+    "1Rnd_SmokePurple_Grenade_shell",                               // 40mm Smoke Round (Purple)
+    "1Rnd_SmokeBlue_Grenade_shell",                                 // 40mm Smoke Round (Blue)
+    "1Rnd_SmokeOrange_Grenade_shell",                               // 40mm Smoke Round (Orange)
+    "3Rnd_HE_Grenade_shell",                                        // 3rnd 40mm HE Grenade Round
+    "3Rnd_UGL_FlareWhite_F",                                        // 3rnd 40mm White Flare Round
+    "3Rnd_UGL_FlareGreen_F",                                        // 3rnd 40mm Green Flare Round
+    "3Rnd_UGL_FlareRed_F",                                          // 3rnd 40mm Red Flare Round
+    "3Rnd_UGL_FlareYellow_F",                                       // 3rnd 40mm Yellow Flare Round
+    "3Rnd_UGL_FlareCIR_F",                                          // 3rnd 40mm IR Flare Round
+    "3Rnd_Smoke_Grenade_shell",                                     // 3rnd 40mm Smoke Round (White)
+    "3Rnd_SmokeRed_Grenade_shell",                                  // 3rnd 40mm Smoke Round (Red)
+    "3Rnd_SmokeGreen_Grenade_shell",                                // 3rnd 40mm Smoke Round (Green)
+    "3Rnd_SmokeYellow_Grenade_shell",                               // 3rnd 40mm Smoke Round (Yellow)
+    "3Rnd_SmokePurple_Grenade_shell",                               // 3rnd 40mm Smoke Round (Purple)
+    "3Rnd_SmokeBlue_Grenade_shell",                                 // 3rnd 40mm Smoke Round (Blue)
+    "3Rnd_SmokeOrange_Grenade_shell",                               // 3rnd 40mm Smoke Round (Orange)
+    // -- Launcher ammo
     "MRAWS_HE_F",                                                   // MRAWS HE 44
     "MRAWS_HEAT_F",                                                 // MRAWS HE 75
     "MRAWS_HEAT55_F",                                               // MRAWS HE 55
@@ -131,13 +181,13 @@ GRLIB_arsenal_magazines = [
     "Laserbatteries",                                               // Designator Batteries
 
     // Grenades ----------------------------------------------------------------
+    "MiniGrenade",                                                  // V40 Mini-Grenade
+    "HandGrenade",                                                  // M67 Frag Grenade
     "B_IR_Grenade",                                                 // IR Grenade [NATO]
     "Chemlight_blue",                                               // Chemlight (Blue)
     "Chemlight_green",                                              // Chemlight (Green)
     "Chemlight_red",                                                // Chemlight (Red)
     "Chemlight_yellow",                                             // Chemlight (Yellow)
-    "handGrenade",                                                  // RGO Grenade
-    "MiniGrenade",                                                  // V40 Mini-Grenade
     "SmokeShell",                                                   // Smoke Grenade (White)
     "SmokeShellRed",                                                // Smoke Grenade (Red)
     "SmokeShellGreen",                                              // Smoke Grenade (Green)
@@ -160,7 +210,7 @@ GRLIB_arsenal_magazines = [
 
     // - MS Strobe
     "MS_Strobe_Mag_1",                                              // MS IFF Strobe -1
-    "MS_Strobe_Mag_2",                                              // MS IFF Strobe
+    "MS_Strobe_Mag_2",                                              // MS IFF Strobe -2
 
     // Explosives --------------------------------------------------------------
     "APERSBoundingMine_Range_Mag",                                  // APERS Bounding Mine
