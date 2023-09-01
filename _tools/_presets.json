@@ -125,6 +125,18 @@
             "KP_liberation_preset_resistance" :  9,
             "KP_liberation_arsenal"           : 17
         }
+    },{
+        "sourceFolder": "kp_liberation.Winthera3",
+        "missionName": "PCAT-Liberation-(Panthera-Winter)",
+        "map": "Winthera3",
+        "mapDisplay": "Panthera",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 31,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
     },
     {
         "sourceFolder": "kp_liberation.Sara",
@@ -179,6 +191,19 @@
         }
     },
     {
+        "sourceFolder": "kp_liberation.brf_sumava",
+        "missionName": "PCAT-Liberation-(Sumava)",
+        "map": "brf_sumava",
+        "mapDisplay": "Sumava",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
+    },
+    {
         "sourceFolder": "kp_liberation.Altis",
         "missionName": "PCAT-Liberation-OPFOR",
         "map": "Altis",
@@ -207,6 +232,19 @@
         "missionName": "PCAT-Liberation-OPFOR",
         "map": "Sara",
         "mapDisplay": "Sahrani",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 33,
+            "KP_liberation_preset_opfor"      : 32,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 18
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.tem_anizay",
+        "missionName": "PCAT-Liberation-OPFOR-(Anizay)",
+        "map": "tem_anizay",
+        "mapDisplay": "Anizay",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
             "KP_liberation_preset_blufor"     : 33,
