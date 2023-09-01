@@ -4,80 +4,6 @@
 */
 KP_liberation_fill_mags = true;
 
-// Vehicle classnames which also function as ACE medical vehicles.
-KP_liberation_medical_vehicles = [
-    "B_T_Truck_01_medical_F",
-    "B_Truck_01_medical_F",
-    "C_Van_02_medevac_F",
-    "I_E_Truck_02_Medical_F",
-    "I_E_Van_02_medevac_F",
-    "O_Heli_Transport_04_medevac_F",
-    "O_T_Truck_03_medical_ghex_F",
-    "O_Truck_03_medical_F",
-    "CUP_B_BMP2_AMB_CDF",
-    "CUP_B_BMP2_AMB_CZ_Des",
-    "CUP_B_BMP2_AMB_CZ",
-    "CUP_B_FV432_GB_Ambulance",
-    "CUP_B_HMMWV_Ambulance_ACR",
-    "CUP_B_HMMWV_Ambulance_USA",
-    "CUP_B_HMMWV_Ambulance_USMC",
-    "CUP_B_LR_Ambulance_CZ_D",
-    "CUP_B_LR_Ambulance_CZ_W",
-    "CUP_B_LR_Ambulance_GB_D",
-    "CUP_B_LR_Ambulance_GB_W",
-    "CUP_B_S1203_Ambulance_CDF",
-    "CUP_B_UH1Y_MEV_USMC",
-    "CUP_B_UH60M_Unarmed_FFV_MEV_US",
-    "CUP_O_BMP2_AMB_CHDKZ",
-    "CUP_O_BMP2_AMB_sla",
-    "CUP_O_LR_Ambulance_TKA",
-    "CUP_O_M113_Med_TKA",
-    "gm_gc_airforce_mi2sr",
-    "gm_gc_army_ural375d_medic_win",
-    "gm_gc_army_ural375d_medic",
-    "gm_ge_airforce_do28d2_medevac",
-    "gm_ge_army_u1300l_medic_win_rc",
-    "gm_ge_army_u1300l_medic",
-    "RHS_UH60M_MEV_d",
-    "RHS_UH60M_MEV",
-    "RHS_UH60M_MEV2_d",
-    "RHS_UH60M_MEV2",
-    "rhs_gaz66_ap2_vdv",
-    "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy",
-    "rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy",
-    "rhsusf_m113_usarmy_medical",
-    "rhsusf_m113d_usarmy_medical",
-    "rhsusf_M1230a1_usarmy_d",
-    "rhsusf_M1230a1_usarmy_wd",
-    "UK3CB_BAF_LandRover_Amb_FFR_Green_A_MTP",
-    "UK3CB_BAF_LandRover_Amb_FFR_Sand_A_DDPM",
-    "uns_ch47a_medevac",
-    "uns_H13_medevac_CAV",
-    "uns_M577_amb",
-    "uns_uh1D_med",
-    "vtx_UH60M_MEDEVAC"
-];
-
-// Building classnames which also function as ACE medical facilities.
-KP_liberation_medical_facilities = [
-    "Land_Medevac_house_V1_F",
-    "Land_Medevac_HQ_V1_F",
-    "LAND_uns_army_med",
-    "LAND_uns_tent3mash",
-    "uns_mash_main",
-    "uns_mash",
-    "US_Tent_2",
-    "US_Tent_MASH"
-];
-
-// Classnames of ACE3 crates (which have to be in the unit preset as well).
-KP_liberation_ace_crates = [
-    "ACE_Box_82mm_Mo_HE",
-    "ACE_Box_82mm_Mo_Illum",
-    "ACE_Box_82mm_Mo_Smoke",
-    "ACE_medicalSupplyCrate_advanced"
-];
-
 /* - Custom unit and arsenal preset settings.
 If you want to change a preset, it's recommended to set all four presets to 0 and edit the appropriate custom.sqf files in the preset folders.*/
 
@@ -194,6 +120,80 @@ KP_liberation_preset_civilians = 0;
 15 = AAF arsenal preset
 16 = LDF arsenal preset */
 KP_liberation_arsenal = 17;
+
+// Vehicle classnames which also function as ACE medical vehicles.
+KP_liberation_medical_vehicles = [
+    "B_T_Truck_01_medical_F",
+    "B_Truck_01_medical_F",
+    "C_Van_02_medevac_F",
+    "I_E_Truck_02_Medical_F",
+    "I_E_Van_02_medevac_F",
+    "O_Heli_Transport_04_medevac_F",
+    "O_T_Truck_03_medical_ghex_F",
+    "O_Truck_03_medical_F",
+    "CUP_B_BMP2_AMB_CDF",
+    "CUP_B_BMP2_AMB_CZ_Des",
+    "CUP_B_BMP2_AMB_CZ",
+    "CUP_B_FV432_GB_Ambulance",
+    "CUP_B_HMMWV_Ambulance_ACR",
+    "CUP_B_HMMWV_Ambulance_USA",
+    "CUP_B_HMMWV_Ambulance_USMC",
+    "CUP_B_LR_Ambulance_CZ_D",
+    "CUP_B_LR_Ambulance_CZ_W",
+    "CUP_B_LR_Ambulance_GB_D",
+    "CUP_B_LR_Ambulance_GB_W",
+    "CUP_B_S1203_Ambulance_CDF",
+    "CUP_B_UH1Y_MEV_USMC",
+    "CUP_B_UH60M_Unarmed_FFV_MEV_US",
+    "CUP_O_BMP2_AMB_CHDKZ",
+    "CUP_O_BMP2_AMB_sla",
+    "CUP_O_LR_Ambulance_TKA",
+    "CUP_O_M113_Med_TKA",
+    "gm_gc_airforce_mi2sr",
+    "gm_gc_army_ural375d_medic_win",
+    "gm_gc_army_ural375d_medic",
+    "gm_ge_airforce_do28d2_medevac",
+    "gm_ge_army_u1300l_medic_win_rc",
+    "gm_ge_army_u1300l_medic",
+    "RHS_UH60M_MEV_d",
+    "RHS_UH60M_MEV",
+    "RHS_UH60M_MEV2_d",
+    "RHS_UH60M_MEV2",
+    "rhs_gaz66_ap2_vdv",
+    "rhsusf_M1085A1P2_B_D_Medical_fmtv_usarmy",
+    "rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy",
+    "rhsusf_m113_usarmy_medical",
+    "rhsusf_m113d_usarmy_medical",
+    "rhsusf_M1230a1_usarmy_d",
+    "rhsusf_M1230a1_usarmy_wd",
+    "UK3CB_BAF_LandRover_Amb_FFR_Green_A_MTP",
+    "UK3CB_BAF_LandRover_Amb_FFR_Sand_A_DDPM",
+    "uns_ch47a_medevac",
+    "uns_H13_medevac_CAV",
+    "uns_M577_amb",
+    "uns_uh1D_med",
+    "vtx_UH60M_MEDEVAC"
+];
+
+// Building classnames which also function as ACE medical facilities.
+KP_liberation_medical_facilities = [
+    "Land_Medevac_house_V1_F",
+    "Land_Medevac_HQ_V1_F",
+    "LAND_uns_army_med",
+    "LAND_uns_tent3mash",
+    "uns_mash_main",
+    "uns_mash",
+    "US_Tent_2",
+    "US_Tent_MASH"
+];
+
+// Classnames of ACE3 crates (which have to be in the unit preset as well).
+KP_liberation_ace_crates = [
+    "ACE_Box_82mm_Mo_HE",
+    "ACE_Box_82mm_Mo_Illum",
+    "ACE_Box_82mm_Mo_Smoke",
+    "ACE_medicalSupplyCrate_advanced"
+];
 
 /* - Fuel consumption settings.
 Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine. */
