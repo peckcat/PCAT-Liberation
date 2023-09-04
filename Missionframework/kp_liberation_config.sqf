@@ -209,15 +209,27 @@ GRLIB_save_key = "KP_LIBERATION_" + (toUpper worldName) + "_SAVEGAME";
 
 KP_liberation_save_interval = 60;                                       // Interval in seconds for automatic save.
 
-GRLIB_side_friendly = WEST;                                             // Friendly side.
-GRLIB_side_enemy = EAST;                                                // Enemy side.
+/* - Side settings.
+0 : EAST (OPFOR)
+1 : WEST (BLUFOR)
+Can setting in _preset.json */
+PCAT_side_friend = 1;                                                   // Side of the player's faction.
+PCAT_side_enemy = 0;                                                    // Side of the enemy faction.
+
+GRLIB_side_friendly = PCAT_side_friend call BIS_fnc_sideType;           // Friendly side.
+GRLIB_side_enemy = PCAT_side_enemy call BIS_fnc_sideType;               // Enemy side.
 GRLIB_side_resistance = RESISTANCE;                                     // Resistance side.
 GRLIB_side_civilian = CIVILIAN;                                         // Civilian side.
 GRLIB_respawn_marker = "respawn";                                       // Respawn marker name.
 
-GRLIB_color_friendly = "ColorBLUFOR";                                   // Friendly sector marker color.
-GRLIB_color_enemy = "ColorOPFOR";                                       // Enemy sector marker color.
-GRLIB_color_enemy_bright = "ColorRED";                                  // Enemy sector marker color (activated).
+GRLIB_color_friendly = [GRLIB_side_friendly,true] call BIS_fnc_sideColor;// Friendly side marker color.
+GRLIB_color_enemy = [GRLIB_side_enemy,true] call BIS_fnc_sideColor;     // Enemy side marker color.
+
+if( GRLIB_side_enemy == EAST ) then {                                   // Enemy sector marker color (activated).
+    GRLIB_color_enemy_bright = "ColorRED";
+} else {
+    GRLIB_color_enemy_bright = "ColorBLUE";
+};                                                                      
 
 GRLIB_fob_range = 180;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
@@ -236,7 +248,7 @@ GRLIB_radiotower_size = 2500;                                           // Radio
 GRLIB_surrender_chance = 80;                                            // Chance that enemy infantry will surrender after heavy losses are encountered.
 
 GRLIB_civilians_amount = 10;                                            // Civilian count multiplier.
-GRLIB_cleanup_delay = 600;                                             // Time in seconds until bodies of dead soldiers are cleaned up.
+GRLIB_cleanup_delay = 600;                                              // Time in seconds until bodies of dead soldiers are cleaned up.
 
 GRLIB_blufor_cap = 100;                                                 // Cap for BLUFOR.
 GRLIB_sector_cap = 180;                                                 // Cap for sector defenders.
