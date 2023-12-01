@@ -84,8 +84,8 @@ light_vehicles = [
     ["rhs_btr80_vdv",180,80,100],                                       // BTR-80
     ["rhs_btr80a_vdv",220,80,100],                                      // BTR-80A
     ["RHS_BM21_VDV_01",200,1500,200],                                   // BM-21 (Grad)
-    ["B_UAV_01_F",150,0,50],                                            // UGV Saif
-    ["B_UGV_01_rcws_F",150,40,50],                                      // UGV Saif (RCWS)
+    ["O_UGV_01_F",150,0,50],                                            // UGV Saif
+    ["O_UGV_01_rcws_F",150,40,50],                                      // UGV Saif (RCWS)
     ["O_Boat_Transport_01_F",100,0,25],                                 // Assault Boat
     ["O_Boat_Armed_01_minigun_F",200,80,75],                            // Speedboat Minigun
     ["O_SDV_01_F",150,0,50]                                             // SDV
@@ -108,16 +108,16 @@ heavy_vehicles = [
 ];
 
 air_vehicles = [
-    ["B_UAV_01_F",75,0,25],                                             // AR-2 Tayran
-    ["B_UAV_06_F",80,0,30],                                             // AL-6 Jinaah (Cargo)
+    ["O_UAV_01_F",75,0,25],                                             // AR-2 Tayran
+    ["O_UAV_06_F",80,0,30],                                             // AL-6 Jinaah (Cargo)
     ["rhs_ka60_c",200,0,100],                                           // KA-60
     ["RHS_Mi8AMT_vdv",225,0,125],                                       // Mi-8AMT (Unarmed)
     ["RHS_Mi8MTV3_vdv",225,200,125],                                    // Mi-8MTV-3
     ["RHS_Ka52_vvsc",500,500,200],                                      // Ka-52
     ["RHS_Mi24V_vdv",550,550,250],                                      // Mi-24V
     ["rhs_mi28n_vvsc",650,600,300],                                     // Mi-28N
-    ["B_UAV_02_dynamicLoadout_F",400,300,200],                          // K40 Ababil
-    ["B_UAV_02_CAS_F",450,500,250],                                   // KH-3A
+    ["O_UAV_02_dynamicLoadout_F",400,300,200],                          // K40 Ababil
+    ["O_T_UAV_04_CAS_F",450,500,250],                                   // KH-3A
     ["RHS_Su25SM_vvsc",900,900,400],                                    // Su-25SM
     ["rhs_mig29s_vvsc",1250,1250,450]                                   // Mig-29S
 ];
@@ -337,8 +337,8 @@ elite_vehicles = [
     "rhs_2s1_tv",                                                       // 2S1
     "rhs_2s3_tv",                                                       // 2S3M1
     "rhs_mi28n_vvsc",                                                   // Mi-28N
-    "B_UAV_02_dynamicLoadout_F",                                        // K40 Ababil
-    "B_UAV_02_CAS_F",                                                   // KH-3A
+    "O_UAV_02_dynamicLoadout_F",                                        // K40 Ababil
+    "O_T_UAV_04_CAS_F",                                                 // KH-3A
     "RHS_Su25SM_vvsc",                                                  // Su-25SM
     "rhs_mig29s_vvsc",                                                  // Mig-29S
     "rhs_bmd4m_vdv",                                                    // BMD-4M

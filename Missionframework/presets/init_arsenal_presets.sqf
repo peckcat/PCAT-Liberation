@@ -18,6 +18,7 @@ switch (KP_liberation_arsenal) do {
     case  17: { [] call compileScript [ "presets\arsenal\custom_west.sqf", true]; };
     case  18: { [] call compileScript [ "presets\arsenal\custom_east.sqf", true]; };
     case  19: { [] call compileScript [ "presets\arsenal\custom_NATO.sqf", true]; };
+    case  20: { [] call compileScript [ "presets\arsenal\custom_blufor.sqf", true]; };
     default   {
         GRLIB_arsenal_weapons = [];GRLIB_arsenal_magazines = [];GRLIB_arsenal_items = [];GRLIB_arsenal_backpacks = [];
     };

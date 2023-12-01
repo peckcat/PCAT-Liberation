@@ -204,6 +204,44 @@
         }
     },
     {
+        "sourceFolder": "kp_liberation.Enoch",
+        "missionName": "PCAT-Liberation-(Livonia)",
+        "map": "Enoch",
+        "mapDisplay": "Livonia",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.Takistan",
+        "missionName": "PCAT-Liberation-(Blufor_Arsenal)",
+        "map": "Takistan",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 31,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 20
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.Enoch",
+        "missionName": "PCAT-Liberation-(Livonia)(Blufor_Arsenal)",
+        "map": "Enoch",
+        "mapDisplay": "Livonia",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 20
+        }
+    },
+    {
         "sourceFolder": "kp_liberation.Altis",
         "missionName": "PCAT-Liberation-OPFOR",
         "map": "Altis",

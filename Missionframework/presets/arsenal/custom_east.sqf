@@ -845,13 +845,13 @@ GRLIB_arsenal_items = [
 
     // etc. equips -------------------------------------------------------------
     "B_UavTerminal",                                                // UAV Terminal [NATO]
+    "O_UavTerminal",                                                // UAV Terminal [CSAT]
     "I_UavTerminal",                                                // UAV Terminal [AAF]
     "ItemCompass",                                                  // Compass
     "ItemGPS",                                                      // GPS
     "ItemMap",                                                      // Map
     "ItemRadio",                                                    // Radio
     "ItemWatch",                                                    // Watch
-    "O_UavTerminal",                                                // UAV Terminal [CSAT]
     // - ACE
     "ACE_Altimeter",                                                // Altimeter Watch
 
