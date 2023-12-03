@@ -436,7 +436,7 @@ GRLIB_arsenal_magazines = [
     "UGL_FlareWhite_F",
     "UGL_FlareYellow_F",
     // - ACE
-        "ACE_100Rnd_65x39_caseless_mag_Tracer_Dim",
+    "ACE_100Rnd_65x39_caseless_mag_Tracer_Dim",
     "ACE_10Rnd_127x99_AMAX_Mag",
     "ACE_10Rnd_127x99_API_Mag",
     "ACE_10Rnd_127x99_Mag",
@@ -1568,6 +1568,9 @@ GRLIB_arsenal_items = [
     "rhsusf_acc_SR25S_d",
     "rhsusf_acc_SR25S_wd",
     "rhsusf_acc_SR25S",
+    // - NGA - Next Generation Armory
+    "NGSW_M250_muzzle",
+    "NGSW_MG338_muzzle",
     "SigSLX68",
 
     // Bipods ------------------------------------------------------------------

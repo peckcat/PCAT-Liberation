@@ -605,6 +605,10 @@ GRLIB_arsenal_items = [
     "muzzle_snds_338_black",                                        // Sound Suppressor (.338, Black)
     "muzzle_snds_338_green",                                        // Sound Suppressor (.338, Green)
     "muzzle_snds_338_sand",                                         // Sound Suppressor (.338, Sand)
+    // - NGA - Next Generation Armory
+    "NGSW_M250_muzzle",
+    "NGSW_MG338_muzzle",
+    "SigSLX68",
 
     // Bipods ------------------------------------------------------------------
     "bipod_01_f_blk",                                               // Bipod (Black) [NATO]

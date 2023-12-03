@@ -1083,6 +1083,10 @@ GRLIB_arsenal_items = [
     "rhsusf_acc_SR25S_d",                                           // SR-25 Rifle Suppressor (Desert)
     "rhsusf_acc_SR25S_wd",                                          // SR-25 Rifle Suppressor (Woodland)
     "rhsusf_acc_SR25S",                                             // SR-25 Rifle Suppressor
+    // - NGA - Next Generation Armory
+    "NGSW_M250_muzzle",
+    "NGSW_MG338_muzzle",
+    "SigSLX68",
 
     // Bipods ------------------------------------------------------------------
     // - RHS USAF
