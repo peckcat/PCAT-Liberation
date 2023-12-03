@@ -57,7 +57,7 @@ GRLIB_arsenal_weapons = [
     "srifle_DMR_02_sniper_F",                                       // MAR-10 .338 (Sand)
     // -- 10.36×77 mm (.408 CheyTac)
     "srifle_LRR_F",                                                 // M320 LRR .408
-	"srifle_LRR_tna_F",                                             // M320 LRR .408 (Tropic)
+    "srifle_LRR_tna_F",                                             // M320 LRR .408 (Tropic)
     "srifle_LRR_camo_F",                                            // M320 LRR .408 (Camo)
     // - RHS USAF
     // -- 12 Gauge
@@ -172,6 +172,13 @@ GRLIB_arsenal_weapons = [
     "rhs_weap_m32",                                                 // M32 MGL
     // - RHS GREF
     "rhs_weap_m1garand_sa43",                                       // M1 Garand
+
+    // - NGA - Next Generation Armory
+    "Mk22ASR",
+    "NGSW_M250",
+    "NGSW_MG338",
+    "SJBH_MCX_Raptor",
+    "SJBH_MCX_Spear",
 
     // Handguns -------------------------------------------------------------
     // -- 11.43×23mm (.45 ACP)
@@ -423,6 +430,33 @@ GRLIB_arsenal_magazines = [
     "rhsgref_8Rnd_762x63_Tracer_M1T_M1rifle",                       // 8Rnd .30-06 M1 (Tracer)
     "rhsgref_8Rnd_762x63_M2B_M1rifle",                              // 8Rnd .30-06 M2
     "rhsgref_5Rnd_762x54_m38",                                      // 5rnd 7.62*54Rmm clip (for Mosin Nagant)
+    // - MAAWS Additional Ammo Types
+    "MAA_MAAWS_ASM509",
+    "MAA_MAAWS_GMM_HE",
+    "MAA_MAAWS_GMM_HEAT",
+    "MAA_MAAWS_GMM_MT",
+    "MAA_MAAWS_HE441_AB100",
+    "MAA_MAAWS_HE441_AB250",
+    "MAA_MAAWS_HE441_AB500",
+    "MAA_MAAWS_HEDP502",
+    "MAA_MAAWS_ILLUM545",
+    "MAA_MAAWS_MT756",
+    "MAA_MAAWS_SMOKE469",
+    // - NGA - Next Generation Armory
+    "NGSW_100rnd_338nm_AP",
+    "NGSW_100rnd_338nm_HEAPI",
+    "NGSW_100rnd_338nm_Tracer",
+    "NGSW_100rnd_338nm",
+    "NGSW_10rnd_300nm_API",
+    "NGSW_10rnd_300nm",
+    "NGSW_10rnd_338nm_HEAPI",
+    "NGSW_10rnd_338nm",
+    "NGSW_10rnd_762_M118LR",
+    "NGSW_10rnd_762_M993AP",
+    "tb_68x51mm_150rndbox",
+    "tb_68x51mm_150rndboxTracer",
+    "tb_68x51mm_20rndmag",
+    "tb_68x51mm_20rndmagTracer",
 
     // Grenades ----------------------------------------------------------------
     "B_IR_Grenade",                                                 // IR Grenade [NATO]
@@ -838,6 +872,10 @@ GRLIB_arsenal_items = [
     "rhsusf_shemagh2_white",                                        // Shemagh (White/alt)
 
     // Nightvision -------------------------------------------------------------
+    "NVGoggles",                                                    // NV Goggles (Brown)
+    "NVGoggles_OPFOR",                                              // NV Googles (Gen3, Black)
+    "NVGoggles_INDEP",                                              // NV Goggles (Green)
+    "NVGoggles_tna_F",                                              // NV Goggles (Tropic)
     // - ACE
     "ACE_NVG_Gen4",                                                 // NV Goggles (Gen4, Brown)
     "ACE_NVG_Gen4_Black",                                           // NV Goggles (Gen4, Black)

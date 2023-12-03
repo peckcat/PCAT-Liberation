@@ -85,8 +85,14 @@ GRLIB_arsenal_weapons = [
     "MMG_02_camo_F",                                                // SPMG .338 (MTP)
     // -- 10.36×77 mm (.408 CheyTac)
     "srifle_LRR_F",                                                 // M320 LRR .408
-	"srifle_LRR_tna_F",                                             // M320 LRR .408 (Tropic)
+    "srifle_LRR_tna_F",                                             // M320 LRR .408 (Tropic)
     "srifle_LRR_camo_F",                                            // M320 LRR .408 (Camo)
+    // - NGA - Next Generation Armory
+    "Mk22ASR",
+    "NGSW_M250",
+    "NGSW_MG338",
+    "SJBH_MCX_Raptor",
+    "SJBH_MCX_Spear",
 
     // Handguns -------------------------------------------------------------
     // -- 9x21 mm
@@ -172,7 +178,7 @@ GRLIB_arsenal_magazines = [
     "30Rnd_65x39_caseless_khaki_mag_Tracer",                        // 6.5x39 30Rnd Tracer Khaki Mag
     "30Rnd_65x39_caseless_black_mag_Tracer",                        // 6.5x39 30Rnd Tracer Black Mag
     "100Rnd_65x39_caseless_mag",                                    // 6.5x39 100Rnd Sand Mag
- 	"100Rnd_65x39_caseless_khaki_mag",                              // 6.5x39 100Rnd Khaki Mag
+     "100Rnd_65x39_caseless_khaki_mag",                              // 6.5x39 100Rnd Khaki Mag
     "100Rnd_65x39_caseless_black_mag",                              // 6.5x39 100Rnd Black Mag
     "100Rnd_65x39_caseless_mag_Tracer",                             // 6.5x39 100Rnd Tracer Sand Mag
     "100Rnd_65x39_caseless_khaki_mag_tracer",                       // 6.5x39 100Rnd Tracer Khaki Mag
@@ -259,8 +265,35 @@ GRLIB_arsenal_magazines = [
     // -- 40 mm Grenades
     "ACE_40mm_Flare_ir",                                            // 40 mm Flare Round (IR)
     "ACE_HuntIR_M203",                                              // 40 mm HuntIR Round
+    // - MAAWS Additional Ammo Types
+    "MAA_MAAWS_ASM509",
+    "MAA_MAAWS_GMM_HE",
+    "MAA_MAAWS_GMM_HEAT",
+    "MAA_MAAWS_GMM_MT",
+    "MAA_MAAWS_HE441_AB100",
+    "MAA_MAAWS_HE441_AB250",
+    "MAA_MAAWS_HE441_AB500",
+    "MAA_MAAWS_HEDP502",
+    "MAA_MAAWS_ILLUM545",
+    "MAA_MAAWS_MT756",
+    "MAA_MAAWS_SMOKE469",
+    // - NGA - Next Generation Armory
+    "NGSW_100rnd_338nm_AP",
+    "NGSW_100rnd_338nm_HEAPI",
+    "NGSW_100rnd_338nm_Tracer",
+    "NGSW_100rnd_338nm",
+    "NGSW_10rnd_300nm_API",
+    "NGSW_10rnd_300nm",
+    "NGSW_10rnd_338nm_HEAPI",
+    "NGSW_10rnd_338nm",
+    "NGSW_10rnd_762_M118LR",
+    "NGSW_10rnd_762_M993AP",
+    "tb_68x51mm_150rndbox",
+    "tb_68x51mm_150rndboxTracer",
+    "tb_68x51mm_20rndmag",
+    "tb_68x51mm_20rndmagTracer",
     // -- etc.
-    "Laserbatteries",                                               // Designator Batteries
+    "Laserbatteries",                                               // Designator Batterie
 
     // Grenades ----------------------------------------------------------------
     "B_IR_Grenade",                                                 // IR Grenade [NATO]
@@ -363,7 +396,7 @@ GRLIB_arsenal_items = [
     "H_HelmetB_Enh_tna_F",                                          // Enhanced Combat Helmet (Tropic)
 
     // Uniforms  ---------------------------------------------------------------
-	"U_B_T_Soldier_F",                                              // Combat Fatigues (Tropic)
+    "U_B_T_Soldier_F",                                              // Combat Fatigues (Tropic)
     "U_B_CBRN_Suit_01_MTP_F",                                       // CBRN Suit (MTP) [NATO]
     "U_B_CBRN_Suit_01_Tropic_F",                                    // CBRN Suit (Tropic) [NATO]
     "U_B_CBRN_Suit_01_Wdl_F",                                       // CBRN Suit (Woodland) [NATO]
@@ -470,7 +503,7 @@ GRLIB_arsenal_items = [
     "NVGoggles",                                                    // NV Goggles (Brown)
     "NVGoggles_OPFOR",                                              // NV Googles (Gen3, Black)
     "NVGoggles_INDEP",                                              // NV Goggles (Green)
-	"NVGoggles_tna_F",                                              // NV Goggles (Tropic)
+    "NVGoggles_tna_F",                                              // NV Goggles (Tropic)
     // - ACE
     "ACE_NVG_Gen4",                                                 // NV Goggles (Gen4, Brown)
     "ACE_NVG_Gen4_Black",                                           // NV Goggles (Gen4, Black)
