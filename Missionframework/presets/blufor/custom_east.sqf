@@ -65,7 +65,13 @@ infantry_units = [
 ];
 
 light_vehicles = [
+    ["C_Hatchback_01_sport_F",100,0,50],
     ["rksla3_aircraft_tug_opfor",30,0,15],
+    ["Peral_AS32A",30,0,15],
+    ["Peral_B600",30,0,15],
+    ["Peral_H2_Forklift",30,0,15],
+    ["Peral_MJ_1E",30,0,15],
+    ["Peral_USN6",30,0,15],
     ["O_Quadbike_01_F",50,0,25],                                        // Quad Bike
     ["rhs_uaz_vdv",50,0,45],                                            // UAZ
     ["rhs_uaz_open_vdv",50,0,45],                                       // UAZ (Open)
@@ -244,6 +250,12 @@ buildings = [
     ["MapBoard_altis_F",0,0,0],
     ["MapBoard_seismic_F",0,0,0],
     ["MapBoard_stratis_F",0,0,0],
+    ["Peral_600K_fire_extinguisher",0,0,0],
+    ["Peral_AS32A_towbar",0,0,0],
+    ["Peral_B600_towbar",0,0,0],
+    ["Peral_B809E",0,0,0],
+    ["Peral_pedestrian_barrier",0,0,0],
+    ["Peral_pilot_boarding_ladder",0,0,0],
     ["PortableHelipadLight_01_blue_F",0,0,0],
     ["PortableHelipadLight_01_green_F",0,0,0],
     ["PortableHelipadLight_01_red_F",0,0,0],

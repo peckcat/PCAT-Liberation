@@ -83,7 +83,13 @@ infantry_units = [
 
 light_vehicles = [
     ["ttt_crane ",30,0,15],                                             // Tilly crash crane
+    ["C_Hatchback_01_sport_F",100,0,50],
     ["rksla3_aircraft_tug_blufor",30,0,15],                             // RKSL Studios Airfield Support Tug(Bluefor)
+    ["Peral_AS32A",30,0,15],
+    ["Peral_B600",30,0,15],
+    ["Peral_H2_Forklift",30,0,15],
+    ["Peral_MJ_1E",30,0,15],
+    ["Peral_USN6",30,0,15],
     ["B_Quadbike_01_F",50,0,25],                                        // Quad Bike
     ["B_LSV_01_unarmed_F",75,0,50],                                     // Prowler
     ["B_LSV_01_armed_F",75,40,50],                                      // Prowler (HMG)
@@ -243,6 +249,12 @@ buildings = [
     ["MapBoard_altis_F",0,0,0],
     ["MapBoard_seismic_F",0,0,0],
     ["MapBoard_stratis_F",0,0,0],
+    ["Peral_600K_fire_extinguisher",0,0,0],
+    ["Peral_AS32A_towbar",0,0,0],
+    ["Peral_B600_towbar",0,0,0],
+    ["Peral_B809E",0,0,0],
+    ["Peral_pedestrian_barrier",0,0,0],
+    ["Peral_pilot_boarding_ladder",0,0,0],
     ["PortableHelipadLight_01_blue_F",0,0,0],
     ["PortableHelipadLight_01_green_F",0,0,0],
     ["PortableHelipadLight_01_red_F",0,0,0],
