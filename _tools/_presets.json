@@ -165,6 +165,19 @@
         }
     },
     {
+        "sourceFolder": "kp_liberation.pja305",
+        "missionName": "PCAT-Liberation-(N'ziwasogo)-NATOvsCSAT",
+        "map": "pja305",
+        "mapDisplay": "G.O.S N'ziwasogo v2 Apex",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 34,
+            "KP_liberation_preset_opfor"      :  0,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 19
+        }
+    },
+    {
         "sourceFolder": "kp_liberation.pja310",
         "missionName": "PCAT-Liberation-(Al_Rayak)",
         "map": "pja310",
@@ -239,6 +252,32 @@
             "KP_liberation_preset_opfor"      : 33,
             "KP_liberation_preset_resistance" :  9,
             "KP_liberation_arsenal"           : 20
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.pja310",
+        "missionName": "PCAT-Liberation-(Al_Rayak)(Blufor_Arsenal)",
+        "map": "pja310",
+        "mapDisplay": "G.O.S Al Rayak",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 20
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.green_sea",
+        "missionName": "PCAT-Liberation-(Green_Sea)(Blufor_CDF)",
+        "map": "green_sea",
+        "mapDisplay": "Green Sea",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 35,
+            "KP_liberation_preset_opfor"      : 32,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 18
         }
     },
     {

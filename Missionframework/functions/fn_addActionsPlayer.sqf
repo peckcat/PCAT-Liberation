@@ -318,7 +318,7 @@ _player addAction [
 ];
 
 // Clean up for boost fps.
-if (player == ([] call KPLIB_fnc_getCommander)) then {
+if (player == ( call KPLIB_fnc_getCommander)) then {
     _player addAction [
         ["<t color='#FF0000'>", "-- 清理物件", "</t>"] joinString "",
         {
@@ -343,7 +343,30 @@ if (player == ([] call KPLIB_fnc_getCommander)) then {
             && {isNil 'is_cleaning'}
         "
     ];
+
+    _player addAction [
+        ["<t color='#FFB000'>", "-- 清理物資箱", "</t>"] joinString "",
+        {
+            is_cleaning = true;
+            private _cargetNet =  (allMissionObjects "CargoNet_01_base_F") select { isNull (attachedTo _x) };
+            {
+                deleteVehicle _x;
+            } foreach _cargetNet ;
+            is_cleaning = nil;
+        },
+        nil,
+        -870,
+        false,
+        true,
+        "",
+        toString {
+            alive _originalTarget
+            && {isNil 'is_cleaning'}
+        }
+    ]
 };
+
+
 
 /*
 // Permissions

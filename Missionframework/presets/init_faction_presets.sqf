@@ -43,6 +43,7 @@ switch (KP_liberation_preset_blufor) do {
     case 32: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_west_woodland.sqf";};
     case 33: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_east.sqf";};
     case 34: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_NATO.sqf";};
+    case 35: {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom_RHS_CDF.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\blufor\custom.sqf";};
 };
 
@@ -72,7 +73,7 @@ switch (KP_liberation_preset_opfor) do {
     case 33: {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom_east.sqf";};
     default  {[] call compileFinal preprocessFileLineNumbers "presets\opfor\custom.sqf";};
 };
-   
+
 
 
 switch (KP_liberation_preset_resistance) do {
