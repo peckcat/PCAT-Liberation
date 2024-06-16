@@ -350,5 +350,18 @@
             "KP_liberation_preset_resistance" : 0,
             "KP_liberation_arsenal"           : 19
         }
+    },
+    {
+        "sourceFolder": "kp_liberation.UMB_Colombia",
+        "missionName": "PCAT-Liberation-(UMB_Colombia)-US_Civil_War",
+        "map": "UMB_Colombia",
+        "mapDisplay": "Colombia",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 31,
+            "KP_liberation_preset_opfor"      : 32,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
     }
 ]

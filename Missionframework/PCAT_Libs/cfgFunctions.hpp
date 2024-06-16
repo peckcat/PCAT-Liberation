@@ -16,5 +16,6 @@ class PCAT
 		file = "PCAT_Libs\ui";
 		requiredAddons[]         = {"cba_ai","cba_common"};
 		class parachutingDialog    {};
+		class progressBar          {};  
 	};
 };

@@ -153,7 +153,7 @@ heavy_vehicles = [
     ["B_MBT_01_TUSK_F",550,450,300],                                    // M2A4 Slammer UP (Merkava City)
     ["B_AFV_Wheeled_01_up_cannon_F",550,550,250],                       // Rhino MGS UP
     ["rhsusf_m109d_usarmy",600,1250,300],                               // M109A6
-    ["B_MBT_01_mlrs_F",600,1800,250]                                    // M5 Sandstorm MLRS
+    ["rhsusf_M142_usarmy_D",600,1800,250]                                    // M5 Sandstorm MLRS
 ];
 
 air_vehicles = [
@@ -453,6 +453,7 @@ elite_vehicles = [
     "rhsusf_m1a2sep1tuskiid_usarmy",                                    // M1A2SEPv1 (Tusk II)
     "B_MBT_01_cannon_F",                                                // M2A1 Slammer    (Merkava)
     "B_MBT_01_TUSK_F",                                                  // M2A4 Slammer UP (Merkava City)
+    "rhsusf_M142_usarmy_D",
     "rhsusf_m1a2sep2d_usarmy",
     "rhsusf_m109d_usarmy",                                              // M109A6
     "rhsusf_M142_usarmy_D",
