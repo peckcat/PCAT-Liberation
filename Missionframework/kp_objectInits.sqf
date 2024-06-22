@@ -31,14 +31,21 @@ KPLIB_objectInits = [
                 "<t color='#FFFF00'>-- 維修周遭載具 </t> <img size='2' image='\a3\ui_f_oldman\data\IGUI\Cfg\holdactions\repair_ca.paa'/>",
                 {
                     params ["_target", "_caller", "_actionId", "_arguments"]; // script
-                    private _radius = 20;
-                    private _vehicles = _target nearEntities [["Car","Tank","Air","Ship"], _radius];
-
                     [
                         30,
-                        "<t size='0.8' align='center'>維修中，剩餘 %1 秒 ...</t>",
                         {
-                            params ["_vehicles"];
+                            params ["_timeLeft", "_args"];
+                            private _text = text (format ["維修中，剩餘 %1 秒", [_timeLeft, "MM:SS"] call BIS_fnc_secondsToString]);
+                            _text setAttributes  ["size", "0.8", "align", "center"];
+                            composeText [_text]
+                        },
+                        {false},
+                        {
+                            params ["_timeLeft", "_args", "_isInterrupt"];
+                            _args params ["_repairStation"];
+
+                            private _radius = 20;
+                            private _vehicles = _repairStation nearEntities [["Car","Tank","Air","Ship"], _radius];
                             _vehicles = [ [_vehicles]  , _vehicles ] select (_vehicles isEqualType []);
                             {
                                 if (alive _x) then {
@@ -46,7 +53,7 @@ KPLIB_objectInits = [
                                 };
                             } forEach _vehicles;
                         },
-                        [_vehicles]
+                        _target
                     ] call PCAT_fnc_progressBar;
                 },
                 nil,		// arguments

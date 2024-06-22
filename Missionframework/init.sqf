@@ -55,45 +55,9 @@ if ((isNil {player getVariable "bis_revive_ehHandleHeal"} || isDedicated) && !(b
     [] call bis_fnc_reviveInit;
 };
 
-////////////////////////////////
-// ----- 清除並給予預設裝備 -----
-////////////////////////////////
-if ( isServer) then {
-    private _playableUnits = playableUnits + switchableUnits;
 
-    // 取得可建造步兵單位清單的第一個單位種類預設制服
-    private _basic_uniform = PCAT_b_basic_uniform;
-    {
-        [
-            [_x,_basic_uniform],
-            {
-                //  部分指令為 Local Argument, 所以只好用遠端執行
-                //  因為玩家控制的單位，歸屬於該玩家電腦(Local Argument)，不用遠端，會無法移除
-                params ["_unit","_basic_uniform"];
-
-                // 清除所有裝備
-                removeHeadgear _unit;                      // 清除頭部裝備
-                removeGoggles _unit;                       // 清除臉部裝備(眼鏡...等)
-                removeAllAssignedItems _unit;              // 清除可裝備的道具
-                removeAllWeapons _unit;                    // 清除主武器、副武器、發射器
-                removeAllContainers _unit;                 // 清除衣服、背心、背包
-
-                _unit addUniform _basic_uniform;     // 給予特定制服
-                _unit addWeapon "Rangefinder";    //  望遠鏡/夜視鏡歸類在武器......
-                {
-                    _unit linkItem _x;            //  新增並自動裝備特殊道具
-                } foreach [
-                    "ItemCompass",
-                    "ItemGPS",
-                    "ItemMap",
-                    "ItemWatch"
-                ];
-            }
-        ] remoteExec ["call",owner _x];  // 直接指定單位所屬玩家的電腦執行，避免執行不必要的廣播
-        //  TODO : AI單位是否要特別過濾出來，不要丟到 remoteExec 去佔用資源?
-    } foreach _playableUnits;
-};
-////////////////////////////////
+// Peckcat Append Scripts
+call compileScript ["PCAT_Scripts\idlePlayerKicker.sqf"];
 
 KPLIB_init = true;
 
