@@ -58,6 +58,7 @@ if ((isNil {player getVariable "bis_revive_ehHandleHeal"} || isDedicated) && !(b
 
 // Peckcat Append Scripts
 call compileScript ["PCAT_Scripts\idlePlayerKicker.sqf"];
+call compileScript ["PCAT_Scripts\objectInits.sqf"];
 
 KPLIB_init = true;
 

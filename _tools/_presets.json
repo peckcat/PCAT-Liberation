@@ -113,6 +113,7 @@
             "KP_liberation_arsenal"           : 17
         }
     },
+    
     {
         "sourceFolder": "kp_liberation.panthera3",
         "missionName": "PCAT-Liberation-(Panthera)",
@@ -269,6 +270,19 @@
     },
     {
         "sourceFolder": "kp_liberation.green_sea",
+        "missionName": "PCAT-Liberation-(Green_Sea)",
+        "map": "green_sea",
+        "mapDisplay": "Green Sea",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 32,
+            "KP_liberation_preset_opfor"      : 33,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.green_sea",
         "missionName": "PCAT-Liberation-(Green_Sea)(Blufor_CDF)",
         "map": "green_sea",
         "mapDisplay": "Green Sea",
@@ -356,6 +370,19 @@
         "missionName": "PCAT-Liberation-(UMB_Colombia)-US_Civil_War",
         "map": "UMB_Colombia",
         "mapDisplay": "Colombia",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "KP_liberation_preset_blufor"     : 31,
+            "KP_liberation_preset_opfor"      : 32,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 17
+        }
+    },
+    {
+        "sourceFolder": "kp_liberation.brf_sumava",
+        "missionName": "PCAT-Liberation-(Sumava)-US_Civil_War",
+        "map": "brf_sumava",
+        "mapDisplay": "Sumava",
         "configFile": "kp_liberation_config.sqf",
         "variables": {
             "KP_liberation_preset_blufor"     : 31,

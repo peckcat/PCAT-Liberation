@@ -1,10 +1,10 @@
 /*
-    PCAT_fnc_progressBar v1.0
+    PCAT_fnc_progressBar v1.1
     Parameter: (全可選，非必要)
         _countdownSeconds: default: 15       - 倒數秒數，到達後自動結束
         _text:             default: ""       - 顯示文字                    -┬-Available variables: params [_timeLeft, _args];
         _endCode:          defailt: {}       - 結束後執行的腳本            -┤                      
-        _conditionCode:    default: {false}  - 條件式，回傳 true 時中斷    -┘ 
+        _interruptCode:    default: {false}  - 條件式，回傳 true 時中斷    -┘ 
         _endCode:          default: {}       - 結束後執行的腳本            ---Available variables: params [_timeLeft, _args, _isInterrupt];
         _args:             default: []       - 參數
 
@@ -64,7 +64,7 @@
 params [
     ["_countdownSeconds", 15      , [0]     ],
     ["_text"            , ""      , [{}, "", text ""]],
-    ["_conditionCode"   , {false} , [{}]    ],
+    ["_interruptCode"   , {false} , [{}]    ],
     ["_endCode"         , {}      , [{}]    ],
     ["_args"            , []]
 ];
@@ -85,6 +85,7 @@ try{
     ];
     
     // 顯示背景
+    disableSerialization;
     PCAT_progressBar_background = findDisplay 46 ctrlCreate ["RscText", -1];
     PCAT_progressBar_background ctrlSetPosition _position_and_size;
     PCAT_progressBar_background ctrlSetBackgroundColor [0.2,0.2,0.2,0.7];
@@ -108,11 +109,11 @@ try{
     addMissionEventHandler [
         "EachFrame",
         {
-            _thisArgs params[ "_start", "_end", "_text","_conditionCode", "_endCode", "_args" ];
+            _thisArgs params[ "_start", "_end", "_text","_interruptCode", "_endCode", "_args" ];
 
             // 先行檢查是否以結束或中斷
             private _timeLeft = _end - GET_TIME; // 剩餘時間
-            private _isInterrupt = [_timeLeft, _args] call _conditionCode;
+            private _isInterrupt = [_timeLeft, _args] call _interruptCode;
             if ( !(_isInterrupt isEqualType true) ) then {
                 throw format ["Invalid return type of conditionCode, expected: BOOL, received: %1", typeName _isInterrupt];
             };
@@ -156,7 +157,7 @@ try{
             };
 
         },
-        [ _startTime, _endTime, _text, _conditionCode, _endCode, _args]
+        [ _startTime, _endTime, _text, _interruptCode, _endCode, _args]
     ];
     true
 

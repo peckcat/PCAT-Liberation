@@ -1,11 +1,11 @@
 #define GET_TIME ([time, serverTime] select isMultiplayer)
 #define IDLE_TIMEOUT 1200
+#define KICK_COUNTDOWN 30
 
 if (isServer) then {
     [
         "IDLE_PLAYER_DECTECTED",
         {
-            // FIXME: Not work properly, especially in MP, and can not get the cticmdpassword
             params ["_idle_player"];
 
             private _fileName = "serverCommandPassword";
@@ -15,8 +15,10 @@ if (isServer) then {
             [_fileName] call filext_fnc_close;
 
             private _cmd = format ["#KICK %1",name _idle_player];
-            format ["玩家:%1, 因閒置過久而被剔除.", name _idle_player] remoteExecCall ["systemChat", 0, true];
             _ctiCmdPassword serverCommand _cmd;
+            diag_log format ["%1 serverCommand %2", _ctiCmdPassword, _cmd];
+            format ["玩家:%1, 因閒置過久而被剔除.", name _idle_player] remoteExecCall ["systemChat", 0, true];
+            
         }
     ] call CBA_fnc_addEventHandler;
 };
@@ -44,7 +46,7 @@ if (hasInterface) then {
                 if( !PCAT_CTI_isKickCountdown && {(GET_TIME - PCAT_CTI_lastActionTime) >= IDLE_TIMEOUT} ) then {
                     PCAT_CTI_isKickCountdown = true;
                     [
-                        IDLE_TIMEOUT,
+                        KICK_COUNTDOWN,
                         {
                             params ["_timeLeft", "_args"];
                             private _text = text (format ["閒置過久，倒數 %1 秒後踢出", [_timeLeft, "MM:SS"] call BIS_fnc_secondsToString]);

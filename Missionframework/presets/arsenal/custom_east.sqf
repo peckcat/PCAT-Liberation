@@ -985,6 +985,7 @@ GRLIB_arsenal_items = [
     "ACE_microDAGR",                                                // MicroDAGR GPS
     "ACE_morphine",                                                 // Morphine Autoinjector
     "ACE_packingBandage",                                           // Bandage (Packing)
+    "ACE_painkillers",                                              // Painkillers
     "ACE_personalAidKit",                                           // Personal Aid Kit
     "ACE_plasmaIV_250",
     "ACE_plasmaIV_500",

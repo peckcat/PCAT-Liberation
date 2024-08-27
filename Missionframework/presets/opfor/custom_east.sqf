@@ -69,8 +69,8 @@ militia_vehicles = [
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
 
-    "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
-    "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
+    "rhssaf_army_o_m1151_olive_pkm",                                    // M1151 HMMWV (PKM)
+    "rhssaf_army_o_m1151_olive_pkm",                                    // M1151 HMMWV (PKM)
     "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
     "rhsgref_BRDM2_msv",                                                // BRDM-2
     "rhsgref_BRDM2_msv",                                                // BRDM-2
@@ -88,8 +88,8 @@ opfor_vehicles_low_intensity = [
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
 
-    "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
-    "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
+    "rhssaf_army_o_m1151_olive_pkm",                                    // M1151 HMMWV (PKM)
+    "rhssaf_army_o_m1151_olive_pkm",                                    // M1151 HMMWV (PKM)
     "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
     "rhs_btr80_msv",                                                    // BTR-80
     "rhs_btr80_msv",                                                    // BTR-80
@@ -110,7 +110,9 @@ opfor_vehicles = [
     "rhs_bmp3mera_msv",                                                 // BMP-3 (Vesna-K/A)
     "rhs_bmp3mera_msv",                                                 // BMP-3 (Vesna-K/A)
     "rhs_t80um",                                                        // T-80UM
-    "rhs_t80um"                                                         // T-80UM
+    "rhs_t90sm_tv",                                                     // T-90SM
+    "rhs_t90sm_tv",                                                     // T-90SM
+    "rhs_t90sm_tv"                                                      // T-90SM
 ];
 
 //---------------------------------------------------------------------------------------
@@ -123,8 +125,8 @@ opfor_battlegroup_vehicles_low_intensity = [
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
     "rhs_zsu234_aa",                                                    // ZSU-23-4V
     
-    "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
-    "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
+    "rhssaf_army_o_m1151_olive_pkm",                                    // M1151 HMMWV (PKM)
+    "rhssaf_army_o_m1151_olive_pkm",                                    // M1151 HMMWV (PKM)
     "rhs_tigr_sts_msv",                                                 // GAZ-233014 (Armed)
     "rhs_btr80a_msv",                                                   // BTR-80A
     "rhs_btr80a_msv",                                                   // BTR-80A
@@ -150,11 +152,11 @@ opfor_battlegroup_vehicles = [
     "rhs_t72be_tv",                                                     // T-72B3
     "rhs_t72be_tv",                                                     // T-72B3
     "rhs_t72be_tv",                                                     // T-72B3
-    "rhs_t80ue1",                                                       // T-80UE1
-    "rhs_t80ue1",                                                       // T-80UE1
     "rhs_t80um",                                                        // T-80UM
     "rhs_t80um",                                                        // T-80UM
-    //"rhs_t90sm_tv",                                                     // T-90SM
+    "rhs_t90sm_tv",                                                     // T-90SM
+    "rhs_t90sm_tv",                                                     // T-90SM
+    "rhs_t90sm_tv",                                                     // T-90SM
     "rhs_mi28n_vvs",                                                    // Mi-28N
     "rhs_mi28n_vvs",                                                    // Mi-28N
     "RHS_Ka52_vvs",                                                     // Ka-52

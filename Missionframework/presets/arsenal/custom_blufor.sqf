@@ -161,10 +161,6 @@ GRLIB_arsenal_weapons = [
     "srifle_LRR_camo_F",
     "srifle_LRR_F",
     "srifle_LRR_tna_F",
-    // - ACE
-    "ACE_Flashlight_Maglite_ML300L",
-    "ACE_VMH3",
-    "ACE_VMM3",
     // - RHS USAF
     "rhs_weap_6p53",
     "rhs_weap_fgm148",
@@ -317,11 +313,22 @@ GRLIB_arsenal_weapons = [
     "rhsusf_weap_MP7A2_winter",
     "rhsusf_weap_MP7A2",
     // - NGA - Next Generation Armory
+    /*
     "Mk22ASR",
     "NGSW_M250",
     "NGSW_MG338",
     "SJBH_MCX_Raptor",
-    "SJBH_MCX_Spear"
+    "SJBH_MCX_Spear",
+    */
+    // - Sig MCX Spear - https://steamcommunity.com/sharedfiles/filedetails/?id=3261100509
+    "KAR_XM7",
+    "KAR_XM7_BLK",
+    "KAR_XM7_G",
+    "KAR_XM7_BLK_G",
+    // - ACE
+    "ACE_Flashlight_Maglite_ML300L",
+    "ACE_VMH3",
+    "ACE_VMM3"
 ];
 
 GRLIB_arsenal_magazines = [
@@ -718,6 +725,7 @@ GRLIB_arsenal_magazines = [
     "MAA_MAAWS_ILLUM545",
     "MAA_MAAWS_MT756",
     "MAA_MAAWS_SMOKE469",
+    /*
     // - NGA - Next Generation Armory
     "NGSW_100rnd_338nm_AP",
     "NGSW_100rnd_338nm_HEAPI",
@@ -733,6 +741,16 @@ GRLIB_arsenal_magazines = [
     "tb_68x51mm_150rndboxTracer",
     "tb_68x51mm_20rndmag",
     "tb_68x51mm_20rndmagTracer",
+    */
+    // - Sig MCX Spear - https://steamcommunity.com/sharedfiles/filedetails/?id=3261100509
+    "KAR_20Rnd_Fury",
+    "KAR_20Rnd_Fury_blk",
+    "KAR_20Rnd_Fury_GT_blk",
+    "KAR_20Rnd_Fury_RT_blk",
+    "KAR_20Rnd_Fury_YT_blk",
+    "KAR_20Rnd_Fury_GT",
+    "KAR_20Rnd_Fury_RT",
+    "KAR_20Rnd_Fury_YT",
     
     // Grenades ----------------------------------------------------------------
     "B_IR_Grenade",                                                 // IR Grenade [NATO]
@@ -1568,10 +1586,16 @@ GRLIB_arsenal_items = [
     "rhsusf_acc_SR25S_d",
     "rhsusf_acc_SR25S_wd",
     "rhsusf_acc_SR25S",
+    
     // - NGA - Next Generation Armory
+    /*
     "NGSW_M250_muzzle",
     "NGSW_MG338_muzzle",
     "SigSLX68",
+    */
+    // - Sig MCX Spear - https://steamcommunity.com/sharedfiles/filedetails/?id=3261100509
+    "KAR_XM7_SUP",
+    "KAR_XM7_SUP_blk",
 
     // Bipods ------------------------------------------------------------------
     // - RHS USAF
@@ -1647,6 +1671,7 @@ GRLIB_arsenal_items = [
     "ACE_microDAGR",                                                // MicroDAGR GPS
     "ACE_morphine",                                                 // Morphine autoinjector
     "ACE_packingBandage",                                           // Bandage (Packing)
+    "ACE_painkillers",                                              // Painkillers
     "ACE_personalAidKit",                                           // Personal Aid Kit
     "ACE_plasmaIV_250",                                             // Plasma IV (250 ml)
     "ACE_plasmaIV_500",                                             // Plasma IV (500 ml)
