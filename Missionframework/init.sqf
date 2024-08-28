@@ -60,6 +60,10 @@ if ((isNil {player getVariable "bis_revive_ehHandleHeal"} || isDedicated) && !(b
 call compileScript ["PCAT_Scripts\idlePlayerKicker.sqf"];
 call compileScript ["PCAT_Scripts\objectInits.sqf"];
 
+PCAT_remote_call_intel = compileScript ["PCAT_Scripts\Custom_remote_call_intel.sqf", true];
+execVM "PCAT_Scripts\PCAT_Liberation_AnitAir_Spawner.sqf";
+//compileScript ["PCAT_Scripts\PCAT_Liberation_AnitAir_Spawner.sqf"];
+
 KPLIB_init = true;
 
 // Notify clients that server is ready

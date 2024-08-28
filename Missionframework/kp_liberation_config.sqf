@@ -233,7 +233,7 @@ if( GRLIB_side_enemy == EAST ) then {                                   // Enemy
 
 GRLIB_fob_range = 180;                                                  // Build range around the main FOB building.
 GRLIB_halo_altitude = 2500;                                             // Altitude in metres for the HALO jump.
-GRLIB_secondary_missions_costs = [15, 10, 8, 5];                        // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR, Humanitarian Aid].
+GRLIB_secondary_missions_costs = [15, 10, 8, 5, 10];                        // Intel price for the secondary missions [FOB hunting, Convoy ambush, SAR, Humanitarian Aid].
 GRLIB_secondary_objective_impact = 0.6;                                 // The percentage impact against enemy combat readiness for a successful FOB hunt.
 KP_liberation_civ_supplies_impact = 5;									// The percentage increase received when completing a Humanitarian Aid secondary objective
 GRLIB_recycling_percentage = 0.5;                                       // Percentage of resources you get back from recycling.
@@ -313,7 +313,7 @@ KPLIB_radioTowerClassnames = [
 ];
 
 /* - Default arsenal blacklist method.
-Useless if you're using anything other than "kp_liberation_arsenal = 0;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
+Useless if you're using anything other than "kp_liberation_arsenal = 17;" above. A whitelisted arsenal is always more performance friendly then a blacklisted arsenal.
 REMEMBER: All static turret and UAV bags should be defined here, to stop players from exploiting free resources via the virtual arsenal.    */
 blacklisted_from_arsenal = [
     "B_AA_01_weapon_F",
