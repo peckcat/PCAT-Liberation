@@ -1,11 +1,7 @@
-/*
-	Author  : Lepasdz【Leptotyphlo】
-	Discord : lepasdz
-*/
-
 #define __DEBUG_FLAG__ 0
 #define GET_TIME ([time, serverTime] select isMultiplayer)
-#define CIV_REP(min_value, max_value) (KP_liberation_civ_rep<=min_value and KP_liberation_civ_rep>=max_value)
+#define COMBAT_INTENSITY(min_value, max_value) (combat_readiness<max_value and combat_readiness>=min_value)
+#define Dedicated_RM_machineID ([0, -2] select isDedicated)
 
 #if __DEBUG_FLAG__ == 1
 	#define IS_TIMEOUT(LastTimestamp, timeout) (([time, serverTime] select isMultiplayer) > 60)
@@ -24,27 +20,29 @@ PCAT_area_antiair_RadarVeh_spawnNum = 3;
 PCAT_area_antiair_RadarVeh_array = [];
 PCAT_area_antiair_Detected_Flag = false;
 
-Intercepter_FromAB_Num = 3; //NOTE: 從機場起飛的飛機數量
-Intercepter_CAP_Num = 3;    //NOTE: 從邊界接近的支援致空機數量
-
-Intercepter_LastSpawnTime = -1;
-Intercepter_Colddown = 600;
-Intercepter_Min_CivSpawnRep = -65;     // NOTE: SAM-最小觸發條件-民怨值, < 0
-Intercepter_Max_CivSpawnRep = -95;     // NOTE: SAM-最大觸發條件-民怨值, < 0
-SAM_LastSpawnTime = -1;
-SAM_Min_CivSpawnRep = -70;     // NOTE: SAM-最小觸發條件-民怨值, < 0
-spawn_range   = [5000, 10000]; // NOTE: 生成距離最近藍軍據點, 單位公尺 [MIN, MAX]
-sam_num       = 1;             // NOTE: 要生成的 SAM 的數量
+Intercepter_FromAB_Num = 3; 			// NOTE: 從機場起飛的飛機數量
+Intercepter_CAP_Num = 3;    			// NOTE: 從邊界接近的支援致空機數量
+Intercepter_LastSpawnTime = -1;			// NOTE: 上次戰機重生時間
+Intercepter_Colddown = 10 * 60;			// NOTE: 戰機重生冷卻時間
+Intercepter_Min_combat_readiness = 65;	// NOTE: SAM-最小觸發條件-民怨值, < 0
+Intercepter_Max_combat_readiness = 96;	// NOTE: SAM-最大觸發條件-民怨值, < 0
+SAM_LastSpawnTime = -1;					// NOTE: 上次SAM-重生時間
+SAM_Min_combat_readiness = 70;     // NOTE: SAM-最小觸發條件-民怨值, < 0
+spawn_range_SAM   = [5000, 10000]; // NOTE: 生成距離最近藍軍據點, 單位公尺 [MIN, MAX]
+spawn_range_Radar = [4000, 10000]; // NOTE: 生成距離最近藍軍據點, 單位公尺 [MIN, MAX]
 checking_time = 5*60;          // NOTE: 生存檢查間格時間 : 5 分鐘.
-respawn_time  = 15*60;         // NOTE: 重生時間 : 15 分鐘.
+respawn_time  = 20*60;         // NOTE: 重生時間 : 15 分鐘.
 rearm_time    = 10*60;         // NOTE: 彈藥補給時間 10 分鐘.
 random_addition_times = 10*60;  // NOTE: 最大誤差時間 : 5 分鐘.
-vehs_arr      = [];            // NOTE: 記錄所有防空車輛(非人員)
+PCAT_area_antiair_SAMVehicle_array = [];   // NOTE: 記錄所有防空車輛(非人員)
+
+
 
 PCAT_area_antiair_Reset = {
 	PCAT_area_antiair_Detected_Flag = false;
-	Intercepter_LastSpawnTime = GET_TIME;
+	SAM_LastSpawnTime = GET_TIME;
 	//NOTE: 也許讓敵方飛機撤退?
+	Intercepter_LastSpawnTime = GET_TIME;
 };
 
 //NOTE: 隱藏地形/關閉傷害
@@ -58,6 +56,33 @@ PCAT_Cleance = {
 		_x hideObjectGlobal true;
 		_x allowDamage false;
 	} forEach (nearestTerrainObjects [_centerPos, [], _radius, false, true]);	
+};
+
+//NOTE: 取得載具生成點, 遠離城鎮 > 2000m, 距離FOB [_min, _max]
+PCAT_getOpforSpawnPoint = {
+	params [
+		["_min", 2000, [0]],
+		["_max", 20000, [0]]
+	];
+	private _spawnsToCheck = sectors_opfor;
+	if (!isNil "used_positions") then {
+		_spawnsToCheck = sectors_opfor - used_positions;
+	};
+	private _maxIter = count sectors_opfor;
+	if (_maxIter<=0) exitWith {"";};
+	while {_maxIter > 0} do {
+		if (count _spawnsToCheck <= 0 or _maxIter<=0) exitWith {""};
+		_sector = selectRandom _spawnsToCheck;
+		_currentPos = markerPos _sector;
+		_distances  = GRLIB_all_fobs apply {_currentPos distance2d _x};
+		_didPass = (_distances findIf {_x > _max} < 0) and (_distances findIf {_x < _min} < 0);
+		_didPass = _didPass and (blufor_sectors findIf {(_currentPos distance2D (markerPos _x)) < 2000} < 0);
+		if (_didPass) exitWith {
+			_sector;
+		};
+		_spawnsToCheck = _spawnsToCheck - [_sector];
+		_maxIter = _maxIter - 1;
+	};
 };
 
 //取得地圖上定義的跑道起飛點
@@ -86,7 +111,7 @@ PCAT_Liberation_GetAllAirport = {
 PCAT_Liberation_spawnAndPatrolAtRunway = {
 	params [["_pos", [0,0,0]], ["_dir", 0], ["_Patroldist", 5000], ["_type", "JS_JC_SU35"]];
 	private _spawnLocation = [_pos, 8, 40, 10, 0, 10, 0] call BIS_fnc_findSafePos;
-	private _spawnLocation_ASL = ATLToASL [_spawnLocation # 0, _spawnLocation # 1, 0.1];
+	private _spawnLocation_ASL = ATLToASL [_spawnLocation # 0, _spawnLocation # 1, 0.5];
 	[_spawnLocation_ASL, 30] call PCAT_Cleance;
 	private _veh = createVehicle [_type, _spawnLocation_ASL, [], 0, "NONE"];
 	private _grp = createVehicleCrew _veh;
@@ -106,9 +131,11 @@ PCAT_Liberation_spawnAndPatrolAtRunway = {
 				_this setVelocity (((vectorDir _this) vectorMultiply 80) vectorAdd [0,0,100]);
 			};
 		};
-	};
-	if !((isNull _veh) or (isNull _grp)) then {
+		_grp = (group (driver _veh));
+		//NOTE: 洩漏雷達已知目標資訊, 自由開火 + 脫離隊形, 接戰 or 巡羅
+		(listRemoteTargets GRLIB_side_enemy) apply {_grp reveal [_x # 0, 4]};
 		[_grp, _pos, _Patroldist] call BIS_fnc_taskPatrol;
+		_grp setCombatMode "RED";
 	};
 };
 
@@ -120,7 +147,17 @@ PCAT_Liberation_spawnAndPatrol = {
 	private _planeInfo = [_spawnLocation, _spawnLocation getDir _pos, _type, GRLIB_side_enemy] call BIS_fnc_spawnVehicle;
 	private _grp = _planeInfo select 2;
 	(units _grp) joinSilent createGroup GRLIB_side_enemy;
-	[_grp, _patrolPos, _Patroldist] call BIS_fnc_taskPatrol;
+	if (isNull (_planeInfo # 0)) exitWith {};
+	//NOTE: 洩漏雷達已知目標資訊, 自由開火 + 脫離隊形, 接戰 or 巡羅
+	[_planeInfo # 0, _pos, _Patroldist] spawn {
+		params ["_veh", "_pos", "_Patroldist"];
+		waitUntil {sleep 1;!(isNull _veh) and (alive (driver _veh)) or !(alive _veh);};
+		if !(alive _veh) exitWith {};
+		_grp = (group (driver _veh));
+		(listRemoteTargets GRLIB_side_enemy) apply {_grp reveal [_x # 0, 4]};
+		[_grp, _pos, _Patroldist] call BIS_fnc_taskPatrol;
+		_grp setCombatMode "RED";
+	};
 	_planeInfo select 0;
 };
 
@@ -129,9 +166,9 @@ PCAT_Liberation_spawnAndPatrol = {
 //NOTE: 等待KPLIB初始化完乘後進行防空腳本
 waitUntil {sleep 10;KPLIB_init};  //wait for KP init
 waitUntil {sleep  1;GET_TIME > 0 }; //wait for mission init
-"區域防空系統以上線." remoteExec ["systemChat", -2];
+"區域防空系統以上線." remoteExec ["systemChat", Dedicated_RM_machineID];
 PCAT_DEBUG_INIT = true;//For debug purpose
-//NOTE: 紅方雷達
+//NOTE: 紅方雷達 && 紅方防空
 0 spawn {
 	while {true} do {
 		//NOTE: 雷達轉向 + 傷害判定(組員跳機/失能)
@@ -140,8 +177,13 @@ PCAT_DEBUG_INIT = true;//For debug purpose
 			if (count _AiUnit > 0) then {
 				_AiUnit lookAt (_x getRelPos [100, random 360]);
 			};
-			if (count(_AiUnit) <= 0 or !(alive (_AiUnit # 0))) then {_x setDamage 1;};
+			if (count(_AiUnit) <= 0 or !(alive (_AiUnit # 0))) then {_x setDamage 1;};//GA, GE
 		} forEach PCAT_area_antiair_RadarVeh_array;
+		//NOTE: 當乘員死亡 OR 下車時炸毀SAM
+		{
+			_AiUnit = gunner _x;
+			if ( (isNull _AiUnit) or !(alive (_AiUnit)) ) then {_x setDamage 1;};//GA, GE
+		} forEach PCAT_area_antiair_SAMVehicle_array;
 		//NOTE: 讀取紅方資料鏈 + 過濾固定翼
 		if (((listRemoteTargets GRLIB_side_enemy) findIf {((_x # 0) isKindOf "Plane") and [side (_x # 0), GRLIB_side_enemy] call BIS_fnc_sideIsEnemy}) > 0) then {
 			PCAT_area_antiair_Detected_Flag = true;
@@ -153,7 +195,7 @@ while{ true } do {
 
 	//TODO: PCAT-放置紅方雷達偵測空中固定翼 (弄真雷達)
 	if (count (PCAT_area_antiair_RadarVeh_array) < PCAT_area_antiair_RadarVeh_spawnNum) then {
-		_spawn_marker = spawn_range call KPLIB_fnc_getOpforSpawnPoint; // NOTE: 使用 KPLIB 取得適當的生成點.
+		_spawn_marker = spawn_range_Radar call PCAT_getOpforSpawnPoint; // NOTE: 使用 KPLIB 取得適當的生成點.
 		if ( _spawn_marker != "" ) then { // NOTE: 生成點取得成功.
 			private _spawn_pos = getMarkerPos [_spawn_marker]; // NOTE: 取得 Marker 的座標.
 			_spawn_pos = [_spawn_pos, 5, 30, 5] call BIS_fnc_findSafePos;
@@ -171,13 +213,13 @@ while{ true } do {
 		};
 	};
 	//NOTE: 民怨值介於於最大/最低設定值, 產生 3 * SU-35 從敵方機場起飛 (從地圖設定檔取得"跑道起飛點" > 隨機選一個 + 高度偏移值(10 m/米) > 產生飛機 > 關閉傷害(5秒後恢復) > 等待 2 s/秒 > Loop直到FOR完成)
-	if (PCAT_area_antiair_Detected_Flag and IS_TIMEOUT(Intercepter_LastSpawnTime, Intercepter_Colddown) and CIV_REP(Intercepter_Min_CivSpawnRep, Intercepter_Max_CivSpawnRep)) then {
+	if (PCAT_area_antiair_Detected_Flag and IS_TIMEOUT(Intercepter_LastSpawnTime, Intercepter_Colddown) and COMBAT_INTENSITY(Intercepter_Min_combat_readiness, Intercepter_Max_combat_readiness)) then {
 		private _All_airfields = call PCAT_Liberation_GetAllAirport;
 		PCAT_area_antiair_Detected_Flag = false;
 		if (count(_All_airfields) > 0) then {
 			0 spawn{
 				sleep ((random 4 max 1) * 60);
-				["TaskAssigned",["", "偵測到 Opfor 戰機升空"]] remoteExec ["bis_fnc_shownotification"];
+				["TaskAssigned",["", "偵測到 Opfor 戰機升空"]] remoteExec ["bis_fnc_shownotification", Dedicated_RM_machineID];
 			};
 			[_All_airfields, Intercepter_FromAB_Num] spawn {
 				params ["_airports", "_numOfplanes"];
@@ -193,7 +235,7 @@ while{ true } do {
 		};
 	};
 	//NOTE: 民怨值低於最大設定值, 產生 3 * SU-35 從地圖邊界 5 公里外向地圖內飛(巡邏路徑點)
-	if (PCAT_area_antiair_Detected_Flag and IS_TIMEOUT(Intercepter_LastSpawnTime, Intercepter_Colddown) and CIV_REP(Intercepter_Max_CivSpawnRep, -1000)) then {
+	if (PCAT_area_antiair_Detected_Flag and IS_TIMEOUT(Intercepter_LastSpawnTime, Intercepter_Colddown) and COMBAT_INTENSITY(Intercepter_Max_combat_readiness, 1E3)) then {
 		Intercepter_LastSpawnTime = GET_TIME;
 		PCAT_area_antiair_Detected_Flag = false;
 		[Intercepter_CAP_Num] spawn {
@@ -206,15 +248,15 @@ while{ true } do {
 			};
 			0 spawn{
 				sleep ((random 2 max 1) * 60);
-				["TaskAssigned",["", "偵測到 Opfor 空中攔截機"]] remoteExec ["bis_fnc_shownotification"];
+				["TaskAssigned",["", "偵測到 Opfor 空中攔截機"]] remoteExec ["bis_fnc_shownotification", Dedicated_RM_machineID];
 			};
 		};
 	};
 	//NOTE: 比對Timestamp, 檢查重生條件(乘載員群組沒人倖存), 觸發條件: 民怨值
-	if (IS_TIMEOUT(SAM_LastSpawnTime, respawn_time + random random_addition_times) and (({ side _x == GRLIB_side_enemy } count vehs_arr) == 0) and KP_liberation_civ_rep <= SAM_Min_CivSpawnRep) then {
-		private _NumOfSAMwillBeSpawned = abs(floor((KP_liberation_civ_rep - SAM_Min_CivSpawnRep)/10)) + 2;
-		for "_i" from 1 to _NumOfSAMwillBeSpawned do { //NOTE: 我喜歡每次都生在不同點上 :D
-			_spawn_marker = spawn_range call KPLIB_fnc_getOpforSpawnPoint; // NOTE: 使用 KPLIB 取得適當的生成點.
+	private _NumOfSAMwillBeSpawned = abs(floor((combat_readiness - SAM_Min_combat_readiness)/10)) + 2;
+	if (IS_TIMEOUT(SAM_LastSpawnTime, respawn_time + random random_addition_times) and combat_readiness >= SAM_Min_combat_readiness and (({ side _x == GRLIB_side_enemy } count PCAT_area_antiair_SAMVehicle_array) < _NumOfSAMwillBeSpawned)) then {
+		for "_i" from 1 to (_NumOfSAMwillBeSpawned-(count PCAT_area_antiair_SAMVehicle_array)) do { //NOTE: 我喜歡每次都生在不同點上 :D
+			_spawn_marker = spawn_range_SAM call PCAT_getOpforSpawnPoint; // NOTE: 使用 KPLIB 取得適當的生成點.
 			if ( _spawn_marker != "" ) then { // NOTE: 生成點取得成功.
 				private _spawn_pos = getMarkerPos [_spawn_marker]; // NOTE: 取得 Marker 的座標.
 				_spawn_pos = [_spawn_pos, 5, 30, 5] call BIS_fnc_findSafePos;
@@ -224,12 +266,16 @@ while{ true } do {
 				private _veh = createVehicle [sam_classname, _spawn_pos];
 				[_veh, createGroup [GRLIB_side_enemy, true], false, "" , opfor_aa] call BIS_fnc_spawnCrew;
 				(crew _veh) join PCAT_area_antiair_group;
-				vehs_arr pushBack _veh;
+				PCAT_area_antiair_SAMVehicle_array pushBack _veh;
 
 				//NOTE: 使 SAM 載具駕駛失能
 				if (alive (driver _veh)) then {
 					(driver _veh) disableAI "PATH";
 				};
+
+
+				//NOTE: SAM被摧毀後自動從列表中刪除
+				_veh addEventHandler ["Killed",{PCAT_area_antiair_SAMVehicle_array = (PCAT_area_antiair_SAMVehicle_array select {alive _x}) - [_this # 0];}];
 
 				// NOTE: : 設定當 SAM 彈藥用盡時, 會等待 rearmed_time 秒後, 自動進行補給.
 				_veh addEventHandler ["Fired", {
@@ -270,6 +316,7 @@ while{ true } do {
 				"敵方防空單位無法增援." remoteExec ["hint", -2];
 				//["Could not find position for create anti air base", "ERROR"] call KPLIB_fnc_log;
 			};
+			sleep 2;
 		};
 	};
 
@@ -278,7 +325,7 @@ while{ true } do {
 	waitUntil{// 每 checking_time 檢查一次組員, 若有倖存則重新等待.
 		sleep checking_time; // 檢查間隔.
 		// NOTE: 當敵方沒有防空車輛時, 結束等待, 進入重生 cd 時間. 移至SAM生城IF....
-		({ side _x == GRLIB_side_enemy } count vehs_arr) == 0
+		({ side _x == GRLIB_side_enemy } count PCAT_area_antiair_SAMVehicle_array) == 0
 	};
 	// NOTE: 結束等待, 並進入防空小組生成冷卻時間.
 	sleep (respawn_time + random random_addition_times); // 重生時間

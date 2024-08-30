@@ -26,7 +26,8 @@ waitUntil {
 //TODO: 偵查子任務: 白狼-解完會提示概略範圍被摧毀後重設檢查時間
 call PCAT_area_antiair_Reset;
 
-combat_readiness = round (combat_readiness * (GRLIB_secondary_objective_impact+1));
+//NOTE: 減少戰備值
+combat_readiness = round (combat_readiness * (GRLIB_secondary_objective_impact));
 stats_secondary_objectives = stats_secondary_objectives + 1;
 sleep 1;
 [] spawn KPLIB_fnc_doSave;
