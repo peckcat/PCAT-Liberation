@@ -353,6 +353,21 @@
         }
     },
     {
+        "sourceFolder": "kp_liberation.green_sea",
+        "missionName": "PCAT-Liberation-OPFOR-RUvUSW-(Green_Sea)",
+        "map": "green_sea",
+        "mapDisplay": "Green Sea",
+        "configFile": "kp_liberation_config.sqf",
+        "variables": {
+            "PCAT_side_friend"                : 0,
+            "PCAT_side_enemy"                 : 1,
+            "KP_liberation_preset_blufor"     : 33,
+            "KP_liberation_preset_opfor"      : 32,
+            "KP_liberation_preset_resistance" :  9,
+            "KP_liberation_arsenal"           : 18
+        }
+    },
+    {
         "sourceFolder": "kp_liberation.vt7",
         "missionName": "PCAT-Liberation-NATO-(Virolahti)",
         "map": "vt7",

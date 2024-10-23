@@ -28,15 +28,13 @@ Intercepter_Min_combat_readiness = 65;	// NOTE: SAM-最小觸發條件-民怨值
 Intercepter_Max_combat_readiness = 96;	// NOTE: SAM-最大觸發條件-民怨值, < 0
 SAM_LastSpawnTime = -1;					// NOTE: 上次SAM-重生時間
 SAM_Min_combat_readiness = 70;     // NOTE: SAM-最小觸發條件-民怨值, < 0
-spawn_range_SAM   = [5000, 10000]; // NOTE: 生成距離最近藍軍據點, 單位公尺 [MIN, MAX]
-spawn_range_Radar = [4000, 10000]; // NOTE: 生成距離最近藍軍據點, 單位公尺 [MIN, MAX]
+spawn_range_SAM   = [5000, sqrt 2 / 2 * worldSize]; // NOTE: 生成距離最近藍軍FOB據點, 單位公尺 [MIN, MAX]
+spawn_range_Radar = [4000, sqrt 2 / 2 * worldSize]; // NOTE: 生成距離最近藍軍FOB據點, 單位公尺 [MIN, MAX]
 checking_time = 5*60;          // NOTE: 生存檢查間格時間 : 5 分鐘.
-respawn_time  = 20*60;         // NOTE: 重生時間 : 15 分鐘.
+respawn_time  = 15*60;         // NOTE: 重生時間 : 15 分鐘.
 rearm_time    = 10*60;         // NOTE: 彈藥補給時間 10 分鐘.
-random_addition_times = 10*60;  // NOTE: 最大誤差時間 : 5 分鐘.
+random_addition_times = 5*60;  // NOTE: 最大誤差時間 : 5 分鐘.
 PCAT_area_antiair_SAMVehicle_array = [];   // NOTE: 記錄所有防空車輛(非人員)
-
-
 
 PCAT_area_antiair_Reset = {
 	PCAT_area_antiair_Detected_Flag = false;
@@ -68,18 +66,18 @@ PCAT_getOpforSpawnPoint = {
 	if (!isNil "used_positions") then {
 		_spawnsToCheck = sectors_opfor - used_positions;
 	};
-	private _maxIter = count sectors_opfor;
+	private _maxIter = count _spawnsToCheck;
+	private _didPass = false;
+	private _sector  = "";
 	if (_maxIter<=0) exitWith {"";};
-	while {_maxIter > 0} do {
-		if (count _spawnsToCheck <= 0 or _maxIter<=0) exitWith {""};
+	while {_maxIter >= 0} do {
+		if (count _spawnsToCheck <= 0 or _maxIter<=0) exitWith {"";};
 		_sector = selectRandom _spawnsToCheck;
 		_currentPos = markerPos _sector;
 		_distances  = GRLIB_all_fobs apply {_currentPos distance2d _x};
 		_didPass = (_distances findIf {_x > _max} < 0) and (_distances findIf {_x < _min} < 0);
 		_didPass = _didPass and (blufor_sectors findIf {(_currentPos distance2D (markerPos _x)) < 2000} < 0);
-		if (_didPass) exitWith {
-			_sector;
-		};
+		if (_didPass) exitWith {_sector;};
 		_spawnsToCheck = _spawnsToCheck - [_sector];
 		_maxIter = _maxIter - 1;
 	};
@@ -103,7 +101,7 @@ PCAT_Liberation_GetAllAirport = {
 	}; 
 	_All_airfields = missionNamespace getVariable ["PCAT_Liberation_All_Airbases", []];
 	_All_airfields select{
-		!( ([allMapMarkers, (_x # 0)] call BIS_fnc_nearestPosition) in blufor_sectors)
+		!( ([sectors_allSectors, (_x # 0)] call BIS_fnc_nearestPosition) in (blufor_sectors + (missionNamespace getVariable ["GRLIB_all_fobs", []])));
 	};
 };
 
@@ -119,6 +117,7 @@ PCAT_Liberation_spawnAndPatrolAtRunway = {
 	if !(isNull _veh) then {
 		_veh allowDamage false;
 		_veh setDir -(asin _dir);
+		_veh setVariable ["KP_liberation_preplaced", true, true];
 		_veh addEventHandler ["Killed",{deleteVehicle (_this select 0);}];//NOTE: 有時候AI就喜歡互撞...移除殘骸淨空跑道
 		_veh spawn {sleep 5;_this allowDamage true;};
 		_veh spawn {
@@ -149,6 +148,7 @@ PCAT_Liberation_spawnAndPatrol = {
 	(units _grp) joinSilent createGroup GRLIB_side_enemy;
 	if (isNull (_planeInfo # 0)) exitWith {};
 	//NOTE: 洩漏雷達已知目標資訊, 自由開火 + 脫離隊形, 接戰 or 巡羅
+	(_planeInfo # 0) setVariable ["KP_liberation_preplaced", true, true];
 	[_planeInfo # 0, _pos, _Patroldist] spawn {
 		params ["_veh", "_pos", "_Patroldist"];
 		waitUntil {sleep 1;!(isNull _veh) and (alive (driver _veh)) or !(alive _veh);};
@@ -202,6 +202,7 @@ while{ true } do {
 			[ATLToASL [_spawn_pos # 0, _spawn_pos # 1, 0], 50] call KPLIB_fnc_createClearance; // NOTE: 清除周圍 10 公尺以供生成.
 			private _veh = createVehicle ["O_Radar_System_02_F", _spawn_pos];
 			if !(isNull _veh) then {
+				_veh setVariable ["KP_liberation_preplaced", true, true];
 				[_veh, createGroup [GRLIB_side_enemy, true], false, "" , opfor_aa] call BIS_fnc_spawnCrew;
 				PCAT_area_antiair_RadarVeh_array pushBack _veh;
 				(crew _veh) join PCAT_area_antiair_Radar_group;
@@ -253,7 +254,7 @@ while{ true } do {
 		};
 	};
 	//NOTE: 比對Timestamp, 檢查重生條件(乘載員群組沒人倖存), 觸發條件: 民怨值
-	private _NumOfSAMwillBeSpawned = abs(floor((combat_readiness - SAM_Min_combat_readiness)/10)) + 2;
+	private _NumOfSAMwillBeSpawned = abs(floor((combat_readiness - SAM_Min_combat_readiness)/10)) + 0;//max 5 -> 3
 	if (IS_TIMEOUT(SAM_LastSpawnTime, respawn_time + random random_addition_times) and combat_readiness >= SAM_Min_combat_readiness and (({ side _x == GRLIB_side_enemy } count PCAT_area_antiair_SAMVehicle_array) < _NumOfSAMwillBeSpawned)) then {
 		for "_i" from 1 to (_NumOfSAMwillBeSpawned-(count PCAT_area_antiair_SAMVehicle_array)) do { //NOTE: 我喜歡每次都生在不同點上 :D
 			_spawn_marker = spawn_range_SAM call PCAT_getOpforSpawnPoint; // NOTE: 使用 KPLIB 取得適當的生成點.
@@ -275,6 +276,7 @@ while{ true } do {
 
 
 				//NOTE: SAM被摧毀後自動從列表中刪除
+				_veh setVariable ["KP_liberation_preplaced", true, true];
 				_veh addEventHandler ["Killed",{PCAT_area_antiair_SAMVehicle_array = (PCAT_area_antiair_SAMVehicle_array select {alive _x}) - [_this # 0];}];
 
 				// NOTE: : 設定當 SAM 彈藥用盡時, 會等待 rearmed_time 秒後, 自動進行補給.

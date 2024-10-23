@@ -19,6 +19,10 @@ GRLIB_arsenal_weapons = [
     // Main Weapoons -----------------------------------------------------------
     "arifle_AK12_F",                                // AK-15
     "arifle_AK12_GL_F",                             // AK-15GL
+    "arifle_AK12_GL_F",                             // AK-15GL
+    "arifle_RPK12_F",                               // RPK12
+    "arifle_RPK12_arid_F",                          // RPK12
+    "arifle_RPK12_lush_F",                          // RPK12
     "SMG_02_F",                                     // Scorpion Evo 3 A1
     "srifle_GM6_F",                                 // GM6 Lynx
     "srifle_GM6_camo_F",                            // GM6 Lynx (Camo)
@@ -28,6 +32,8 @@ GRLIB_arsenal_weapons = [
     "arifle_Katiba_C_F",                            // KH2002C Sama
     "srifle_DMR_05_tan_f",                          // 居魯士狙擊步槍(黃褐色)
     "srifle_DMR_05_blk_f",                          // 居魯士狙擊步槍(黑色)
+    "srifle_DMR_01_F",                              // VS-121狙擊步槍
+    "LMG_Zafir_F",                                  // 內蓋夫NG7
     // - RHS AFRF
     "rhs_weap_ak103",
     "rhs_weap_ak103_1",
@@ -159,6 +165,8 @@ GRLIB_arsenal_magazines = [
     "30Rnd_65x39_caseless_green",                                   // 6.5 mm 30Rnd Caseless Mag
     "30Rnd_65x39_caseless_green_mag_Tracer",                        // 6.5 mm 30Rnd Tracer (Green) Caseless Mag
     "30Rnd_65x39_caseless_green_mag_Tracer_Dim",                    // 6.5 mm 30Rnd Tracer IR-DIM Mag
+    "150Rnd_762x54_Box",                                            // 7.62 mm 150 彈藥盒
+    "150Rnd_762x54_Box_Tracer",                                     // 7.62 mm 150 彈藥盒
     "5Rnd_127x108_APDS_Mag",                                        // 12.7 mm 5Rnd APDS Mag
     "5Rnd_127x108_Mag",                                             // 12.7 mm 5Rnd Mag
     "1Rnd_HE_Grenade_shell",                                        // 40 mm HE Grenade Round
@@ -176,6 +184,13 @@ GRLIB_arsenal_magazines = [
     "1Rnd_SmokeYellow_Grenade_shell",                               // Smoke Round (Yellow)
     "RPG32_F",                                                      // RPG-42 Rocket
     "RPG32_HE_F",                                                   // RPG-42 HE Rocket
+    "smokeshell",                                                   // 煙霧彈(白)
+    "smokeshellOrange",                                             // 煙霧彈(橘)
+    "smokeshellRed",                                                // 煙霧彈(紅)
+    "smokeshellPurple",                                             // 煙霧彈(紫)
+    "smokeshellGreen",                                              // 煙霧彈(綠)
+    "smokeshellBlue",                                               // 煙霧彈(藍)
+    "smokeshellYellow",                                             // 煙霧彈(黃)
     // - ACE
     "Laserbatteries",                                               // Designattor Batteries
     "ACE_SpareBarrel",                                              // Spare barrel
@@ -187,6 +202,8 @@ GRLIB_arsenal_magazines = [
     "rhs_mag_rsp30_white",
     "rhs_mag_rsp30_red",
     "rhs_mag_rsp30_green",
+    "rhs_grenade_khattabka_vog17_mag",                              // VOG-17
+    "rhs_grenade_khattabka_vog25_mag",                              // VOG-25
     "rhs_100Rnd_762x54mmR",
     "rhs_100Rnd_762x54mmR_7BZ3",
     "rhs_100Rnd_762x54mmR_7N13",
@@ -856,11 +873,20 @@ GRLIB_arsenal_items = [
     "ACE_Altimeter",                                                // Altimeter Watch
 
     // Sights ------------------------------------------------------------------
+    // ACE
+    "ACE_optic_LRPS_PIP",
+    "ACE_optic_LRPS_2D",
+    "optic_Arco",                                                   // ELCAN SpecterOS(黃褐色)
+    "optic_Arco_blk_F",                                             // ELCAN SpecterOS(黑)
+    "ACE_optic_Arco_2D",                                            // ELCAN SpecterOS(2D)
+    "ACE_optic_Arco_PIP",                                           // ELCAN SpecterOS(PIP)
     // - GOLD_Optics
     "Scot_EO_Vudu",
     "Scot_VRTX_RAZR",
     // - RHS AFRF
     "rhs_acc_1p29",
+    "rhs_acc_1p29_asval",
+    "rhs_acc_1p29_pkp",
     "rhs_acc_1p63",
     "rhs_acc_1p78",
     "rhs_acc_1p87",
@@ -879,8 +905,13 @@ GRLIB_arsenal_items = [
     "rhs_acc_pgo7v3",
     "rhs_acc_pkas",
     "rhs_acc_pso1m2",
+    "rhs_acc_pso1m2_ak",
+    "rhs_acc_pso1m2_asval",
+    "rhs_acc_pso1m2_pkp",
     "rhs_acc_pso1m21_ak",
     "rhs_acc_pso1m21",
+    "rhs_acc_pso1m21_pkp",
+    "rhs_acc_pso1m21_svd",
     "rhs_acc_rakursPM",
     // - RHS GREF
     "rhsgref_mg42_acc_aasight",
@@ -904,7 +935,13 @@ GRLIB_arsenal_items = [
     "ACE_acc_pointer_green",
 
     // Muzzle Attachments ------------------------------------------------------
-    "muzzle_snds_I",                           // Sound Suppressor (6.5mm)
+    "muzzle_snds_H",                           // Sound Suppressor (6.5mm)
+    "muzzle_snds_H_khk_F",                     // 6.5消音器(卡其)
+    "muzzle_snds_H_snd_F",                     // 6.5消音器(沙色)
+    "muzzle_snds_B",                           // 7.62消音器
+    "muzzle_snds_B_khk_F",                     // 7.62消音器(卡其)
+    "muzzle_snds_B_snd_F",                     // 7.62消音器(沙色)
+    "ACE_muzzle_mzls_H",                        
     "muzzle_snds_93mmg",
     "muzzle_snds_93mmg_tan",
     // - RHS AFRF

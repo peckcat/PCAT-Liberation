@@ -635,6 +635,9 @@ publicVariable "GRLIB_all_fobs";
 publicVariable "KPLIB_sectorsUnderAttack";
 publicVariable "KP_liberation_clearances";
 
+// UnLink dupe items
+elite_vehicles = (elite_vehicles arrayIntersect elite_vehicles);
+
 // Check for deleted military sectors or deleted classnames in the locked vehicles array
 GRLIB_vehicle_to_military_base_links = GRLIB_vehicle_to_military_base_links select {((_x select 0) in elite_vehicles) && ((_x select 1) in sectors_military)};
 
@@ -656,6 +659,7 @@ if ((_lockedVehCount < (count sectors_military)) && (_lockedVehCount < (count el
 
     // Add new entries, when there are elite vehicles and military sectors are not yet assigned
     while {((count _assignedVehicles) < (count elite_vehicles)) && ((count _assignedBases) < (count sectors_military))} do {
+        if (count(elite_vehicles - _assignedVehicles)<=0) then {break;};
         _nextVehicle = selectRandom (elite_vehicles - _assignedVehicles);
         _nextBase = selectRandom (sectors_military - _assignedBases);
         _assignedVehicles pushBack _nextVehicle;
@@ -664,6 +668,13 @@ if ((_lockedVehCount < (count sectors_military)) && (_lockedVehCount < (count el
     };
     ["Additional military sectors or unlockable vehicles detected and assigned", "SAVE"] call KPLIB_fnc_log;
 };
+
+// Null Check
+GRLIB_vehicle_to_military_base_links = GRLIB_vehicle_to_military_base_links select {
+    _x params ["_vehicle", "_base"];
+    !(isNil "_vehicle" or isNil "_base");
+};
+
 
 publicVariable "GRLIB_vehicle_to_military_base_links";
 publicVariable "GRLIB_permissions";
